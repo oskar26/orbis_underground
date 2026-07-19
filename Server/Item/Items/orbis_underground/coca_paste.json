@@ -1,6 +1,44 @@
 {
-  "Id":"orbis_underground:coca_paste",
-  "TranslationProperties":{"Name":"server.orbis_underground.coca_paste.name","Description":"server.orbis_underground.coca_paste.description"},
-  "Icon":"Icons/ItemsGenerated/coca_paste.png","Quality":"Uncommon","MaxStack":32,"Categories":["OrbisUnderground.Materials"],
-  "Recipe":{"TimeSeconds":12,"Input":[{"ItemId":"orbis_underground:coca_leaves","Quantity":5},{"ItemId":"Ingredient_TreeSap","Quantity":1},{"ItemId":"Ingredient_PlantFiber","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:coca_paste"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"],"RequiredTierLevel":2}]}
+  "Id": "orbis_underground:coca_paste",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.coca_paste.name",
+    "Description": "server.orbis_underground.coca_paste.description"
+  },
+  "Icon": "Icons/ItemsGenerated/coca_paste.png",
+  "Quality": "Uncommon",
+  "MaxStack": 32,
+  "Categories": [
+    "OrbisUnderground.Materials"
+  ],
+  "Recipe": {
+    "TimeSeconds": 12,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:coca_leaves",
+        "Quantity": 5
+      },
+      {
+        "ItemId": "Ingredient_TreeSap",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_PlantFiber",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:coca_paste"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

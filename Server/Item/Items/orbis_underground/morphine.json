@@ -1,8 +1,63 @@
 {
-  "Parent":"Potion_Template","Id":"orbis_underground:morphine",
-  "TranslationProperties":{"Name":"server.orbis_underground.morphine.name","Description":"server.orbis_underground.morphine.description"},
-  "Icon":"Icons/ItemsGenerated/morphine.png","Quality":"Uncommon","MaxStack":10,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_morphine"}]}},
-  "Recipe":{"TimeSeconds":20,"Input":[{"ItemId":"orbis_underground:rohopium","Quantity":2},{"ItemId":"orbis_underground:schwefelsaeure","Quantity":1},{"ItemId":"Ingredient_Charcoal","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:morphine"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:morphine",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.morphine.name",
+    "Description": "server.orbis_underground.morphine.description"
+  },
+  "Icon": "Icons/ItemsGenerated/morphine.png",
+  "Quality": "Uncommon",
+  "MaxStack": 10,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_morphine",
+          "Duration": 300.0
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 20,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:rohopium",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "orbis_underground:schwefelsaeure",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:morphine"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "Potions"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

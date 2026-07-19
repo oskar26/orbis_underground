@@ -1,8 +1,60 @@
 {
-  "Parent":"Potion_Template","Id":"orbis_underground:heroin",
-  "TranslationProperties":{"Name":"server.orbis_underground.heroin.name","Description":"server.orbis_underground.heroin.description"},
-  "Icon":"Icons/ItemsGenerated/heroin.png","Quality":"Rare","MaxStack":10,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_heroin"}]}},
-  "Recipe":{"TimeSeconds":24,"Input":[{"ItemId":"orbis_underground:morphine","Quantity":1},{"ItemId":"orbis_underground:aceton","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:heroin"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"],"RequiredTierLevel":2}]}
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:heroin",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.heroin.name",
+    "Description": "server.orbis_underground.heroin.description"
+  },
+  "Icon": "Icons/ItemsGenerated/heroin.png",
+  "Quality": "Rare",
+  "MaxStack": 10,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_heroin",
+          "Duration": 480.0
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 24,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:morphine",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:aceton",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:heroin"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "Potions"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

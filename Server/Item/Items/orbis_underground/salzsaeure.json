@@ -1,6 +1,43 @@
 {
-  "Id":"orbis_underground:salzsaeure",
-  "TranslationProperties":{"Name":"server.orbis_underground.salzsaeure.name","Description":"server.orbis_underground.salzsaeure.description"},
-  "Icon":"Icons/ItemsGenerated/salzsaeure.png","Quality":"Common","MaxStack":32,"Categories":["OrbisUnderground.Chemicals"],
-  "Recipe":{"TimeSeconds":14,"Input":[{"ItemId":"Ingredient_BoneFragment","Quantity":1},{"ItemId":"orbis_underground:schwefelsaeure","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:salzsaeure"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+  "Id": "orbis_underground:salzsaeure",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.salzsaeure.name",
+    "Description": "server.orbis_underground.salzsaeure.description"
+  },
+  "Icon": "Icons/ItemsGenerated/salzsaeure.png",
+  "Quality": "Common",
+  "MaxStack": 32,
+  "Categories": [
+    "OrbisUnderground.Chemicals"
+  ],
+  "Recipe": {
+    "TimeSeconds": 14,
+    "Input": [
+      {
+        "ItemId": "Ingredient_BoneFragment",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:schwefelsaeure",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:salzsaeure"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "Potions"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

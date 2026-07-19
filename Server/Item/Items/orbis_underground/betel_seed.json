@@ -1,1 +1,40 @@
-{"Id":"orbis_underground:betel_seed","TranslationProperties":{"Name":"server.orbis_underground.betel_seed.name","Description":"server.orbis_underground.betel_seed.description"},"Icon":"Icons/ItemsGenerated/betel_seed.png","Quality":"Uncommon","MaxStack":64,"Categories":["OrbisUnderground.Seeds"],"Recipe":{"TimeSeconds":5,"Input":[{"ItemId":"orbis_underground:essence_shadow","Quantity":2},{"ItemId":"orbis_underground:betel_nut","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:betel_seed"},"BenchRequirement":[{"Type":"Crafting","Id":"Farmingbench","Categories":["Seeds"],"RequiredTierLevel":3}]}}
+{
+  "Id": "orbis_underground:betel_seed",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.betel_seed.name",
+    "Description": "server.orbis_underground.betel_seed.description"
+  },
+  "Icon": "Icons/ItemsGenerated/betel_seed.png",
+  "Quality": "Uncommon",
+  "MaxStack": 64,
+  "Categories": [
+    "OrbisUnderground.Seeds"
+  ],
+  "Recipe": {
+    "TimeSeconds": 5,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:essence_shadow",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "orbis_underground:betel_nut",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:betel_seed"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Farming",
+        "Categories": [
+          "Seeds"
+        ],
+        "RequiredTierLevel": 3
+      }
+    ],
+    "CraftingBench": "Bench_Farming"
+  }
+}

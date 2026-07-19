@@ -1,6 +1,43 @@
 {
-  "Id":"orbis_underground:aceton",
-  "TranslationProperties":{"Name":"server.orbis_underground.aceton.name","Description":"server.orbis_underground.aceton.description"},
-  "Icon":"Icons/ItemsGenerated/aceton.png","Quality":"Common","MaxStack":32,"Categories":["OrbisUnderground.Chemicals"],
-  "Recipe":{"TimeSeconds":14,"Input":[{"ItemId":"Ingredient_TreeSap","Quantity":2},{"ItemId":"Ingredient_Charcoal","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:aceton"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+  "Id": "orbis_underground:aceton",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.aceton.name",
+    "Description": "server.orbis_underground.aceton.description"
+  },
+  "Icon": "Icons/ItemsGenerated/aceton.png",
+  "Quality": "Common",
+  "MaxStack": 32,
+  "Categories": [
+    "OrbisUnderground.Chemicals"
+  ],
+  "Recipe": {
+    "TimeSeconds": 14,
+    "Input": [
+      {
+        "ItemId": "Ingredient_TreeSap",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:aceton"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "Potions"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

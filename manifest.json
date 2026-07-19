@@ -2,10 +2,11 @@
   "Group": "orbis_underground",
   "Name": "Orbis Underground",
   "Version": "1.0.0",
-  "Description": "Comprehensive drug mod for Hytale. All 3 phases: cannabis, opium, psilocybin, cocaine, heroin, meth, MDMA, LSD, ibogaine + Kweebeck Dealer trading system. Includes custom Botanical Table crafting bench.",
+  "Description": "Comprehensive drug mod for Hytale. All 3 phases: cannabis, opium, psilocybin, cocaine, heroin, meth, MDMA, LSD, ibogaine + Kweebeck Dealer trading system.",
   "Authors": [{"Name": "Orbis Underground Team"}],
   "Website": "https://github.com/oskar26/orbis_underground",
   "ServerVersion": "*",
+  "Main": "com.orbisunderground.OrbisUndergroundPlugin",
   "Dependencies": {},
   "OptionalDependencies": {},
   "DisabledByDefault": false

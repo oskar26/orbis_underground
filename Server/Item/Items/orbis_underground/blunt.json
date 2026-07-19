@@ -1,24 +1,56 @@
 {
   "Parent": "Potion_Template",
   "Id": "orbis_underground:blunt",
-  "TranslationProperties": {"Name":"server.orbis_underground.blunt.name","Description":"server.orbis_underground.blunt.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.blunt.name",
+    "Description": "server.orbis_underground.blunt.description"
+  },
   "Icon": "Icons/ItemsGenerated/blunt.png",
   "Model": "Items/Consumables/Blunt.blockymodel",
   "Quality": "Common",
   "MaxStack": 16,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
   "InteractionVars": {
-    "Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_cannabis_indica"}]}
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_cannabis_indica",
+          "Duration": 180.0
+        }
+      ]
+    }
   },
   "Recipe": {
     "TimeSeconds": 4,
     "Input": [
-      {"ItemId":"orbis_underground:dried_cannabis","Quantity":2},
-      {"ItemId":"orbis_underground:paper","Quantity":1}
+      {
+        "ItemId": "orbis_underground:dried_cannabis",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "orbis_underground:paper",
+        "Quantity": 1
+      }
     ],
-    "PrimaryOutput": {"ItemId":"orbis_underground:blunt"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:blunt"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Workbench",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Workbench"
   }
 }

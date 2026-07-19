@@ -1,17 +1,39 @@
 {
   "Id": "orbis_underground:paper",
-  "TranslationProperties": {"Name":"server.orbis_underground.paper.name","Description":"server.orbis_underground.paper.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.paper.name",
+    "Description": "server.orbis_underground.paper.description"
+  },
   "Icon": "Icons/ItemsGenerated/paper.png",
   "Quality": "Common",
   "MaxStack": 64,
-  "Categories": ["OrbisUnderground.Materials"],
+  "Categories": [
+    "OrbisUnderground.Materials"
+  ],
   "Recipe": {
     "TimeSeconds": 4,
     "Input": [
-      {"ItemId":"Ingredient_PlantFiber","Quantity":3},
-      {"ItemId":"Ingredient_TreeSap","Quantity":1}
+      {
+        "ItemId": "Ingredient_PlantFiber",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_TreeSap",
+        "Quantity": 1
+      }
     ],
-    "PrimaryOutput": {"ItemId":"orbis_underground:paper"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:paper"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Workbench",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Workbench"
   }
 }

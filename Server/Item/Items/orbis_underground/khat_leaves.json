@@ -1,8 +1,30 @@
 {
-  "Parent":"Template_Food","Id":"orbis_underground:khat_leaves",
-  "TranslationProperties":{"Name":"server.orbis_underground.khat_leaves.name","Description":"server.orbis_underground.khat_leaves.description"},
-  "Icon":"Icons/ItemsGenerated/khat_leaves.png","Quality":"Common","MaxStack":64,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Food_T2"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_khat"}]}},
-  "ItemLevel":1
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:khat_leaves",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.khat_leaves.name",
+    "Description": "server.orbis_underground.khat_leaves.description"
+  },
+  "Icon": "Icons/ItemsGenerated/khat_leaves.png",
+  "Quality": "Common",
+  "MaxStack": 64,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_khat",
+          "Duration": 180.0
+        }
+      ]
+    }
+  },
+  "ItemLevel": 1
 }

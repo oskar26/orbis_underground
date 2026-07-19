@@ -1,17 +1,40 @@
 {
   "Id": "orbis_underground:cannabis_seed_indica",
-  "TranslationProperties": {"Name":"server.orbis_underground.cannabis_seed_indica.name","Description":"server.orbis_underground.cannabis_seed_indica.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.cannabis_seed_indica.name",
+    "Description": "server.orbis_underground.cannabis_seed_indica.description"
+  },
   "Icon": "Icons/ItemsGenerated/cannabis_seed_indica.png",
   "Quality": "Uncommon",
   "MaxStack": 64,
-  "Categories": ["OrbisUnderground.Seeds"],
+  "Categories": [
+    "OrbisUnderground.Seeds"
+  ],
   "Recipe": {
     "TimeSeconds": 5,
     "Input": [
-      {"ItemId":"orbis_underground:essence_shadow","Quantity":2},
-      {"ItemId":"orbis_underground:dried_cannabis","Quantity":1}
+      {
+        "ItemId": "orbis_underground:essence_shadow",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "orbis_underground:dried_cannabis",
+        "Quantity": 1
+      }
     ],
-    "PrimaryOutput": {"ItemId":"orbis_underground:cannabis_seed_indica"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"Farmingbench","Categories":["Seeds"],"RequiredTierLevel":2}]
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:cannabis_seed_indica"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Farming",
+        "Categories": [
+          "Seeds"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "CraftingBench": "Bench_Farming"
   }
 }

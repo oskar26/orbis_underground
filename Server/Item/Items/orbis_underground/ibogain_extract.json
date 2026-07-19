@@ -1,1 +1,60 @@
-{"Parent":"Potion_Template","Id":"orbis_underground:ibogain_extract","TranslationProperties":{"Name":"server.orbis_underground.ibogain_extract.name","Description":"server.orbis_underground.ibogain_extract.description"},"Icon":"Icons/ItemsGenerated/ibogain_extract.png","Quality":"Rare","MaxStack":10,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],"Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},"InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_ibogaine"}]}},"Recipe":{"TimeSeconds":18,"Input":[{"ItemId":"orbis_underground:iboga_root","Quantity":3},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1},{"ItemId":"Ingredient_Charcoal","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:ibogain_extract"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"],"RequiredTierLevel":2}]}}
+{
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:ibogain_extract",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.ibogain_extract.name",
+    "Description": "server.orbis_underground.ibogain_extract.description"
+  },
+  "Icon": "Icons/ItemsGenerated/ibogain_extract.png",
+  "Quality": "Rare",
+  "MaxStack": 10,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_ibogaine",
+          "Duration": 1800.0
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 18,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:iboga_root",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:ibogain_extract"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
+}

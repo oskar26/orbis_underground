@@ -1,6 +1,39 @@
 {
-  "Id":"orbis_underground:lithium_powder",
-  "TranslationProperties":{"Name":"server.orbis_underground.lithium_powder.name","Description":"server.orbis_underground.lithium_powder.description"},
-  "Icon":"Icons/ItemsGenerated/lithium_powder.png","Quality":"Uncommon","MaxStack":64,"Categories":["OrbisUnderground.Chemicals"],
-  "Recipe":{"TimeSeconds":10,"Input":[{"ItemId":"Ingredient_Bar_Iron","Quantity":1},{"ItemId":"Ingredient_Charcoal","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:lithium_powder"},"BenchRequirement":[{"Type":"Crafting","Id":"Salvagebench","Categories":["Salvage"]}]}
+  "Id": "orbis_underground:lithium_powder",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.lithium_powder.name",
+    "Description": "server.orbis_underground.lithium_powder.description"
+  },
+  "Icon": "Icons/ItemsGenerated/lithium_powder.png",
+  "Quality": "Uncommon",
+  "MaxStack": 64,
+  "Categories": [
+    "OrbisUnderground.Chemicals"
+  ],
+  "Recipe": {
+    "TimeSeconds": 10,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:lithium_powder"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Salvage",
+        "Categories": [
+          "Salvage"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Salvage"
+  }
 }

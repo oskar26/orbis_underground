@@ -1,22 +1,59 @@
 {
   "Parent": "Potion_Template",
   "Id": "orbis_underground:psilocybin_tinktur",
-  "TranslationProperties": {"Name":"server.orbis_underground.psilocybin_tinktur.name","Description":"server.orbis_underground.psilocybin_tinktur.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.psilocybin_tinktur.name",
+    "Description": "server.orbis_underground.psilocybin_tinktur.description"
+  },
   "Icon": "Icons/ItemsGenerated/psilocybin_tinktur.png",
   "Quality": "Uncommon",
   "MaxStack": 10,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
-  "InteractionVars": {"Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_psilocybin"}]}},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_psilocybin",
+          "Duration": 240.0
+        }
+      ]
+    }
+  },
   "Recipe": {
     "TimeSeconds": 10,
     "Input": [
-      {"ItemId":"orbis_underground:pilz_pulver","Quantity":3},
-      {"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1},
-      {"ItemId":"Ingredient_TreeSap","Quantity":1}
+      {
+        "ItemId": "orbis_underground:pilz_pulver",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_TreeSap",
+        "Quantity": 1
+      }
     ],
-    "PrimaryOutput": {"ItemId":"orbis_underground:psilocybin_tinktur"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:psilocybin_tinktur"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
   }
 }

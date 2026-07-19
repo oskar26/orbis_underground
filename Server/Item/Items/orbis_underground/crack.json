@@ -1,8 +1,55 @@
 {
-  "Parent":"Potion_Template","Id":"orbis_underground:crack",
-  "TranslationProperties":{"Name":"server.orbis_underground.crack.name","Description":"server.orbis_underground.crack.description"},
-  "Icon":"Icons/ItemsGenerated/crack.png","Quality":"Uncommon","MaxStack":16,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_crack"}]}},
-  "Recipe":{"TimeSeconds":10,"Input":[{"ItemId":"orbis_underground:cocaine","Quantity":1},{"ItemId":"orbis_underground:ammoniak","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:crack"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:crack",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.crack.name",
+    "Description": "server.orbis_underground.crack.description"
+  },
+  "Icon": "Icons/ItemsGenerated/crack.png",
+  "Quality": "Uncommon",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_crack",
+          "Duration": 30.0
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 10,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:cocaine",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:ammoniak",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:crack"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "Potions"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

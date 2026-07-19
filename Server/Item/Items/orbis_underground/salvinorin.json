@@ -1,8 +1,56 @@
 {
-  "Parent":"Potion_Template","Id":"orbis_underground:salvinorin",
-  "TranslationProperties":{"Name":"server.orbis_underground.salvinorin.name","Description":"server.orbis_underground.salvinorin.description"},
-  "Icon":"Icons/ItemsGenerated/salvinorin.png","Quality":"Uncommon","MaxStack":10,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_salvinorin"}]}},
-  "Recipe":{"TimeSeconds":12,"Input":[{"ItemId":"orbis_underground:salvia_leaves","Quantity":3},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:salvinorin"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"],"RequiredTierLevel":2}]}
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:salvinorin",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.salvinorin.name",
+    "Description": "server.orbis_underground.salvinorin.description"
+  },
+  "Icon": "Icons/ItemsGenerated/salvinorin.png",
+  "Quality": "Uncommon",
+  "MaxStack": 10,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_salvinorin",
+          "Duration": 90.0
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 12,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:salvia_leaves",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:salvinorin"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }
