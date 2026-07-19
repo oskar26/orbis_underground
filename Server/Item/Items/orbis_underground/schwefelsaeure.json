@@ -1,0 +1,6 @@
+{
+  "Id":"orbis_underground:schwefelsaeure",
+  "TranslationProperties":{"Name":"server.orbis_underground.schwefelsaeure.name","Description":"server.orbis_underground.schwefelsaeure.description"},
+  "Icon":"Icons/ItemsGenerated/schwefelsaeure.png","Quality":"Common","MaxStack":32,"Categories":["OrbisUnderground.Chemicals"],
+  "Recipe":{"TimeSeconds":16,"Input":[{"ItemId":"Ingredient_Charcoal","Quantity":2},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1},{"ItemId":"Ingredient_EssenceOfFire","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:schwefelsaeure"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+}

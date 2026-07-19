@@ -1,0 +1,17 @@
+{
+  "Id": "orbis_underground:kweebeck_dealer_shop",
+  "CurrencyItemId": "orbis_underground:essence_shadow",
+  "Trades": [
+    {"Type":"Buy","ItemId":"orbis_underground:dried_cannabis","Price":3,"MaxStock":32},
+    {"Type":"Buy","ItemId":"orbis_underground:haschisch","Price":8,"MaxStock":16},
+    {"Type":"Buy","ItemId":"orbis_underground:rohopium","Price":12,"MaxStock":8},
+    {"Type":"Buy","ItemId":"orbis_underground:pilz_pulver","Price":6,"MaxStock":16},
+    {"Type":"Buy","ItemId":"orbis_underground:joint","Price":5,"MaxStock":16},
+    {"Type":"Buy","ItemId":"orbis_underground:blunt","Price":7,"MaxStock":12},
+    {"Type":"Sell","ItemId":"orbis_underground:cannabis_seed_sativa","Price":3,"MaxStock":8},
+    {"Type":"Sell","ItemId":"orbis_underground:cannabis_seed_indica","Price":4,"MaxStock":8},
+    {"Type":"Sell","ItemId":"orbis_underground:mohn_samen","Price":4,"MaxStock":8},
+    {"Type":"Sell","ItemId":"Ingredient_EmptyPotionBottle","Price":2,"MaxStock":16},
+    {"Type":"Sell","ItemId":"orbis_underground:paper","Price":1,"MaxStock":32}
+  ]
+}

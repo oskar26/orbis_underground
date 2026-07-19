@@ -1,0 +1,12 @@
+{
+  "Id": "orbis_underground:drug_cocaine_crash",
+  "Name": "effect.orbis_underground.drug_cocaine_crash",
+  "Duration": 120,
+  "Debuff": true,
+  "StatModifiers": {
+    "MovementSpeed": -0.3
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_crash.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE"
+}

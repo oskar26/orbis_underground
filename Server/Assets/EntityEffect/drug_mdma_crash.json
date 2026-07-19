@@ -1,0 +1,13 @@
+{
+  "Id": "orbis_underground:drug_mdma_crash",
+  "Name": "effect.orbis_underground.drug_mdma_crash",
+  "Duration": 86400,
+  "Debuff": true,
+  "StatModifiers": {
+    "MovementSpeed": -0.1,
+    "Strength": -0.1
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_crash.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE"
+}

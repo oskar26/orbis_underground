@@ -1,0 +1,15 @@
+# Asset extraction cache
+_get_hy_assets/
+_get_hy_extracted/
+vanilla_textures/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Generated textures (keep originals, not cache)
+scripts/__pycache__/

@@ -1,0 +1,16 @@
+{
+  "Id": "orbis_underground:drug_cocaine",
+  "Name": "effect.orbis_underground.drug_cocaine",
+  "Duration": 90,
+  "Debuff": false,
+  "StatModifiers": {
+    "MovementSpeed": 0.4,
+    "DamageResist": 0.3
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_cocaine.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#ffffff"
+  }
+}

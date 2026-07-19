@@ -1,0 +1,12 @@
+{
+  "Id": "orbis_underground:drug_meth_crash",
+  "Name": "effect.orbis_underground.drug_meth_crash",
+  "Duration": 600,
+  "Debuff": true,
+  "StatModifiers": {
+    "HealthRegenBlocked": 1.0
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_crash.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE"
+}

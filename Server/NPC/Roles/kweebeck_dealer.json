@@ -1,0 +1,21 @@
+{
+  "Id": "orbis_underground:kweebeck_dealer",
+  "Model": "npc/kweebec",
+  "NPCGroups": ["Friendly","Villager","Trader"],
+  "StartState": "Idle",
+  "StartSubState": "Default",
+  "EntitySlots": {"Target":{"UpdateRate":0.5,"Range":10.0,"MaxCount":1}},
+  "MotionControllers": {"Walk":{"MaxSpeed":2.0,"Acceleration":10.0,"TurnSpeed":90.0}},
+  "States": {
+    "Idle": {
+      "SubStates": {
+        "Default": {
+          "Instructions": [
+            {"Sensors":{"Type":"Player","Range":6.0,"Slot":"Target"},"Actions":[{"Type":"OpenBarterShop","BarterShopAsset":"orbis_underground:kweebeck_dealer_shop","Dialog":"npc.orbis_underground.kweebeck_dealer.dialog"}],"BodyMotion":{"Type":"Nothing"},"HeadMotion":{"Type":"Watch","Slot":"Target"}},
+            {"Sensors":{"Type":"Any"},"BodyMotion":{"Type":"Idle"}}
+          ]
+        }
+      }
+    }
+  }
+}

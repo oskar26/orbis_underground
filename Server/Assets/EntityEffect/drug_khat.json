@@ -1,0 +1,15 @@
+{
+  "Id": "orbis_underground:drug_khat",
+  "Name": "effect.orbis_underground.drug_khat",
+  "Duration": 180,
+  "Debuff": false,
+  "StatModifiers": {
+    "MovementSpeed": 0.1
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_khat.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#aaddaa"
+  }
+}

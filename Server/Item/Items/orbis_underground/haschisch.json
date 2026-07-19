@@ -1,0 +1,23 @@
+{
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:haschisch",
+  "TranslationProperties": {"Name":"server.orbis_underground.haschisch.name","Description":"server.orbis_underground.haschisch.description"},
+  "Icon": "Icons/ItemsGenerated/haschisch.png",
+  "Quality": "Uncommon",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Categories": ["OrbisUnderground.Consumables"],
+  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
+  "InteractionVars": {
+    "Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_hashish"}]}
+  },
+  "Recipe": {
+    "TimeSeconds": 10,
+    "Input": [
+      {"ItemId":"orbis_underground:dried_cannabis","Quantity":4},
+      {"ItemId":"Ingredient_TreeSap","Quantity":1}
+    ],
+    "PrimaryOutput": {"ItemId":"orbis_underground:haschisch"},
+    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+  }
+}

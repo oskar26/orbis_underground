@@ -1,0 +1,9 @@
+{
+  "Parent":"Template_Food","Id":"orbis_underground:cannabis_butter",
+  "TranslationProperties":{"Name":"server.orbis_underground.cannabis_butter.name","Description":"server.orbis_underground.cannabis_butter.description"},
+  "Icon":"Icons/ItemsGenerated/cannabis_butter.png","Quality":"Uncommon","MaxStack":16,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
+  "Interactions":{"Secondary":"Root_Secondary_Consume_Food_T2"},
+  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_cannabis_indica"}]}},
+  "Recipe":{"TimeSeconds":8,"Input":[{"ItemId":"orbis_underground:dried_cannabis","Quantity":1},{"ItemId":"Ingredient_Dough","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:cannabis_butter"},"BenchRequirement":[{"Type":"Crafting","Id":"Cookingbench","Categories":["Baked"]}]},
+  "ItemLevel":3
+}

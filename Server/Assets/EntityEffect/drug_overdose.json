@@ -1,0 +1,20 @@
+{
+  "Id": "orbis_underground:drug_overdose",
+  "Name": "effect.orbis_underground.drug_overdose",
+  "Duration": 60,
+  "Debuff": true,
+  "StatModifiers": {},
+  "StatusEffectIcon": "UI/StatusEffects/drug_overdose.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#000000"
+  },
+  "DamageCalculator": {
+    "Type": "OverTime",
+    "DamageCauses": {
+      "Overdose": 10.0
+    }
+  },
+  "DamageCalculatorCooldown": 1.0
+}

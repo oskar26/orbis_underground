@@ -1,0 +1,10 @@
+{
+  "Id": "orbis_underground:cannabis_bud_indica_exotic",
+  "TranslationProperties": {"Name":"server.orbis_underground.cannabis_bud_indica_exotic.name","Description":"server.orbis_underground.cannabis_bud_indica_exotic.description"},
+  "Icon": "Icons/ItemsGenerated/cannabis_bud_indica_exotic.png",
+  "Model": "Items/Cannabis/cannabis_bud_indica.blockymodel",
+  "Quality": "Rare",
+  "MaxStack": 32,
+  "Categories": ["OrbisUnderground.Materials"],
+  "ItemLevel": 1
+}

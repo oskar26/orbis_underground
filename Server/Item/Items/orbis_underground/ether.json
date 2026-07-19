@@ -1,0 +1,6 @@
+{
+  "Id":"orbis_underground:ether",
+  "TranslationProperties":{"Name":"server.orbis_underground.ether.name","Description":"server.orbis_underground.ether.description"},
+  "Icon":"Icons/ItemsGenerated/ether.png","Quality":"Uncommon","MaxStack":32,"Categories":["OrbisUnderground.Chemicals"],
+  "Recipe":{"TimeSeconds":18,"Input":[{"ItemId":"orbis_underground:ethanol","Quantity":1},{"ItemId":"orbis_underground:schwefelsaeure","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:ether"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+}

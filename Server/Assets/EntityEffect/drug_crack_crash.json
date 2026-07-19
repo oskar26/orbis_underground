@@ -1,0 +1,12 @@
+{
+  "Id": "orbis_underground:drug_crack_crash",
+  "Name": "effect.orbis_underground.drug_crack_crash",
+  "Duration": 180,
+  "Debuff": true,
+  "StatModifiers": {
+    "MovementSpeed": -0.5
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_crash.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE"
+}

@@ -1,0 +1,16 @@
+{
+  "Id": "orbis_underground:drug_cannabis_sativa",
+  "Name": "effect.orbis_underground.drug_cannabis_sativa",
+  "Duration": 120,
+  "Debuff": false,
+  "StatModifiers": {
+    "MovementSpeed": 0.15,
+    "HealthRegen": 0.3
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_cannabis.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#4a8a3c"
+  }
+}

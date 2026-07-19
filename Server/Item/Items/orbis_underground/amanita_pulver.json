@@ -1,0 +1,18 @@
+{
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:amanita_pulver",
+  "TranslationProperties": {"Name":"server.orbis_underground.amanita_pulver.name","Description":"server.orbis_underground.amanita_pulver.description"},
+  "Icon": "Icons/ItemsGenerated/pilz_pulver.png",
+  "Quality": "Common",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Categories": ["OrbisUnderground.Consumables"],
+  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
+  "InteractionVars": {"Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_amanita"}]}},
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [{"ItemId":"Plant_BloodcapMushroom","Quantity":1}],
+    "PrimaryOutput": {"ItemId":"orbis_underground:amanita_pulver"},
+    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "Id": "orbis_underground:cannabis_seed_hybrid",
+  "TranslationProperties": {"Name":"server.orbis_underground.cannabis_seed_hybrid.name","Description":"server.orbis_underground.cannabis_seed_hybrid.description"},
+  "Icon": "Icons/ItemsGenerated/cannabis_seed_hybrid.png",
+  "Quality": "Uncommon",
+  "MaxStack": 64,
+  "Categories": ["OrbisUnderground.Seeds"],
+  "Recipe": {
+    "TimeSeconds": 5,
+    "Input": [
+      {"ItemId":"orbis_underground:essence_shadow","Quantity":3},
+      {"ItemId":"orbis_underground:dried_cannabis","Quantity":1},{"ItemId":"Ingredient_PlantFiber","Quantity":1}
+    ],
+    "PrimaryOutput": {"ItemId":"orbis_underground:cannabis_seed_hybrid"},
+    "BenchRequirement": [{"Type":"Crafting","Id":"Farmingbench","Categories":["Seeds"],"RequiredTierLevel":3}]
+  }
+}

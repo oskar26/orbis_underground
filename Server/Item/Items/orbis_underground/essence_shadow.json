@@ -1,0 +1,11 @@
+{
+  "Id": "orbis_underground:essence_shadow",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.essence_shadow.name",
+    "Description": "server.orbis_underground.essence_shadow.description"
+  },
+  "Icon": "Icons/ItemsGenerated/essence_shadow.png",
+  "Quality": "Uncommon",
+  "MaxStack": 64,
+  "Categories": ["OrbisUnderground.Currency"]
+}

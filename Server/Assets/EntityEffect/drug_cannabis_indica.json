@@ -1,0 +1,16 @@
+{
+  "Id": "orbis_underground:drug_cannabis_indica",
+  "Name": "effect.orbis_underground.drug_cannabis_indica",
+  "Duration": 180,
+  "Debuff": false,
+  "StatModifiers": {
+    "MovementSpeed": -0.15,
+    "HealthRegen": 0.5
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_cannabis.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#2d6b1e"
+  }
+}

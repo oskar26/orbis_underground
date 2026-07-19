@@ -1,0 +1,23 @@
+{
+  "Id": "orbis_underground:drug_heroin",
+  "Name": "effect.orbis_underground.drug_heroin",
+  "Duration": 480,
+  "Debuff": false,
+  "StatModifiers": {
+    "DamageResist": 0.7,
+    "HorizontalSpeedMultiplier": 0.7
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_heroin.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#c4b8a8"
+  },
+  "DamageCalculator": {
+    "Type": "OverTime",
+    "DamageCauses": {
+      "Respiratory": 3.0
+    }
+  },
+  "DamageCalculatorCooldown": 1.0
+}

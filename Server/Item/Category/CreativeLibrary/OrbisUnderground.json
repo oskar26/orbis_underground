@@ -1,0 +1,14 @@
+{
+  "Id": "OrbisUnderground",
+  "Name": "ui.itemcategory.orbis_underground",
+  "Icon": "Icons/ItemCategories/OrbisUnderground.png",
+  "Order": 12,
+  "Children": [
+    {"Id":"Currency","Name":"ui.itemcategory.orbis_underground.currency","Icon":"Icons/ItemCategories/OrbisUnderground_Currency.png"},
+    {"Id":"Seeds","Name":"ui.itemcategory.orbis_underground.seeds","Icon":"Icons/ItemCategories/OrbisUnderground_Seeds.png"},
+    {"Id":"Materials","Name":"ui.itemcategory.orbis_underground.materials","Icon":"Icons/ItemCategories/OrbisUnderground_Materials.png"},
+    {"Id":"Consumables","Name":"ui.itemcategory.orbis_underground.consumables","Icon":"Icons/ItemCategories/OrbisUnderground_Consumables.png"},
+    {"Id":"Chemicals","Name":"ui.itemcategory.orbis_underground.chemicals","Icon":"Icons/ItemCategories/OrbisUnderground_Chemicals.png"},
+    {"Id":"Tools","Name":"ui.itemcategory.orbis_underground.tools","Icon":"Icons/ItemCategories/OrbisUnderground_Tools.png"}
+  ]
+}
