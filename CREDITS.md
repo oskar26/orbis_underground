@@ -17,8 +17,6 @@ Original mod: https://www.curseforge.com/hytale/mods/get-hy
 
 ## Tools Used
 - Python/PIL for texture recoloring (scripts/recolor.py)
-- PixExact (https://www.pixexact.com) for AI-generated pixel art
-- Retro Diffusion (https://retrodiffusion.ai) for plant textures
 
 ## License
 This project is licensed under the MIT License.
