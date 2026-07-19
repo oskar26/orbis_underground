@@ -30,6 +30,7 @@
 Beide Custom-Bänke besitzen **Tier 1 und Tier 2**. Tier 2 schaltet komplexe Pflanzenextrakte bzw. harte Drogen frei. Die Weltgenerierung nutzt die konfliktarmen `Server/WorldGen/Modifier`-Assets des WorldGen-v1-Modifier-Systems, anstatt Vanilla-Biome-Dateien vollständig zu überschreiben.
 
 > **ID-Hinweis:** Hytale-Asset-IDs sind global und werden aus dem Dateinamen abgeleitet. Darum heißen die runtimefähigen Item-IDs z. B. `bench_botany` und `essence_shadow`; die Paketidentität bleibt `orbis_underground:Orbis Underground`. Minecraft-artige Item-IDs wie `orbis_underground:bench_botany` sind im Hytale-Item-AssetStore nicht gültig.
+
 ---
 
 ## 📁 INSTALLATION — Schritt für Schritt
