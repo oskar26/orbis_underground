@@ -1,8 +1,59 @@
 {
-  "Parent":"Potion_Template","Id":"orbis_underground:cocaine",
-  "TranslationProperties":{"Name":"server.orbis_underground.cocaine.name","Description":"server.orbis_underground.cocaine.description"},
-  "Icon":"Icons/ItemsGenerated/cocaine.png","Quality":"Uncommon","MaxStack":16,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_cocaine"}]}},
-  "Recipe":{"TimeSeconds":22,"Input":[{"ItemId":"orbis_underground:coca_paste","Quantity":2},{"ItemId":"orbis_underground:schwefelsaeure","Quantity":1},{"ItemId":"orbis_underground:filter_paper","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:cocaine"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:cocaine",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.cocaine.name",
+    "Description": "server.orbis_underground.cocaine.description"
+  },
+  "Icon": "Icons/ItemsGenerated/cocaine.png",
+  "Quality": "Uncommon",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_cocaine",
+          "Duration": 90.0
+        }
+      ]
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 22,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:coca_paste",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "orbis_underground:schwefelsaeure",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:filter_paper",
+        "Quantity": 1
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:cocaine"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "Potions"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
+  }
 }

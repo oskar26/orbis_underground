@@ -1,14 +1,35 @@
 {
   "Id": "orbis_underground:rohopium",
-  "TranslationProperties": {"Name":"server.orbis_underground.rohopium.name","Description":"server.orbis_underground.rohopium.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.rohopium.name",
+    "Description": "server.orbis_underground.rohopium.description"
+  },
   "Icon": "Icons/ItemsGenerated/rohopium.png",
   "Quality": "Uncommon",
   "MaxStack": 32,
-  "Categories": ["OrbisUnderground.Materials"],
+  "Categories": [
+    "OrbisUnderground.Materials"
+  ],
   "Recipe": {
     "TimeSeconds": 8,
-    "Input": [{"ItemId":"orbis_underground:mohn_kapsel","Quantity":3}],
-    "PrimaryOutput": {"ItemId":"orbis_underground:rohopium"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "Input": [
+      {
+        "ItemId": "orbis_underground:mohn_kapsel",
+        "Quantity": 3
+      }
+    ],
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:rohopium"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Alchemy",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Alchemy"
   }
 }

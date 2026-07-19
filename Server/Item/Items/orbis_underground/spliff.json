@@ -1,24 +1,56 @@
 {
   "Parent": "Potion_Template",
   "Id": "orbis_underground:spliff",
-  "TranslationProperties": {"Name":"server.orbis_underground.spliff.name","Description":"server.orbis_underground.spliff.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.spliff.name",
+    "Description": "server.orbis_underground.spliff.description"
+  },
   "Icon": "Icons/ItemsGenerated/spliff.png",
   "Model": "Items/Consumables/Spliff.blockymodel",
   "Quality": "Common",
   "MaxStack": 16,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
   "InteractionVars": {
-    "Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_cannabis_hybrid"}]}
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_cannabis_hybrid",
+          "Duration": 150.0
+        }
+      ]
+    }
   },
   "Recipe": {
     "TimeSeconds": 3,
     "Input": [
-      {"ItemId":"orbis_underground:dried_cannabis","Quantity":1},
-      {"ItemId":"orbis_underground:paper","Quantity":1}
+      {
+        "ItemId": "orbis_underground:dried_cannabis",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:paper",
+        "Quantity": 1
+      }
     ],
-    "PrimaryOutput": {"ItemId":"orbis_underground:spliff"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "PrimaryOutput": {
+      "ItemId": "orbis_underground:spliff"
+    },
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Workbench",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ],
+    "CraftingBench": "Bench_Workbench"
   }
 }
