@@ -1,15 +1,14 @@
 {
-  "Id": "orbis_underground:drug_hashish",
   "Name": "effect.orbis_underground.drug_hashish",
   "Duration": 180,
   "Debuff": false,
   "StatModifiers": {
-    "MovementSpeed": -0.22,
+    "MoveSpeed": -0.22,
     "HealthRegen": 0.75
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_hashish.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#1a4d0f"
   }

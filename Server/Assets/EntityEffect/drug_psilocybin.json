@@ -1,16 +1,13 @@
 {
-  "Id": "orbis_underground:drug_psilocybin",
   "Name": "effect.orbis_underground.drug_psilocybin",
   "Duration": 240,
   "Debuff": false,
-  "StatModifiers": {
-    "PerceptionBoost": 1.0
-  },
+  "StatModifiers": {},
   "StatusEffectIcon": "UI/StatusEffects/drug_psilocybin.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#7b4fbf"
   },
-  "modelChange": "psilocybin_visuals"
+  "ModelChange": "psilocybin_visuals"
 }

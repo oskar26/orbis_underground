@@ -1,1 +1,41 @@
-{"Id":"orbis_underground:iboga_seed","TranslationProperties":{"Name":"server.orbis_underground.iboga_seed.name","Description":"server.orbis_underground.iboga_seed.description"},"Icon":"Icons/ItemsGenerated/iboga_seed.png","Quality":"Rare","MaxStack":64,"Categories":["OrbisUnderground.Seeds"],"Recipe":{"TimeSeconds":8,"Input":[{"ItemId":"orbis_underground:essence_shadow","Quantity":3},{"ItemId":"orbis_underground:iboga_root","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:iboga_seed"},"BenchRequirement":[{"Type":"Crafting","Id":"Farmingbench","Categories":["Seeds"],"RequiredTierLevel":4}]}}
+{
+  "Id": "orbis_underground:iboga_seed",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.iboga_seed.name",
+    "Description": "server.orbis_underground.iboga_seed.description"
+  },
+  "Icon": "Icons/ItemsGenerated/iboga_seed.png",
+  "Quality": "Rare",
+  "MaxStack": 64,
+  "Categories": [
+    "OrbisUnderground.Seeds"
+  ],
+  "Recipe": {
+    "TimeSeconds": 8,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:essence_shadow",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "orbis_underground:iboga_root",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:iboga_seed"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Farmingbench",
+        "Categories": [
+          "Seeds"
+        ],
+        "RequiredTierLevel": 4
+      }
+    ]
+  }
+}

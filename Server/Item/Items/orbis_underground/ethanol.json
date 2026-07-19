@@ -1,6 +1,44 @@
 {
-  "Id":"orbis_underground:ethanol",
-  "TranslationProperties":{"Name":"server.orbis_underground.ethanol.name","Description":"server.orbis_underground.ethanol.description"},
-  "Icon":"Icons/ItemsGenerated/ethanol.png","Quality":"Common","MaxStack":32,"Categories":["OrbisUnderground.Chemicals"],
-  "Recipe":{"TimeSeconds":12,"Input":[{"ItemId":"Ingredient_Wheat","Quantity":2},{"ItemId":"Ingredient_WildBerries","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:ethanol"},"BenchRequirement":[{"Type":"Crafting","Id":"Cookingbench","Categories":["Baked"]}]}
+  "Id": "orbis_underground:ethanol",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.ethanol.name",
+    "Description": "server.orbis_underground.ethanol.description"
+  },
+  "Icon": "Icons/ItemsGenerated/ethanol.png",
+  "Quality": "Common",
+  "MaxStack": 32,
+  "Categories": [
+    "OrbisUnderground.Chemicals"
+  ],
+  "Recipe": {
+    "TimeSeconds": 12,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Wheat",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_WildBerries",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:ethanol"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Baked"
+        ]
+      }
+    ]
+  }
 }

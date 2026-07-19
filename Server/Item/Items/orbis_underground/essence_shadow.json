@@ -7,5 +7,7 @@
   "Icon": "Icons/ItemsGenerated/essence_shadow.png",
   "Quality": "Uncommon",
   "MaxStack": 64,
-  "Categories": ["OrbisUnderground.Currency"]
+  "Categories": [
+    "OrbisUnderground.Currency"
+  ]
 }

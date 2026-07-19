@@ -1,1 +1,105 @@
-{"Parent":"Potion_Template","Id":"orbis_underground:naloxon","TranslationProperties":{"Name":"server.orbis_underground.naloxon.name","Description":"server.orbis_underground.naloxon.description"},"Icon":"Icons/ItemsGenerated/naloxon.png","Quality":"Uncommon","MaxStack":10,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],"Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},"InteractionVars":{"Effect":{"Interactions":[{"Type":"RemoveAllDrugEffects"}]}},"Recipe":{"TimeSeconds":18,"Input":[{"ItemId":"orbis_underground:morphine","Quantity":1},{"ItemId":"orbis_underground:salzsaeure","Quantity":1},{"ItemId":"Ingredient_Charcoal","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:naloxon"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"],"RequiredTierLevel":2}]}}
+{
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:naloxon",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.naloxon.name",
+    "Description": "server.orbis_underground.naloxon.description"
+  },
+  "Icon": "Icons/ItemsGenerated/naloxon.png",
+  "Quality": "Uncommon",
+  "MaxStack": 10,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": {
+      "RequireNewClick": false,
+      "Interactions": [
+        {
+          "Type": "Condition",
+          "RequiredGameMode": "Adventure",
+          "Crouching": false,
+          "Next": {
+            "Type": "Replace",
+            "DefaultValue": {
+              "Interactions": [
+                "orbis_underground:RemoveAllDrugEffects"
+              ]
+            },
+            "Var": "orbis_underground:RemoveAllDrugEffects"
+          },
+          "Failed": "Block_Secondary"
+        }
+      ]
+    }
+  },
+  "InteractionVars": {
+    "orbis_underground:RemoveAllDrugEffects": {
+      "Interactions": [
+        {
+          "Type": "orbis_underground:RemoveAllDrugEffects"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Blue.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e6f0ff",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 18,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:morphine",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:salzsaeure",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Charcoal",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:naloxon"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Alchemybench",
+        "Categories": [
+          "Alchemy_Potions_Misc"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ]
+  }
+}

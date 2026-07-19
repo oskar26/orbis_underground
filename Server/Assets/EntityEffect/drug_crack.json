@@ -1,15 +1,14 @@
 {
-  "Id": "orbis_underground:drug_crack",
   "Name": "effect.orbis_underground.drug_crack",
   "Duration": 30,
   "Debuff": false,
   "StatModifiers": {
-    "MovementSpeed": 0.8,
-    "DamageResist": 0.6
+    "MoveSpeed": 0.8,
+    "AttackDamage": 0.6
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_crack.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#ffffcc"
   }

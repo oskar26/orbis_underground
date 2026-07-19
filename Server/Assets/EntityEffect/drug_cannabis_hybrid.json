@@ -1,15 +1,14 @@
 {
-  "Id": "orbis_underground:drug_cannabis_hybrid",
   "Name": "effect.orbis_underground.drug_cannabis_hybrid",
   "Duration": 150,
   "Debuff": false,
   "StatModifiers": {
-    "MovementSpeed": 0.05,
+    "MoveSpeed": 0.05,
     "HealthRegen": 0.4
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_cannabis.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#3d7a30"
   }

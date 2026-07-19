@@ -1,12 +1,19 @@
 {
-  "Id": "orbis_underground:bench_botany",
+  "Id": "Bench_Botany",
   "TranslationProperties": {
     "Name": "server.orbis_underground.bench_botany.name",
     "Description": "server.orbis_underground.bench_botany.description"
   },
   "MaxStack": 1,
   "Icon": "Icons/ItemsGenerated/bench_botany.png",
-  "Categories": ["OrbisUnderground.Tools", "Benches"],
+  "Categories": [
+    "OrbisUnderground.Tools"
+  ],
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
   "PlayerAnimationsId": "Block",
   "Set": "Bench_Botany",
   "BlockType": {
@@ -15,7 +22,9 @@
     "CustomModel": "Models/blocks/bench_botany.blockymodel",
     "Group": "Wood",
     "Textures": [
-      {"All": "BlockTextures/bench_botany.png"}
+      {
+        "All": "BlockTextures/bench_botany.png"
+      }
     ],
     "ParticleColor": "#8a6642",
     "BlockSoundSetId": "Wood",
@@ -23,43 +32,80 @@
     "Gathering": {
       "Breaking": {
         "GatherType": "Benches",
-        "ItemId": "orbis_underground:bench_botany"
+        "ItemId": "Bench_Botany"
       }
     },
     "Bench": {
       "Type": "Crafting",
+      "Id": "Bench_Botany",
       "Categories": [
-        {"Id": "OrbisUnderground_Botany", "Name": "ui.benchcategory.botany", "Icon": "Icons/ItemCategories/OrbisUnderground.png"}
+        {
+          "Id": "OrbisUnderground_Botany",
+          "Name": "ui.benchcategory.botany",
+          "Icon": "Icons/ItemCategories/OrbisUnderground.png"
+        }
+      ],
+      "TierLevels": [
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Bar_Copper",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Bar_Thorium",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_PlantFiber",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "Ingredient_VenomSac",
+                "Quantity": 3
+              }
+            ],
+            "TimeSeconds": 5.0
+          },
+          "CraftingTimeReductionModifier": 0.3
+        }
       ]
     }
   },
   "Recipe": {
     "TimeSeconds": 8,
     "Input": [
-      {"ItemId": "Ingredient_Log", "Quantity": 4},
-      {"ItemId": "Ingredient_PlantFiber", "Quantity": 4},
-      {"ItemId": "Ingredient_TreeBark", "Quantity": 2},
-      {"ItemId": "Ingredient_SturdyChitin", "Quantity": 1}
-    ],
-    "PrimaryOutput": {"ItemId": "orbis_underground:bench_botany"},
-    "BenchRequirement": [
-      {"Type": "Crafting", "Id": "Workbench", "Categories": ["Crafting"]}
-    ]
-  },
-  "TierLevels": [
-    {
-      "UpgradeRequirement": {
-        "Input": [
-          {"ItemId": "Ingredient_Bar_Copper", "Quantity": 10},
-          {"ItemId": "Ingredient_Bar_Thorium", "Quantity": 5},
-          {"ItemId": "Ingredient_PlantFiber", "Quantity": 20},
-          {"ItemId": "Ingredient_VenomSac", "Quantity": 3}
-        ]
+      {
+        "ItemId": "Ingredient_Log",
+        "Quantity": 4
       },
-      "CraftingTimeReductionModifier": 0.3,
-      "ExtraInputSlot": 0,
-      "ExtraOutputSlot": 0
-    }
-  ],
-  "ResourceTypes": [{"Id": "Bench"}]
+      {
+        "ItemId": "Ingredient_PlantFiber",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_TreeBark",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_SturdyChitin",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "Bench_Botany"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Survival"
+        ]
+      }
+    ]
+  }
 }

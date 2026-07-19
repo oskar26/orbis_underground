@@ -1,9 +1,78 @@
 {
-  "Parent":"Template_Food","Id":"orbis_underground:koka_tee",
-  "TranslationProperties":{"Name":"server.orbis_underground.koka_tee.name","Description":"server.orbis_underground.koka_tee.description"},
-  "Icon":"Icons/ItemsGenerated/koka_tee.png","Quality":"Common","MaxStack":16,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
-  "Interactions":{"Secondary":"Root_Secondary_Consume_Food_T2"},
-  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_khat"}]}},
-  "Recipe":{"TimeSeconds":5,"Input":[{"ItemId":"orbis_underground:coca_leaves","Quantity":1},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:koka_tee"},"BenchRequirement":[{"Type":"Crafting","Id":"Cookingbench","Categories":["Prepared"]}]},
-  "ItemLevel":2
+  "Parent": "Template_Food",
+  "Id": "orbis_underground:koka_tee",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.koka_tee.name",
+    "Description": "server.orbis_underground.koka_tee.description"
+  },
+  "Icon": "Icons/ItemsGenerated/koka_tee.png",
+  "Quality": "Common",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Food"
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T2"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_ephedrin"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#8aaa55",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 5,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:coca_leaves",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:koka_tee"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Cookingbench",
+        "Categories": [
+          "Prepared"
+        ]
+      }
+    ]
+  },
+  "ItemLevel": 2
 }

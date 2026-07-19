@@ -1,6 +1,45 @@
 {
-  "Id":"orbis_underground:empty_syringe",
-  "TranslationProperties":{"Name":"server.orbis_underground.empty_syringe.name","Description":"server.orbis_underground.empty_syringe.description"},
-  "Icon":"Icons/ItemsGenerated/empty_syringe.png","Model":"Items/Syringe/Syringe_Empty.blockymodel","Quality":"Common","MaxStack":16,"Categories":["OrbisUnderground.Tools"],
-  "Recipe":{"TimeSeconds":8,"Input":[{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1},{"ItemId":"Ingredient_Bar_Iron","Quantity":1},{"ItemId":"Ingredient_LinenScraps","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:empty_syringe"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]}
+  "Id": "orbis_underground:empty_syringe",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.empty_syringe.name",
+    "Description": "server.orbis_underground.empty_syringe.description"
+  },
+  "Icon": "Icons/ItemsGenerated/empty_syringe.png",
+  "Model": "Items/Syringe/Syringe_Empty.blockymodel",
+  "Quality": "Common",
+  "MaxStack": 16,
+  "Categories": [
+    "OrbisUnderground.Tools"
+  ],
+  "Recipe": {
+    "TimeSeconds": 8,
+    "Input": [
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_LinenScraps",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:empty_syringe"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Botany",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ]
+  }
 }
