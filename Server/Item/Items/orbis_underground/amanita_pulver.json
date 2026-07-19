@@ -4,7 +4,7 @@
     "Name": "server.orbis_underground.amanita_pulver.name",
     "Description": "server.orbis_underground.amanita_pulver.description"
   },
-  "Icon": "Icons/ItemsGenerated/pilz_pulver.png",
+  "Icon": "Icons/ItemsGenerated/amanita_pulver.png",
   "Quality": "Common",
   "MaxStack": 16,
   "DropOnDeath": true,

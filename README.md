@@ -59,33 +59,57 @@ Der Pfad sollte danach so aussehen:
         └── Languages\de-DE\server.lang     ← Deutsche Texte
 ```
 
-### Schritt 2: Texturen generieren (MUST DO!)
-Die Mod hat **noch keine Texturen** — du musst sie erzeugen. Drei Wege:
+### Schritt 2: Texturen generieren (empfohlene Methode = Original-Assets recolorn)
+Die saubere Methode ist **nicht** die Platzhalter-Generierung, sondern das **Umfärben der originalen Hytale-Assets**. Genau dafür ist `scripts/recolor.py` jetzt gedacht.
 
-#### Weg A: Vanilla-Texturen umfärben (Python-Script)
+#### Empfohlenes Setup
+- Lege deinen Hytale-Asset-Ordner als `Assets/` direkt **in den Repo-Hauptordner**.
+- Lege die entpackte **Get Hy!**-Mod irgendwo lokal ab, z. B. `/home/oskar/Downloads/get_hy`.
+- Dann sucht `scripts/recolor.py` rekursiv selbst nach den benötigten Dateien.
+
+#### Ein-Kommando-Variante
 ```bash
-# 1. Extrahiere Hytales Assets.zip (findest du im Spielverzeichnis)
-# 2. Kopiere die relevanten Texturen in scripts/vanilla_textures/
-# 3. Führe das Script aus:
-cd scripts
-pip install Pillow
-python recolor.py ../vanilla_textures/
+cd /home/oskar/hytale_underground
+python3 -m pip install Pillow
+python3 scripts/recolor.py \
+  --assets-dir /home/oskar/hytale_underground/Assets \
+  --get-hy-dir /home/oskar/Downloads/get_hy
 ```
 
-#### Weg B: Get Hy! Assets übernehmen (Empfohlen für Cannabis)
+#### Wenn `Assets/` schon im Repo-Hauptordner liegt
+Dann reicht meistens schon:
 ```bash
-# Die Get Hy! Mod (MIT-lizenziert) enthält fertige Cannabis-Modelle:
-# - Lade sie manuell von CurseForge herunter
-# - Entpacke die ZIP
-# - Kopiere die .blockymodel und .png Dateien nach Common/Models/ und Common/Icons/
+cd /home/oskar/hytale_underground
+python3 -m pip install Pillow
+python3 scripts/recolor.py
+python3 scripts/check_missing.py
 ```
 
-#### Weg C: AI-Pixel-Art generieren
+> Falls `python3 -m pip install Pillow` auf deinem Linux mit `externally-managed-environment` scheitert:
+> ```bash
+> python3 -m venv .venv
+> source .venv/bin/activate
+> pip install Pillow
+> python scripts/recolor.py
+> python scripts/check_missing.py
+> ```
+
+#### Was das Script automatisch macht
+- sucht die Vanilla-Basisdateien rekursiv in `Assets/`
+- recolort daraus die benötigten Mod-Icons
+- erstellt Kategorie-Icons und Status-Effekt-Icons
+- erstellt/kopiert die Werkbank-Texturen
+- kopiert Cannabis-Bud-/Joint-/Blunt-/Spliff-Icons aus **Get Hy!**, wenn vorhanden
+- kopiert optionale Cannabis-Bud-Modelle nach `Common/Items/Cannabis/`, wenn vorhanden
+
+#### Platzhalter bewusst deaktiviert
+Standardmäßig erzeugt `recolor.py` **keine** hässlichen Platzhalter. Falls du sie trotzdem willst, musst du es explizit mit `--allow-placeholders` einschalten.
+
+#### Falls etwas fehlt
+```bash
+python3 scripts/check_missing.py
 ```
-Siehe scripts/ai_prompts.txt für genaue Prompts.
-Nutze https://www.pixexact.com/pixel-art-generator/16x16
-Speichere die 16×16 Icons als PNG in Common/Icons/ItemsGenerated/
-```
+Das Script zeigt dir danach genau, welche Dateien noch fehlen.
 
 **Alle Icons die du brauchst (79 Stück):**
 - essence_shadow.png, cannabis_seed_sativa/indica/hybrid.png
@@ -107,41 +131,43 @@ Speichere die 16×16 Icons als PNG in Common/Icons/ItemsGenerated/
 - mutterkorn.png, lysergsaeure.png, lsd_tab.png, naloxon.png
 - OrbisUnderground.png, OrbisUnderground_Currency.png, _Seeds.png, _Materials.png, _Consumables.png, _Chemicals.png, _Tools.png
 
-### Schritt 3: Kategorie-Icons erstellen
+### Schritt 3: Kategorie-Icons
+Diese 32×32-Kategorie-Icons werden durch `scripts/recolor.py` automatisch erzeugt:
 ```
-Erstelle 32×32 PNG-Icons für die Creative-Menu-Kategorien:
-  Common/Icons/ItemCategories/OrbisUnderground.png
-  Common/Icons/ItemCategories/OrbisUnderground_Currency.png  (lila Essence)
-  Common/Icons/ItemCategories/OrbisUnderground_Seeds.png     (Samen-Tüte)
-  Common/Icons/ItemCategories/OrbisUnderground_Materials.png (Blatt)
-  Common/Icons/ItemCategories/OrbisUnderground_Consumables.png (Pille)
-  Common/Icons/ItemCategories/OrbisUnderground_Chemicals.png (Flasche)
-  Common/Icons/ItemCategories/OrbisUnderground_Tools.png     (Spritze)
+Common/Icons/ItemCategories/OrbisUnderground.png
+Common/Icons/ItemCategories/OrbisUnderground_Currency.png
+Common/Icons/ItemCategories/OrbisUnderground_Seeds.png
+Common/Icons/ItemCategories/OrbisUnderground_Materials.png
+Common/Icons/ItemCategories/OrbisUnderground_Consumables.png
+Common/Icons/ItemCategories/OrbisUnderground_Chemicals.png
+Common/Icons/ItemCategories/OrbisUnderground_Tools.png
 ```
+Wenn danach noch etwas fehlt: `python3 scripts/check_missing.py`
 
 ### Schritt 4: Status-Effekt-Icons
+Auch diese Icons werden beim Recolor-Lauf automatisch gebaut:
 ```
-  Common/Icons/UI/StatusEffects/drug_cannabis.png      (grünes Blatt)
-  Common/Icons/UI/StatusEffects/drug_hashish.png       (brauner Klumpen)
-  Common/Icons/UI/StatusEffects/drug_psilocybin.png    (blauer Pilz)
-  Common/Icons/UI/StatusEffects/drug_amanita.png       (roter Pilz)
-  Common/Icons/UI/StatusEffects/drug_cocaine.png       (weißes Pulver)
-  Common/Icons/UI/StatusEffects/drug_crack.png         (gelbe Steine)
-  Common/Icons/UI/StatusEffects/drug_morphine.png      (weiße Flasche)
-  Common/Icons/UI/StatusEffects/drug_heroin.png        (braune Flasche)
-  Common/Icons/UI/StatusEffects/drug_meth.png          (blaue Kristalle)
-  Common/Icons/UI/StatusEffects/drug_mdma.png          (bunte Pille)
-  Common/Icons/UI/StatusEffects/drug_mescaline.png     (braune Flasche)
-  Common/Icons/UI/StatusEffects/drug_scopolamine.png   (grüne Flasche)
-  Common/Icons/UI/StatusEffects/drug_salvinorin.png    (hellgrüne Flasche)
-  Common/Icons/UI/StatusEffects/drug_khat.png          (hellgrünes Blatt)
-  Common/Icons/UI/StatusEffects/drug_ibogaine.png      (braune Wurzel)
-  Common/Icons/UI/StatusEffects/drug_ephedrin.png      (weißlich-grün)
-  Common/Icons/UI/StatusEffects/drug_betel.png         (braune Nuss)
-  Common/Icons/UI/StatusEffects/drug_kava.png          (graue Paste)
-  Common/Icons/UI/StatusEffects/drug_lsd.png           (bunter Tab)
-  Common/Icons/UI/StatusEffects/drug_overdose.png      (Totenkopf)
-  Common/Icons/UI/StatusEffects/drug_crash.png         (roter Pfeil runter)
+Common/Icons/UI/StatusEffects/drug_cannabis.png
+Common/Icons/UI/StatusEffects/drug_hashish.png
+Common/Icons/UI/StatusEffects/drug_psilocybin.png
+Common/Icons/UI/StatusEffects/drug_amanita.png
+Common/Icons/UI/StatusEffects/drug_cocaine.png
+Common/Icons/UI/StatusEffects/drug_crack.png
+Common/Icons/UI/StatusEffects/drug_morphine.png
+Common/Icons/UI/StatusEffects/drug_heroin.png
+Common/Icons/UI/StatusEffects/drug_meth.png
+Common/Icons/UI/StatusEffects/drug_mdma.png
+Common/Icons/UI/StatusEffects/drug_mescaline.png
+Common/Icons/UI/StatusEffects/drug_scopolamine.png
+Common/Icons/UI/StatusEffects/drug_salvinorin.png
+Common/Icons/UI/StatusEffects/drug_khat.png
+Common/Icons/UI/StatusEffects/drug_ibogaine.png
+Common/Icons/UI/StatusEffects/drug_ephedrin.png
+Common/Icons/UI/StatusEffects/drug_betel.png
+Common/Icons/UI/StatusEffects/drug_kava.png
+Common/Icons/UI/StatusEffects/drug_lsd.png
+Common/Icons/UI/StatusEffects/drug_overdose.png
+Common/Icons/UI/StatusEffects/drug_crash.png
 ```
 
 ### Schritt 5: Mod aktivieren und testen

@@ -1,6 +1,9 @@
 # Vanilla Hytale Texture Reference für Orbis Underground
 
-## Benötigte Vanilla-Texturen (in `scripts/vanilla_textures/` ablegen)
+## Benötigte Vanilla-Texturen
+
+`recolor.py` sucht diese Dateien inzwischen **rekursiv** in deinem lokalen `Assets/`-Ordner.
+Der alte Weg über `scripts/vanilla_textures/` funktioniert weiterhin als Fallback, ist aber nicht mehr nötig.
 
 | Mod-Ziel | Vanilla-Dateiname (vermutet) | Quelle / Hinweis |
 |---|---|---|
@@ -104,44 +107,60 @@ find "$ASSETS_DIR" -name "*.png" | head -30
 
 ---
 
-## Get Hy! Assets (MIT-Lizenz) — MANUELL KOPIEREN
+## Get Hy! Assets (MIT-Lizenz)
 
 **Download:** https://modrinth.com/mod/get-hy oder CurseForge
 
-**Benötigte Dateien nach `Common/Icons/ItemsGenerated/`:**
+`recolor.py` versucht diese Dateien automatisch rekursiv aus dem angegebenen Get-Hy-Ordner zu kopieren.
+
+**Benötigte Icons nach `Common/Icons/ItemsGenerated/`:**
 ```
 cannabis_bud_sativa_junk.png          cannabis_bud_indica_junk.png          cannabis_bud_hybrid_junk.png
 cannabis_bud_sativa_street.png        cannabis_bud_indica_street.png        cannabis_bud_hybrid_street.png
 cannabis_bud_sativa_dispensary.png    cannabis_bud_indica_dispensary.png    cannabis_bud_hybrid_dispensary.png
 cannabis_bud_sativa_exotic.png        cannabis_bud_indica_exotic.png        cannabis_bud_hybrid_exotic.png
 cannabis_bud_sativa_god.png           cannabis_bud_indica_god.png           cannabis_bud_hybrid_god.png
-joint.png / joint_sativa.png / etc.   blunt.png / blunt_*.png               spliff.png
+joint.png                             blunt.png                              spliff.png
 ```
 
-**Benötigte Modelle nach `Common/Models/`:**
+**Optionale Item-Modelle nach `Common/Items/Cannabis/`:**
 ```
-cannabis_sativa_stage1.blockymodel    cannabis_indica_stage1.blockymodel    cannabis_hybrid_stage1.blockymodel
-cannabis_sativa_stage2.blockymodel    cannabis_indica_stage2.blockymodel    cannabis_hybrid_stage2.blockymodel
-cannabis_sativa_stage3.blockymodel    cannabis_indica_stage3.blockymodel    cannabis_hybrid_stage3.blockymodel
+cannabis_bud_sativa.blockymodel
+cannabis_bud_indica.blockymodel
+cannabis_bud_hybrid.blockymodel
 ```
+
+Falls dein Get-Hy-Paket andere Dateinamen nutzt, musst du diese drei Modelldateien ggf. manuell zuordnen oder umbenennen.
 
 ---
 
 ## Ausführung
 
+### Empfohlen für dein lokales Setup
 ```bash
-cd /home/oskar/hytale_underground/scripts
+cd /home/oskar/hytale_underground
+python3 -m pip install Pillow
+python3 scripts/recolor.py \
+  --assets-dir /home/oskar/hytale_underground/Assets \
+  --get-hy-dir /home/oskar/Downloads/get_hy
+python3 scripts/check_missing.py
+```
 
-# 1. Vanilla-Texturen prüfen
-ls vanilla_textures/
+> Falls `python3 -m pip install Pillow` wegen `externally-managed-environment` fehlschlägt:
+> ```bash
+> python3 -m venv .venv
+> source .venv/bin/activate
+> pip install Pillow
+> python scripts/recolor.py
+> python scripts/check_missing.py
+> ```
 
-# 2. Recolor laufen lassen
-python3 recolor.py
-
-# 3. Fehlende prüfen
-python3 check_missing.py
-
-# 4. Get Hy! Assets manuell kopieren (falls nicht auto erkannt)
+### Wenn `Assets/` schon im Repo-Hauptordner liegt
+```bash
+cd /home/oskar/hytale_underground
+python3 -m pip install Pillow
+python3 scripts/recolor.py
+python3 scripts/check_missing.py
 ```
 
 ---
@@ -150,7 +169,7 @@ python3 check_missing.py
 
 | Problem | Lösung |
 |---|---|
-| `FileNotFoundError: vanilla_textures/essence_of_life.png` | Assets.zip nicht extrahiert oder falscher Pfad |
+| `⚠ FEHLT: essence_of_life ...` in `recolor.py` | Assets-Ordner nicht gefunden oder falscher `--assets-dir` |
 | `PIL.UnidentifiedImageError` | Datei korrupt / kein PNG |
 | Farben stimmen nicht | Vanilla-Textur hat andere Farbwerte → `tint()` alpha anpassen |
 | `amanita_pulver.png` fehlt | Wurde im Script neu hinzugefügt (nicht in altem generate_textures.py) |
