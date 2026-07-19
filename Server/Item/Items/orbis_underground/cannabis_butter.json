@@ -1,6 +1,5 @@
 {
-  "Parent": "Potion_Template",
-  "Id": "orbis_underground:cannabis_butter",
+  "Parent": "Template_Food",
   "TranslationProperties": {
     "Name": "server.orbis_underground.cannabis_butter.name",
     "Description": "server.orbis_underground.cannabis_butter.description"
@@ -12,25 +11,46 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Food"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
-    "Secondary": "Root_Secondary_Consume_Potion"
+    "Secondary": "Root_Secondary_Consume_Food_T2"
   },
   "InteractionVars": {
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_cannabis_indica",
-          "Duration": 180.0
+          "EffectId": "drug_cannabis_indica"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#c8c888",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 1
       },
       {
@@ -38,19 +58,20 @@
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:cannabis_butter"
-    },
+    "Output": [
+      {
+        "ItemId": "cannabis_butter"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Cooking",
+        "Id": "Cookingbench",
         "Categories": [
           "Baked"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Cooking"
+    ]
   },
   "ItemLevel": 3
 }

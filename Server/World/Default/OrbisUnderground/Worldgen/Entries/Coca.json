@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Coca"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Coca"
+  }
+}

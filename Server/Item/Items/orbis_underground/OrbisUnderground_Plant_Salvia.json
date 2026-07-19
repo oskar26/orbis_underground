@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Wet",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.salvia.name",
+    "Description": "server.orbis_underground.plant.salvia.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Salvia"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

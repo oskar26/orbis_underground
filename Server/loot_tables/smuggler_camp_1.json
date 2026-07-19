@@ -1,1 +1,57 @@
-{"Id":"orbis_underground:smuggler_camp_1","Rolls":{"Min":4,"Max":8},"Entries":[{"ItemId":"orbis_underground:cannabis_seed_sativa","Weight":25,"MinCount":1,"MaxCount":3},{"ItemId":"orbis_underground:cannabis_seed_indica","Weight":20,"MinCount":1,"MaxCount":2},{"ItemId":"orbis_underground:cannabis_seed_hybrid","Weight":10,"MinCount":1,"MaxCount":1},{"ItemId":"orbis_underground:essence_shadow","Weight":40,"MinCount":5,"MaxCount":15},{"ItemId":"Ingredient_BoomPowder","Weight":15,"MinCount":1,"MaxCount":3},{"ItemId":"orbis_underground:paper","Weight":30,"MinCount":1,"MaxCount":5},{"ItemId":"orbis_underground:dried_cannabis","Weight":20,"MinCount":1,"MaxCount":4},{"ItemId":"orbis_underground:mohn_samen","Weight":15,"MinCount":1,"MaxCount":3}]}
+{
+  "Id": "orbis_underground:smuggler_camp_1",
+  "Rolls": {
+    "Min": 4,
+    "Max": 8
+  },
+  "Entries": [
+    {
+      "ItemId": "cannabis_seed_sativa",
+      "Weight": 25,
+      "MinCount": 1,
+      "MaxCount": 3
+    },
+    {
+      "ItemId": "cannabis_seed_indica",
+      "Weight": 20,
+      "MinCount": 1,
+      "MaxCount": 2
+    },
+    {
+      "ItemId": "cannabis_seed_hybrid",
+      "Weight": 10,
+      "MinCount": 1,
+      "MaxCount": 1
+    },
+    {
+      "ItemId": "essence_shadow",
+      "Weight": 40,
+      "MinCount": 5,
+      "MaxCount": 15
+    },
+    {
+      "ItemId": "Ingredient_Powder_Boom",
+      "Weight": 15,
+      "MinCount": 1,
+      "MaxCount": 3
+    },
+    {
+      "ItemId": "paper",
+      "Weight": 30,
+      "MinCount": 1,
+      "MaxCount": 5
+    },
+    {
+      "ItemId": "dried_cannabis",
+      "Weight": 20,
+      "MinCount": 1,
+      "MaxCount": 4
+    },
+    {
+      "ItemId": "mohn_samen",
+      "Weight": 15,
+      "MinCount": 1,
+      "MaxCount": 3
+    }
+  ]
+}

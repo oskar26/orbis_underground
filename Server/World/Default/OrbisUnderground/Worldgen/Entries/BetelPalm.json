@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.BetelPalm"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.BetelPalm"
+  }
+}

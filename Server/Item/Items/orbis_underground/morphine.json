@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:morphine",
   "TranslationProperties": {
     "Name": "server.orbis_underground.morphine.name",
     "Description": "server.orbis_underground.morphine.description"
@@ -12,6 +11,12 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
     "Secondary": "Root_Secondary_Consume_Potion"
   },
@@ -20,21 +25,36 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_morphine",
-          "Duration": 300.0
+          "EffectId": "drug_morphine"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/White.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#d4d4d4",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 20,
     "Input": [
       {
-        "ItemId": "orbis_underground:rohopium",
+        "ItemId": "rohopium",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:schwefelsaeure",
+        "ItemId": "schwefelsaeure",
         "Quantity": 1
       },
       {
@@ -42,22 +62,23 @@
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:morphine"
-    },
+    "Output": [
+      {
+        "ItemId": "morphine"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

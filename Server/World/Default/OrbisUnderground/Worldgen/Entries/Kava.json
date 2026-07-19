@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Kava"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Kava"
+  }
+}

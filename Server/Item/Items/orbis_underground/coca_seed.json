@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:coca_seed",
   "TranslationProperties": {
     "Name": "server.orbis_underground.coca_seed.name",
     "Description": "server.orbis_underground.coca_seed.description"
@@ -14,27 +13,28 @@
     "TimeSeconds": 6,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:coca_leaves",
+        "ItemId": "coca_leaves",
         "Quantity": 3
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:coca_seed"
-    },
+    "Output": [
+      {
+        "ItemId": "coca_seed"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Farming",
+        "Id": "Farmingbench",
         "Categories": [
           "Seeds"
         ],
         "RequiredTierLevel": 3
       }
-    ],
-    "CraftingBench": "Bench_Farming"
+    ]
   }
 }

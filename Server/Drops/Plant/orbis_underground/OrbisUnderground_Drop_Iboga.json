@@ -1,0 +1,10 @@
+{
+  "Container": {
+    "Type": "Single",
+    "Item": {
+      "ItemId": "iboga_root",
+      "QuantityMin": 1,
+      "QuantityMax": 2
+    }
+  }
+}

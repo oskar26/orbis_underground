@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:ephedra_seed",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ephedra_seed.name",
     "Description": "server.orbis_underground.ephedra_seed.description"
@@ -14,27 +13,28 @@
     "TimeSeconds": 5,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:ephedra_stem",
+        "ItemId": "ephedra_stem",
         "Quantity": 2
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:ephedra_seed"
-    },
+    "Output": [
+      {
+        "ItemId": "ephedra_seed"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Farming",
+        "Id": "Farmingbench",
         "Categories": [
           "Seeds"
         ],
         "RequiredTierLevel": 3
       }
-    ],
-    "CraftingBench": "Bench_Farming"
+    ]
   }
 }

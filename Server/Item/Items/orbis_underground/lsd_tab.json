@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:lsd_tab",
   "TranslationProperties": {
     "Name": "server.orbis_underground.lsd_tab.name",
     "Description": "server.orbis_underground.lsd_tab.description"
@@ -12,6 +11,12 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
     "Secondary": "Root_Secondary_Consume_Potion"
   },
@@ -20,45 +25,61 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_lsd",
-          "Duration": 720.0
+          "EffectId": "drug_lsd"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Purple.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#ff66ff",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 22,
     "Input": [
       {
-        "ItemId": "orbis_underground:lysergsaeure",
+        "ItemId": "lysergsaeure",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_MotesOfLight",
+        "ItemId": "Ingredient_Motes_Light",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:paper",
+        "ItemId": "paper",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EssenceOfVoid",
+        "ItemId": "Ingredient_Void_Essence",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:lsd_tab"
-    },
+    "Output": [
+      {
+        "ItemId": "lsd_tab"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Workbench",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }
-    ],
-    "CraftingBench": "Bench_Workbench"
+    ]
   }
 }

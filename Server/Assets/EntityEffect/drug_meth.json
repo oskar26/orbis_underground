@@ -1,15 +1,14 @@
 {
-  "Id": "orbis_underground:drug_meth",
   "Name": "effect.orbis_underground.drug_meth",
   "Duration": 600,
   "Debuff": false,
   "StatModifiers": {
-    "MovementSpeed": 0.3,
-    "MiningSpeed": 0.5
+    "MoveSpeed": 0.3,
+    "AttackDamage": 0.5
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_meth.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#aaccff"
   }

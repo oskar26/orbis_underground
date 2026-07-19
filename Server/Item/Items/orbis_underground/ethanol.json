@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:ethanol",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ethanol.name",
     "Description": "server.orbis_underground.ethanol.description"
@@ -14,30 +13,31 @@
     "TimeSeconds": 12,
     "Input": [
       {
-        "ItemId": "Ingredient_Wheat",
+        "ItemId": "Plant_Crop_Wheat_Item",
         "Quantity": 2
       },
       {
-        "ItemId": "Ingredient_WildBerries",
+        "ItemId": "Plant_Fruit_Berries_Red",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:ethanol"
-    },
+    "Output": [
+      {
+        "ItemId": "ethanol"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Cooking",
+        "Id": "Cookingbench",
         "Categories": [
           "Baked"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Cooking"
+    ]
   }
 }

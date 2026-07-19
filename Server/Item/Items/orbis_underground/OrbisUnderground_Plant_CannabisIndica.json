@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Wet",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.cannabis_indica.name",
+    "Description": "server.orbis_underground.plant.cannabis_indica.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_CannabisIndica"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

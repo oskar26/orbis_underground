@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:drug_betel",
   "Name": "effect.orbis_underground.drug_betel",
   "Duration": 120,
   "Debuff": false,
@@ -7,8 +6,8 @@
     "HealthRegen": 0.2
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_betel.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#cc8866"
   }

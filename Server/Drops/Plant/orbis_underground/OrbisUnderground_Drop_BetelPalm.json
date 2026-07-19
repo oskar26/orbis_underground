@@ -1,0 +1,10 @@
+{
+  "Container": {
+    "Type": "Single",
+    "Item": {
+      "ItemId": "betel_nut",
+      "QuantityMin": 1,
+      "QuantityMax": 2
+    }
+  }
+}

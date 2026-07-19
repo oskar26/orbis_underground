@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:ibogain_extract",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ibogain_extract.name",
     "Description": "server.orbis_underground.ibogain_extract.description"
@@ -12,6 +11,12 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
     "Secondary": "Root_Secondary_Consume_Potion"
   },
@@ -20,21 +25,36 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_ibogaine",
-          "Duration": 1800.0
+          "EffectId": "drug_ibogaine"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/White.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#aa9977",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 18,
     "Input": [
       {
-        "ItemId": "orbis_underground:iboga_root",
+        "ItemId": "iboga_root",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
@@ -42,19 +62,20 @@
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:ibogain_extract"
-    },
+    "Output": [
+      {
+        "ItemId": "ibogain_extract"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

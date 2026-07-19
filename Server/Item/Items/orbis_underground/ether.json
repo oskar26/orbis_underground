@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:ether",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ether.name",
     "Description": "server.orbis_underground.ether.description"
@@ -14,30 +13,31 @@
     "TimeSeconds": 18,
     "Input": [
       {
-        "ItemId": "orbis_underground:ethanol",
+        "ItemId": "ethanol",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:schwefelsaeure",
+        "ItemId": "schwefelsaeure",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:ether"
-    },
+    "Output": [
+      {
+        "ItemId": "ether"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

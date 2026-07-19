@@ -1,0 +1,10 @@
+{
+  "Container": {
+    "Type": "Single",
+    "Item": {
+      "ItemId": "mohn_kapsel",
+      "QuantityMin": 1,
+      "QuantityMax": 2
+    }
+  }
+}

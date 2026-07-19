@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:ammoniak",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ammoniak.name",
     "Description": "server.orbis_underground.ammoniak.description"
@@ -14,30 +13,31 @@
     "TimeSeconds": 14,
     "Input": [
       {
-        "ItemId": "Ingredient_BoneFragment",
+        "ItemId": "Ingredient_Bone_Fragment",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EssenceOfWater",
+        "ItemId": "Ingredient_Water_Essence",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:ammoniak"
-    },
+    "Output": [
+      {
+        "ItemId": "ammoniak"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

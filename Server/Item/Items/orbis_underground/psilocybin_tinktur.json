@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:psilocybin_tinktur",
   "TranslationProperties": {
     "Name": "server.orbis_underground.psilocybin_tinktur.name",
     "Description": "server.orbis_underground.psilocybin_tinktur.description"
@@ -12,6 +11,12 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
     "Secondary": "Root_Secondary_Consume_Potion"
   },
@@ -20,40 +25,56 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_psilocybin",
-          "Duration": 240.0
+          "EffectId": "drug_psilocybin"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Blue.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#7b4fbf",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 10,
     "Input": [
       {
-        "ItemId": "orbis_underground:pilz_pulver",
+        "ItemId": "pilz_pulver",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_TreeSap",
+        "ItemId": "Ingredient_Tree_Sap",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:psilocybin_tinktur"
-    },
+    "Output": [
+      {
+        "ItemId": "psilocybin_tinktur"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Salvia"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Salvia"
+  }
+}

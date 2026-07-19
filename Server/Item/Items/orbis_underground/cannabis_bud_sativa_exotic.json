@@ -1,10 +1,14 @@
 {
-  "Id": "orbis_underground:cannabis_bud_sativa_exotic",
-  "TranslationProperties": {"Name":"server.orbis_underground.cannabis_bud_sativa_exotic.name","Description":"server.orbis_underground.cannabis_bud_sativa_exotic.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.cannabis_bud_sativa_exotic.name",
+    "Description": "server.orbis_underground.cannabis_bud_sativa_exotic.description"
+  },
   "Icon": "Icons/ItemsGenerated/cannabis_bud_sativa_exotic.png",
   "Model": "Items/Cannabis/cannabis_bud_sativa.blockymodel",
   "Quality": "Rare",
   "MaxStack": 32,
-  "Categories": ["OrbisUnderground.Materials"],
+  "Categories": [
+    "OrbisUnderground.Materials"
+  ],
   "ItemLevel": 1
 }

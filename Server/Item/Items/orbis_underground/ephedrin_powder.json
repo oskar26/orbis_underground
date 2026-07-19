@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:ephedrin_powder",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ephedrin_powder.name",
     "Description": "server.orbis_underground.ephedrin_powder.description"
@@ -14,41 +13,27 @@
     "TimeSeconds": 10,
     "Input": [
       {
-        "ItemId": "orbis_underground:ephedra_stem",
+        "ItemId": "ephedra_stem",
         "Quantity": 4
       },
       {
-        "ItemId": "Ingredient_PlantFiber",
+        "ItemId": "Ingredient_Fibre",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:ephedrin_powder"
-    },
+    "Output": [
+      {
+        "ItemId": "ephedrin_powder"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Salvage",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Salvage"
-  },
-  "Parent": "Potion_Template",
-  "Interactions": {
-    "Secondary": "Root_Secondary_Consume_Potion"
-  },
-  "InteractionVars": {
-    "Effect": {
-      "Interactions": [
-        {
-          "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_ephedrin",
-          "Duration": 120.0
-        }
-      ]
-    }
+    ]
   }
 }

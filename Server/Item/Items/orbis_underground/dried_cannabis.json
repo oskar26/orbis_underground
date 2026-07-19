@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:dried_cannabis",
   "TranslationProperties": {
     "Name": "server.orbis_underground.dried_cannabis.name",
     "Description": "server.orbis_underground.dried_cannabis.description"
@@ -14,26 +13,27 @@
     "TimeSeconds": 6,
     "Input": [
       {
-        "ItemTag": "orbis_underground:cannabis_bud",
+        "ItemId": "cannabis_bud_sativa_dispensary",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_PlantFiber",
+        "ItemId": "Ingredient_Fibre",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:dried_cannabis"
-    },
+    "Output": [
+      {
+        "ItemId": "dried_cannabis"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Salvage",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Salvage"
+    ]
   }
 }

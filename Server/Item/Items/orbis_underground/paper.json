@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:paper",
   "TranslationProperties": {
     "Name": "server.orbis_underground.paper.name",
     "Description": "server.orbis_underground.paper.description"
@@ -14,26 +13,27 @@
     "TimeSeconds": 4,
     "Input": [
       {
-        "ItemId": "Ingredient_PlantFiber",
+        "ItemId": "Ingredient_Fibre",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_TreeSap",
+        "ItemId": "Ingredient_Tree_Sap",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:paper"
-    },
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Workbench",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ],
-    "CraftingBench": "Bench_Workbench"
+    "Output": [
+      {
+        "ItemId": "paper"
+      }
+    ]
   }
 }

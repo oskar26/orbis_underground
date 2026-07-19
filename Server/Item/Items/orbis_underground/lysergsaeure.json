@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:lysergsaeure",
   "TranslationProperties": {
     "Name": "server.orbis_underground.lysergsaeure.name",
     "Description": "server.orbis_underground.lysergsaeure.description"
@@ -14,31 +13,32 @@
     "TimeSeconds": 28,
     "Input": [
       {
-        "ItemId": "orbis_underground:mutterkorn",
+        "ItemId": "mutterkorn",
         "Quantity": 2
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EssenceOfVoid",
+        "ItemId": "Ingredient_Void_Essence",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:lysergsaeure"
-    },
+    "Output": [
+      {
+        "ItemId": "lysergsaeure"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

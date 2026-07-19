@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:naloxon",
   "TranslationProperties": {
     "Name": "server.orbis_underground.naloxon.name",
     "Description": "server.orbis_underground.naloxon.description"
@@ -12,27 +11,69 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
-  "Interactions": {
-    "Secondary": "Root_Secondary_Consume_Potion"
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
   },
-  "InteractionVars": {
-    "Effect": {
+  "Consumable": true,
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": {
+      "RequireNewClick": false,
       "Interactions": [
         {
-          "Type": "RemoveAllDrugEffects"
+          "Type": "Condition",
+          "RequiredGameMode": "Adventure",
+          "Crouching": false,
+          "Next": {
+            "Type": "Replace",
+            "DefaultValue": {
+              "Interactions": [
+                "orbis_underground:RemoveAllDrugEffects"
+              ]
+            },
+            "Var": "orbis_underground:RemoveAllDrugEffects"
+          },
+          "Failed": "Block_Secondary"
         }
       ]
+    }
+  },
+  "InteractionVars": {
+    "orbis_underground:RemoveAllDrugEffects": {
+      "Interactions": [
+        {
+          "Type": "orbis_underground:RemoveAllDrugEffects"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Blue.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#e6f0ff",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 18,
     "Input": [
       {
-        "ItemId": "orbis_underground:morphine",
+        "ItemId": "morphine",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:salzsaeure",
+        "ItemId": "salzsaeure",
         "Quantity": 1
       },
       {
@@ -40,23 +81,24 @@
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:naloxon"
-    },
+    "Output": [
+      {
+        "ItemId": "naloxon"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

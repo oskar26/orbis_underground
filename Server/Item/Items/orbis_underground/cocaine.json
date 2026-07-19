@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:cocaine",
   "TranslationProperties": {
     "Name": "server.orbis_underground.cocaine.name",
     "Description": "server.orbis_underground.cocaine.description"
@@ -12,6 +11,12 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
     "Secondary": "Root_Secondary_Consume_Potion"
   },
@@ -20,40 +25,56 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_cocaine",
-          "Duration": 90.0
+          "EffectId": "drug_cocaine"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/White.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#ffffff",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 22,
     "Input": [
       {
-        "ItemId": "orbis_underground:coca_paste",
+        "ItemId": "coca_paste",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:schwefelsaeure",
+        "ItemId": "schwefelsaeure",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:filter_paper",
+        "ItemId": "filter_paper",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:cocaine"
-    },
+    "Output": [
+      {
+        "ItemId": "cocaine"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

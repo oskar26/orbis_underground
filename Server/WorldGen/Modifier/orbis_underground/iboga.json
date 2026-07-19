@@ -1,0 +1,22 @@
+{
+  "$Comment": "Inject Wild Iboga Shrub into: Zones.Zone4_Tier*.Tile.Forest_*, Zones.Zone4_Tier*.Custom.*Forest_*",
+  "Priority": "NORMAL",
+  "Target": {
+    "Root": "Default",
+    "Rules": [
+      "Zones.Zone4_Tier*.Tile.Forest_*",
+      "Zones.Zone4_Tier*.Custom.*Forest_*"
+    ]
+  },
+  "Content": {
+    "Biome_Prefabs": [
+      {
+        "Operation": "Add",
+        "Content": {
+          "Type": "File",
+          "Path": "OrbisUnderground.Worldgen.Entries.Iboga"
+        }
+      }
+    ]
+  }
+}

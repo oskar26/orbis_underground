@@ -1,6 +1,5 @@
 {
-  "Parent": "Potion_Template",
-  "Id": "orbis_underground:kava_paste",
+  "Parent": "Template_Food",
   "TranslationProperties": {
     "Name": "server.orbis_underground.kava_paste.name",
     "Description": "server.orbis_underground.kava_paste.description"
@@ -12,45 +11,60 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Food"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
-    "Secondary": "Root_Secondary_Consume_Potion"
+    "Secondary": "Root_Secondary_Consume_Food_T2"
   },
   "InteractionVars": {
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_kava",
-          "Duration": 240.0
+          "EffectId": "drug_kava"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "ParticleColor": "#999988",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "orbis_underground:kava_root",
+        "ItemId": "kava_root",
         "Quantity": 2
       },
       {
-        "ItemId": "Ingredient_TreeSap",
+        "ItemId": "Ingredient_Tree_Sap",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:kava_paste"
-    },
+    "Output": [
+      {
+        "ItemId": "kava_paste"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Workbench",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Workbench"
+    ]
   },
   "ItemLevel": 1
 }

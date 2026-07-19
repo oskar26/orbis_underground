@@ -1,21 +1,20 @@
 {
-  "Id": "orbis_underground:drug_scopolamine",
   "Name": "effect.orbis_underground.drug_scopolamine",
   "Duration": 300,
   "Debuff": false,
   "StatModifiers": {},
   "StatusEffectIcon": "UI/StatusEffects/drug_scopolamine.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#6b8a5e"
   },
-  "modelChange": "scopolamine_delirium",
+  "ModelChange": "scopolamine_delirium",
   "DamageCalculator": {
     "Type": "OverTime",
     "DamageCauses": {
-      "Confusion": 3.0
+      "Poison": 1.5
     }
   },
-  "DamageCalculatorCooldown": 1.0
+  "DamageCalculatorCooldown": 2.0
 }

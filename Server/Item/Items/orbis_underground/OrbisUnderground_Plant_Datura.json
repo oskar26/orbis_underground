@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Flower_Common_Purple",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.datura.name",
+    "Description": "server.orbis_underground.plant.datura.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Datura"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

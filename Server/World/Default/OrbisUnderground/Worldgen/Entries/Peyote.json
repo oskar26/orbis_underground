@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Peyote"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Peyote"
+  }
+}

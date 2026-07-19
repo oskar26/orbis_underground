@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Poppy"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Poppy"
+  }
+}

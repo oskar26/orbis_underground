@@ -1,0 +1,22 @@
+{
+  "$Comment": "Inject Wild Khat Shrub into: Zones.Zone2_Tier*.Tile.Desert_Oasis, Zones.Zone2_Tier*.Custom.*Oasis*",
+  "Priority": "NORMAL",
+  "Target": {
+    "Root": "Default",
+    "Rules": [
+      "Zones.Zone2_Tier*.Tile.Desert_Oasis",
+      "Zones.Zone2_Tier*.Custom.*Oasis*"
+    ]
+  },
+  "Content": {
+    "Biome_Prefabs": [
+      {
+        "Operation": "Add",
+        "Content": {
+          "Type": "File",
+          "Path": "OrbisUnderground.Worldgen.Entries.Khat"
+        }
+      }
+    ]
+  }
+}

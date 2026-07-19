@@ -1,0 +1,22 @@
+{
+  "$Comment": "Inject Opium Poppy into: Zones.Zone1_Tier*.Tile.Plains_*, Zones.Zone3_Tier*.Tile.Plains_*",
+  "Priority": "NORMAL",
+  "Target": {
+    "Root": "Default",
+    "Rules": [
+      "Zones.Zone1_Tier*.Tile.Plains_*",
+      "Zones.Zone3_Tier*.Tile.Plains_*"
+    ]
+  },
+  "Content": {
+    "Biome_Prefabs": [
+      {
+        "Operation": "Add",
+        "Content": {
+          "Type": "File",
+          "Path": "OrbisUnderground.Worldgen.Entries.Poppy"
+        }
+      }
+    ]
+  }
+}

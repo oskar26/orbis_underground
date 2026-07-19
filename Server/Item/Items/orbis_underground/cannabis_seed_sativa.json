@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:cannabis_seed_sativa",
   "TranslationProperties": {
     "Name": "server.orbis_underground.cannabis_seed_sativa.name",
     "Description": "server.orbis_underground.cannabis_seed_sativa.description"
@@ -14,27 +13,28 @@
     "TimeSeconds": 5,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:cannabis_seed_sativa"
-    },
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Farming",
+        "Id": "Farmingbench",
         "Categories": [
           "Seeds"
         ],
         "RequiredTierLevel": 2
       }
     ],
-    "CraftingBench": "Bench_Farming"
+    "Output": [
+      {
+        "ItemId": "cannabis_seed_sativa"
+      }
+    ]
   }
 }

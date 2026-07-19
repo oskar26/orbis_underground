@@ -1,1 +1,12 @@
-{"Id":"orbis_underground:kava_root","TranslationProperties":{"Name":"server.orbis_underground.kava_root.name","Description":"server.orbis_underground.kava_root.description"},"Icon":"Icons/ItemsGenerated/kava_root.png","Quality":"Common","MaxStack":64,"Categories":["OrbisUnderground.Materials"]}
+{
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.kava_root.name",
+    "Description": "server.orbis_underground.kava_root.description"
+  },
+  "Icon": "Icons/ItemsGenerated/kava_root.png",
+  "Quality": "Common",
+  "MaxStack": 64,
+  "Categories": [
+    "OrbisUnderground.Materials"
+  ]
+}

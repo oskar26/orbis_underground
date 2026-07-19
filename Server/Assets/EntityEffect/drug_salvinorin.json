@@ -1,16 +1,13 @@
 {
-  "Id": "orbis_underground:drug_salvinorin",
   "Name": "effect.orbis_underground.drug_salvinorin",
   "Duration": 90,
   "Debuff": false,
-  "StatModifiers": {
-    "ExtremePerceptionShift": 1.0
-  },
+  "StatModifiers": {},
   "StatusEffectIcon": "UI/StatusEffects/drug_salvinorin.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#44aa44"
   },
-  "modelChange": "salvinorin_visuals"
+  "ModelChange": "salvinorin_visuals"
 }

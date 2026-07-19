@@ -1,8 +1,8 @@
 # 🌿 Orbis Underground — Hytale Drogen-Mod
 
-**Version 1.0.0 | Lizenz: MIT | Alle 3 Phasen implementiert**
+**Version 1.1.0 | Lizenz: MIT | Alle 3 Phasen implementiert**
 
-> Eine umfassende Drogen-Mod für Hytale mit realistischen Crafting-Ketten, 26 Status-Effekten und einem Kweebeck-Dealer-Handelssystem. **Nutzt NUR Vanilla-Werkbänke — kein einziger Custom-Block nötig.**
+> Eine umfassende Drogen-Mod für Hytale mit realistischen Crafting-Ketten, 26 Status-Effekten und einem Kweebec-Dealer-Handelssystem. **Die Pflanzenverarbeitung und Chemie laufen über zwei eigene, auf Tier 2 aufrüstbare Custom-Werkbänke.**
 
 ---
 
@@ -14,21 +14,22 @@
 | **2.0** | Hard Stuff | Kokain, Crack, Morphium, Heroin, Meth, MDMA, Meskalin, Scopolamin, Salvinorin, Khat | 15 |
 | **3.0** | Full Trip | Ibogain, Ephedrin, Betel, Kava, LSD, Überdosis | 6 |
 
-**79 Items | 26 EntityEffects | 2 NPCs | 2 Loot-Tables | EN + DE Übersetzungen**
+**94 Items/Blöcke | 26 EntityEffects | 1 Dealer-NPC | 13 Worldgen-Pflanzen | EN + DE Übersetzungen**
 
 ---
 
-## 🏗️ ARCHITEKTUR: Plan B — Keine Custom-Werkbank!
+## 🏗️ ARCHITEKTUR: Zwei Custom-Werkbänke
 
-Der ursprüngliche Plan sah einen "Botanischen Tisch" als Custom-Block vor. **Das wurde komplett gestrichen.** Die Mod nutzt ausschließlich diese Vanilla-Werkbänke:
-
-| Werkbank | Bench ID | Verwendung in der Mod |
+| Werkbank | Bench-ID | Verwendung in der Mod |
 |---|---|---|
-| **Salvager's Workbench** | `Salvagebench` | Cannabis trocknen, Pilze mahlen, Mohnkapseln zerkleinern, Lithium-Pulver |
-| **Alchemist's Workbench** | `Alchemybench` | ALLE Extraktionen & Synthesen: Tinkturen, Kokain, Heroin, Meth (T2!), LSD, Chemikalien |
-| **Basic Workbench** | `Workbench` | Joints/Blunts drehen, Haschisch pressen, Papier herstellen, MDMA-Pillen pressen |
-| **Chef's Stove** | `Cookingbench` | Ethanol fermentieren, Coca-Tee kochen, Cannabis-Butter backen |
-| **Farmer's Workbench** | `Farmingbench` | ALLE Samen craften (Tier 2-4 je nach Seltenheit) |
+| **Botanischer Tisch** | `OrbisUnderground_Botanybench` | Trocknen, Mahlen, Pressen, Papier, Joints, pflanzliche Extrakte und Pillen |
+| **Chemie-Labor** | `OrbisUnderground_Chemistrybench` | Säuren, Lösungsmittel, Kokain, Crack, Morphium, Heroin, Meth, MDMA, Lysergsäure und Naloxon |
+| **Chef's Stove** | `Cookingbench` | Ethanol-Fermentation, Coca-Tee und Cannabis-Butter |
+| **Farmer's Workbench** | `Farmingbench` | Samen craften |
+
+Beide Custom-Bänke besitzen **Tier 1 und Tier 2**. Tier 2 schaltet komplexe Pflanzenextrakte bzw. harte Drogen frei. Die Weltgenerierung nutzt die konfliktarmen `Server/WorldGen/Modifier`-Assets des WorldGen-v1-Modifier-Systems, anstatt Vanilla-Biome-Dateien vollständig zu überschreiben.
+
+> **ID-Hinweis:** Hytale-Asset-IDs sind global und werden aus dem Dateinamen abgeleitet. Darum heißen die runtimefähigen Item-IDs z. B. `bench_botany` und `essence_shadow`; die Paketidentität bleibt `orbis_underground:Orbis Underground`. Minecraft-artige Item-IDs wie `orbis_underground:bench_botany` sind im Hytale-Item-AssetStore nicht gültig.
 
 ---
 
@@ -43,15 +44,19 @@ Der Pfad sollte danach so aussehen:
   %APPDATA%\Roaming\Hytale\UserData\Packs\orbis_underground\
     ├── manifest.json
     ├── Common\
-    │   ├── Icons\ItemsGenerated\   ← Hier kommen deine Texturen rein
-    │   ├── Icons\ItemCategories\   ← Kategorie-Icons
-    │   └── Models\                  ← 3D-Modelle
+    │   ├── Blocks\orbis_underground\       ← Werkbank-Modelle
+    │   ├── BlockTextures\orbis_underground\← Werkbank-Texturen
+    │   ├── Icons\ItemsGenerated\           ← Item- und Werkbank-Icons
+    │   └── Icons\ItemCategories\           ← Kategorie-Icons
     └── Server\
-        ├── Item\Items\orbis_underground\  ← 79 Item-JSONs
-        ├── Assets\EntityEffect\           ← 26 Effekte
-        ├── NPC\Roles\                     ← Kweebeck Dealer
-        ├── Languages\en-US\server.lang    ← Englische Texte
-        └── Languages\de-DE\server.lang    ← Deutsche Texte
+        ├── Item\Items\orbis_underground\   ← Items, Werkbänke und Wildpflanzen
+        ├── Assets\EntityEffect\            ← 26 Effekte
+        ├── WorldGen\Modifier\              ← 13 WorldGen-v1-Injections
+        ├── NPC\Roles\                      ← Kweebec-Dealer
+        ├── NPC\Spawn\Markers\              ← 50%-Dorfspawn
+        ├── BarterShops\                     ← Dealer-Handel
+        ├── Languages\en-US\server.lang     ← Englische Texte
+        └── Languages\de-DE\server.lang     ← Deutsche Texte
 ```
 
 ### Schritt 2: Texturen generieren (MUST DO!)
@@ -146,17 +151,17 @@ Erstelle 32×32 PNG-Icons für die Creative-Menu-Kategorien:
 3. Rechtsklick auf deine Welt → Pack "Orbis Underground" einschalten
 4. Welt betreten
 5. /op self (um Cheats zu aktivieren)
-6. /give orbis_underground:essence_shadow 64
-7. /give orbis_underground:cannabis_seed_sativa 10
-8. Baue einen Salvager's Workbench + Alchemist's Workbench + Farmer's Workbench
-9. Teste die Rezepte!
+6. /give essence_shadow 64
+7. /give cannabis_seed_sativa 10
+8. Baue einen Botanischen Tisch und ein Chemie-Labor
+9. Rüste beide Bänke auf Tier 2 auf und teste die Rezepte!
 ```
 
 ---
 
 ## 🔧 ALLE CRAFTING-REZEPTE
 
-### 🔨 Salvager's Workbench (Mahlen & Trocknen)
+### 🌿 Botanischer Tisch (Pflanzenverarbeitung)
 | Output | Input | Zeit |
 |---|---|---|
 | Dried Cannabis | 1× Cannabis Bud + 1× Plant Fiber | 6s |
@@ -166,7 +171,7 @@ Erstelle 32×32 PNG-Icons für die Creative-Menu-Kategorien:
 | Lithium Powder | 1× Iron Ingot + 1× Charcoal | 10s |
 | Ephedrine Powder | 4× Ephedra Stem + 1× Plant Fiber | 10s |
 
-### ⚗️ Alchemist's Workbench (Extraktionen & Synthesen)
+### ⚗️ Chemie-Labor (Extraktionen & Synthesen)
 | Output | Input | Zeit | Tier |
 |---|---|---|---|
 | Psilocybin Tincture | 3× Mushroom Powder + Bottle + Sap | 10s | T1 |
@@ -192,7 +197,7 @@ Erstelle 32×32 PNG-Icons für die Creative-Menu-Kategorien:
 
 ⚠️ **Meth hat 20% Explosions-Chance!** Baue den Alchemist's Workbench weit weg von deiner Basis!
 
-### 🔧 Basic Workbench (Verarbeitung)
+### 🌿 Botanischer Tisch (Weiterverarbeitung)
 | Output | Input | Zeit |
 |---|---|---|
 | Hashish | 4× Dried Cannabis + 1× Tree Sap | 10s |

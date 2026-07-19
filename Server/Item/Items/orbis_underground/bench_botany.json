@@ -1,111 +1,159 @@
 {
-  "Id": "orbis_underground:bench_botany",
   "TranslationProperties": {
     "Name": "server.orbis_underground.bench_botany.name",
     "Description": "server.orbis_underground.bench_botany.description"
   },
-  "MaxStack": 1,
+  "Quality": "Uncommon",
   "Icon": "Icons/ItemsGenerated/bench_botany.png",
   "Categories": [
     "OrbisUnderground.Tools",
-    "Benches"
+    "Furniture.Benches"
   ],
-  "PlayerAnimationsId": "Block",
-  "Set": "Bench_Botany",
-  "BlockType": {
-    "Material": "Solid",
-    "DrawType": "Model",
-    "CustomModel": "Models/blocks/bench_botany.blockymodel",
-    "Group": "Wood",
-    "Textures": [
-      {
-        "All": "BlockTextures/bench_botany.png"
-      }
-    ],
-    "ParticleColor": "#8a6642",
-    "BlockSoundSetId": "Wood",
-    "BlockBreakingDecalId": "Breaking_Decals_Wood",
-    "Gathering": {
-      "Breaking": {
-        "GatherType": "Benches",
-        "ItemId": "orbis_underground:bench_botany"
-      }
-    },
-    "Bench": {
-      "Type": "Crafting",
-      "Categories": [
-        {
-          "Id": "OrbisUnderground_Botany",
-          "Name": "ui.benchcategory.botany",
-          "Icon": "Icons/ItemCategories/OrbisUnderground.png"
-        }
-      ]
-    }
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
   },
   "Recipe": {
     "TimeSeconds": 8,
+    "KnowledgeRequired": false,
     "Input": [
       {
-        "ItemId": "Ingredient_Log",
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Ingredient_Fibre",
+        "Quantity": 12
+      },
+      {
+        "ItemId": "Ingredient_Tree_Bark",
         "Quantity": 4
       },
       {
-        "ItemId": "Ingredient_PlantFiber",
-        "Quantity": 4
-      },
-      {
-        "ItemId": "Ingredient_TreeBark",
+        "ItemId": "Ingredient_Bar_Copper",
         "Quantity": 2
-      },
+      }
+    ],
+    "Output": [
       {
-        "ItemId": "Ingredient_SturdyChitin",
+        "ItemId": "bench_botany",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:bench_botany"
-    },
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Workbench",
+        "Id": "Workbench",
         "Categories": [
-          "Crafting"
+          "Workbench_Crafting"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Workbench"
+    ]
   },
-  "TierLevels": [
-    {
-      "UpgradeRequirement": {
-        "Input": [
-          {
-            "ItemId": "Ingredient_Bar_Copper",
-            "Quantity": 10
-          },
-          {
-            "ItemId": "Ingredient_Bar_Thorium",
-            "Quantity": 5
-          },
-          {
-            "ItemId": "Ingredient_PlantFiber",
-            "Quantity": 20
-          },
-          {
-            "ItemId": "Ingredient_VenomSac",
-            "Quantity": 3
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/orbis_underground/bench_botany.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/orbis_underground/bench_botany.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "NESW",
+    "HitboxType": "Bench_Workbench",
+    "Bench": {
+      "Type": "Crafting",
+      "Id": "OrbisUnderground_Botanybench",
+      "Categories": [
+        {
+          "Id": "OrbisUnderground_Botany_Processing",
+          "Name": "server.orbis_underground.ui.benchcategory.botany",
+          "Icon": "Icons/ItemCategories/OrbisUnderground_Materials.png"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "TierLevels": [
+        {
+          "CraftingTimeReductionModifier": 0.0,
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Bar_Copper",
+                "Quantity": 12
+              },
+              {
+                "ItemId": "Ingredient_Bar_Iron",
+                "Quantity": 8
+              },
+              {
+                "ItemId": "Ingredient_Fibre",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "essence_shadow",
+                "Quantity": 8
+              }
+            ],
+            "TimeSeconds": 5
           }
-        ]
-      },
-      "CraftingTimeReductionModifier": 0.3,
-      "ExtraInputSlot": 0,
-      "ExtraOutputSlot": 0
-    }
-  ],
-  "ResourceTypes": [
-    {
-      "Id": "Bench"
-    }
-  ]
+        },
+        {
+          "CraftingTimeReductionModifier": 0.3
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "Looping": true
+        },
+        "CraftCompletedInstant": {}
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches",
+        "ItemId": "bench_botany"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#765233",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Wood"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      12,
+      -18
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 6,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
 }

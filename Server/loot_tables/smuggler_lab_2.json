@@ -1,1 +1,63 @@
-{"Id":"orbis_underground:smuggler_lab_2","Rolls":{"Min":3,"Max":6},"Entries":[{"ItemId":"orbis_underground:ether","Weight":15,"MinCount":1,"MaxCount":2},{"ItemId":"orbis_underground:schwefelsaeure","Weight":25,"MinCount":1,"MaxCount":3},{"ItemId":"Ingredient_EmptyPotionBottle","Weight":35,"MinCount":2,"MaxCount":6},{"ItemId":"Ingredient_MotesOfLight","Weight":20,"MinCount":1,"MaxCount":3},{"ItemId":"orbis_underground:essence_shadow","Weight":40,"MinCount":10,"MaxCount":25},{"ItemId":"orbis_underground:coca_paste","Weight":10,"MinCount":1,"MaxCount":2},{"ItemId":"orbis_underground:aceton","Weight":20,"MinCount":1,"MaxCount":2},{"ItemId":"orbis_underground:filter_paper","Weight":25,"MinCount":1,"MaxCount":4},{"ItemId":"orbis_underground:lithium_powder","Weight":12,"MinCount":1,"MaxCount":2}]}
+{
+  "Id": "orbis_underground:smuggler_lab_2",
+  "Rolls": {
+    "Min": 3,
+    "Max": 6
+  },
+  "Entries": [
+    {
+      "ItemId": "ether",
+      "Weight": 15,
+      "MinCount": 1,
+      "MaxCount": 2
+    },
+    {
+      "ItemId": "schwefelsaeure",
+      "Weight": 25,
+      "MinCount": 1,
+      "MaxCount": 3
+    },
+    {
+      "ItemId": "Potion_Empty",
+      "Weight": 35,
+      "MinCount": 2,
+      "MaxCount": 6
+    },
+    {
+      "ItemId": "Ingredient_Motes_Light",
+      "Weight": 20,
+      "MinCount": 1,
+      "MaxCount": 3
+    },
+    {
+      "ItemId": "essence_shadow",
+      "Weight": 40,
+      "MinCount": 10,
+      "MaxCount": 25
+    },
+    {
+      "ItemId": "coca_paste",
+      "Weight": 10,
+      "MinCount": 1,
+      "MaxCount": 2
+    },
+    {
+      "ItemId": "aceton",
+      "Weight": 20,
+      "MinCount": 1,
+      "MaxCount": 2
+    },
+    {
+      "ItemId": "filter_paper",
+      "Weight": 25,
+      "MinCount": 1,
+      "MaxCount": 4
+    },
+    {
+      "ItemId": "lithium_powder",
+      "Weight": 12,
+      "MinCount": 1,
+      "MaxCount": 2
+    }
+  ]
+}

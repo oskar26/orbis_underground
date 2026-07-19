@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Datura"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Datura"
+  }
+}

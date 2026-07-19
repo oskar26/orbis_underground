@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:mohn_samen",
   "TranslationProperties": {
     "Name": "server.orbis_underground.mohn_samen.name",
     "Description": "server.orbis_underground.mohn_samen.description"
@@ -14,27 +13,28 @@
     "TimeSeconds": 3,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:mohn_kapsel",
+        "ItemId": "mohn_kapsel",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:mohn_samen"
-    },
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Farming",
+        "Id": "Farmingbench",
         "Categories": [
           "Seeds"
         ],
         "RequiredTierLevel": 2
       }
     ],
-    "CraftingBench": "Bench_Farming"
+    "Output": [
+      {
+        "ItemId": "mohn_samen"
+      }
+    ]
   }
 }

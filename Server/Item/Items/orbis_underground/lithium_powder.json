@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:lithium_powder",
   "TranslationProperties": {
     "Name": "server.orbis_underground.lithium_powder.name",
     "Description": "server.orbis_underground.lithium_powder.description"
@@ -22,18 +21,19 @@
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:lithium_powder"
-    },
+    "Output": [
+      {
+        "ItemId": "lithium_powder"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Salvage",
+        "Id": "Salvagebench",
         "Categories": [
           "Salvage"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Salvage"
+    ]
   }
 }

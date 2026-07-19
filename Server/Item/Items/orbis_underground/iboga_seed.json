@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:iboga_seed",
   "TranslationProperties": {
     "Name": "server.orbis_underground.iboga_seed.name",
     "Description": "server.orbis_underground.iboga_seed.description"
@@ -14,27 +13,28 @@
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 3
       },
       {
-        "ItemId": "orbis_underground:iboga_root",
+        "ItemId": "iboga_root",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:iboga_seed"
-    },
+    "Output": [
+      {
+        "ItemId": "iboga_seed"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Farming",
+        "Id": "Farmingbench",
         "Categories": [
           "Seeds"
         ],
         "RequiredTierLevel": 4
       }
-    ],
-    "CraftingBench": "Bench_Farming"
+    ]
   }
 }

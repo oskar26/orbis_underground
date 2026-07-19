@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Jungle",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.iboga.name",
+    "Description": "server.orbis_underground.plant.iboga.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Iboga"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

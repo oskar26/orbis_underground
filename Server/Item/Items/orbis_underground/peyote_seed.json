@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:peyote_seed",
   "TranslationProperties": {
     "Name": "server.orbis_underground.peyote_seed.name",
     "Description": "server.orbis_underground.peyote_seed.description"
@@ -14,27 +13,28 @@
     "TimeSeconds": 6,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:peyote_bud",
+        "ItemId": "peyote_bud",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:peyote_seed"
-    },
+    "Output": [
+      {
+        "ItemId": "peyote_seed"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Farming",
+        "Id": "Farmingbench",
         "Categories": [
           "Seeds"
         ],
         "RequiredTierLevel": 3
       }
-    ],
-    "CraftingBench": "Bench_Farming"
+    ]
   }
 }

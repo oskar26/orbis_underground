@@ -1,0 +1,21 @@
+{
+  "$Comment": "Wild Hybrid Cannabis — very rare spawn profile",
+  "GridGenerator": {
+    "Seed": "OrbisUnderground-CannabisHybrid",
+    "Density": 0.02,
+    "Scale": 0.02,
+    "Jitter": 0.9
+  },
+  "Mask": {
+    "File": "Zones.Masks.Shared.Bushes"
+  },
+  "Parent": [
+    "Soil_Grass",
+    "Soil_Grass_Full",
+    "Soil_Grass_Deep",
+    "Soil_Grass_Sunny",
+    "Soil_Dirt",
+    "Soil_Leaves"
+  ],
+  "FitHeightmap": true
+}

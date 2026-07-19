@@ -1,0 +1,10 @@
+{
+  "Container": {
+    "Type": "Single",
+    "Item": {
+      "ItemId": "cannabis_bud_indica_junk",
+      "QuantityMin": 1,
+      "QuantityMax": 2
+    }
+  }
+}

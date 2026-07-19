@@ -1,439 +1,243 @@
 # Orbis Underground — English
-
-server.orbis_underground.aceton.name = Acetone
-server.orbis_underground.aceton.description = Industrial solvent. Used in heroin synthesis.
-aceton.name = Acetone
-aceton.description = Industrial solvent. Used in heroin synthesis.
-
-server.orbis_underground.amanita_pulver.name = Amanita Powder
-server.orbis_underground.amanita_pulver.description = Bloodcap mushroom powder. A dangerous deliriant.
-amanita_pulver.name = Amanita Powder
-amanita_pulver.description = Bloodcap mushroom powder. A dangerous deliriant.
-
-server.orbis_underground.ammoniak.name = Ammonia
-server.orbis_underground.ammoniak.description = Alkaline solution. Used in crack and meth production.
-ammoniak.name = Ammonia
-ammoniak.description = Alkaline solution. Used in crack and meth production.
-
-server.orbis_underground.bench_botany.name = Botanical Table
-server.orbis_underground.bench_botany.description = A workbench for drying, grinding, pressing, and extracting plant materials.
-bench_botany.name = Botanical Table
-bench_botany.description = A workbench for drying, grinding, pressing, and extracting plant materials.
-
-server.orbis_underground.betel_nut.name = Betel Nut
-server.orbis_underground.betel_nut.description = A brown oval nut. Mild stimulant when chewed.
-betel_nut.name = Betel Nut
-betel_nut.description = A brown oval nut. Mild stimulant when chewed.
-
-server.orbis_underground.betel_seed.name = Betel Seed
-server.orbis_underground.betel_seed.description = Betel palm seed. Grows in oases.
-betel_seed.name = Betel Seed
-betel_seed.description = Betel palm seed. Grows in oases.
-
-server.orbis_underground.blunt.name = Blunt
-server.orbis_underground.blunt.description = A thick cannabis cigar. Packs twice the herb.
-blunt.name = Blunt
-blunt.description = A thick cannabis cigar. Packs twice the herb.
-
-server.orbis_underground.cannabis_bud_hybrid_dispensary.name = Cannabis Bud (Hybrid - Dispensary)
-server.orbis_underground.cannabis_bud_hybrid_dispensary.description = High-grade dispensary hybrid cannabis flower.
-cannabis_bud_hybrid_dispensary.name = Cannabis Bud (Hybrid - Dispensary)
-cannabis_bud_hybrid_dispensary.description = High-grade dispensary hybrid cannabis flower.
-
-server.orbis_underground.cannabis_bud_hybrid_exotic.name = Cannabis Bud (Hybrid - Exotic)
-server.orbis_underground.cannabis_bud_hybrid_exotic.description = Exotic hybrid strain with outstanding potency.
-cannabis_bud_hybrid_exotic.name = Cannabis Bud (Hybrid - Exotic)
-cannabis_bud_hybrid_exotic.description = Exotic hybrid strain with outstanding potency.
-
-server.orbis_underground.cannabis_bud_hybrid_god.name = Cannabis Bud (Hybrid - God Tier)
-server.orbis_underground.cannabis_bud_hybrid_god.description = Mythical hybrid bud of unmatched strain quality.
-cannabis_bud_hybrid_god.name = Cannabis Bud (Hybrid - God Tier)
-cannabis_bud_hybrid_god.description = Mythical hybrid bud of unmatched strain quality.
-
-server.orbis_underground.cannabis_bud_hybrid_junk.name = Cannabis Bud (Hybrid - Junk)
-server.orbis_underground.cannabis_bud_hybrid_junk.description = Low grade ditch weed.
-cannabis_bud_hybrid_junk.name = Cannabis Bud (Hybrid - Junk)
-cannabis_bud_hybrid_junk.description = Low grade ditch weed.
-
-server.orbis_underground.cannabis_bud_hybrid_street.name = Cannabis Bud (Hybrid - Street)
-server.orbis_underground.cannabis_bud_hybrid_street.description = Standard street grade hybrid bud.
-cannabis_bud_hybrid_street.name = Cannabis Bud (Hybrid - Street)
-cannabis_bud_hybrid_street.description = Standard street grade hybrid bud.
-
-server.orbis_underground.cannabis_bud_indica_dispensary.name = Cannabis Bud (Indica - Dispensary)
-server.orbis_underground.cannabis_bud_indica_dispensary.description = High-grade dispensary indica cannabis flower.
-cannabis_bud_indica_dispensary.name = Cannabis Bud (Indica - Dispensary)
-cannabis_bud_indica_dispensary.description = High-grade dispensary indica cannabis flower.
-
-server.orbis_underground.cannabis_bud_indica_exotic.name = Cannabis Bud (Indica - Exotic)
-server.orbis_underground.cannabis_bud_indica_exotic.description = Exotic indica strain with deep relaxing traits.
-cannabis_bud_indica_exotic.name = Cannabis Bud (Indica - Exotic)
-cannabis_bud_indica_exotic.description = Exotic indica strain with deep relaxing traits.
-
-server.orbis_underground.cannabis_bud_indica_god.name = Cannabis Bud (Indica - God Tier)
-server.orbis_underground.cannabis_bud_indica_god.description = God-tier indica bud with overwhelming sedation.
-cannabis_bud_indica_god.name = Cannabis Bud (Indica - God Tier)
-cannabis_bud_indica_god.description = God-tier indica bud with overwhelming sedation.
-
-server.orbis_underground.cannabis_bud_indica_junk.name = Cannabis Bud (Indica - Junk)
-server.orbis_underground.cannabis_bud_indica_junk.description = Low grade indica ditch weed.
-cannabis_bud_indica_junk.name = Cannabis Bud (Indica - Junk)
-cannabis_bud_indica_junk.description = Low grade indica ditch weed.
-
-server.orbis_underground.cannabis_bud_indica_street.name = Cannabis Bud (Indica - Street)
-server.orbis_underground.cannabis_bud_indica_street.description = Standard street grade indica bud.
-cannabis_bud_indica_street.name = Cannabis Bud (Indica - Street)
-cannabis_bud_indica_street.description = Standard street grade indica bud.
-
-server.orbis_underground.cannabis_bud_sativa_dispensary.name = Cannabis Bud (Sativa - Dispensary)
-server.orbis_underground.cannabis_bud_sativa_dispensary.description = High-grade dispensary sativa cannabis flower.
-cannabis_bud_sativa_dispensary.name = Cannabis Bud (Sativa - Dispensary)
-cannabis_bud_sativa_dispensary.description = High-grade dispensary sativa cannabis flower.
-
-server.orbis_underground.cannabis_bud_sativa_exotic.name = Cannabis Bud (Sativa - Exotic)
-server.orbis_underground.cannabis_bud_sativa_exotic.description = Exotic sativa strain with uplifting cerebral vibes.
-cannabis_bud_sativa_exotic.name = Cannabis Bud (Sativa - Exotic)
-cannabis_bud_sativa_exotic.description = Exotic sativa strain with uplifting cerebral vibes.
-
-server.orbis_underground.cannabis_bud_sativa_god.name = Cannabis Bud (Sativa - God Tier)
-server.orbis_underground.cannabis_bud_sativa_god.description = God-tier sativa bud of legendary potency.
-cannabis_bud_sativa_god.name = Cannabis Bud (Sativa - God Tier)
-cannabis_bud_sativa_god.description = God-tier sativa bud of legendary potency.
-
-server.orbis_underground.cannabis_bud_sativa_junk.name = Cannabis Bud (Sativa - Junk)
-server.orbis_underground.cannabis_bud_sativa_junk.description = Low grade sativa ditch weed.
-cannabis_bud_sativa_junk.name = Cannabis Bud (Sativa - Junk)
-cannabis_bud_sativa_junk.description = Low grade sativa ditch weed.
-
-server.orbis_underground.cannabis_bud_sativa_street.name = Cannabis Bud (Sativa - Street)
-server.orbis_underground.cannabis_bud_sativa_street.description = Standard street grade sativa bud.
-cannabis_bud_sativa_street.name = Cannabis Bud (Sativa - Street)
-cannabis_bud_sativa_street.description = Standard street grade sativa bud.
-
-server.orbis_underground.cannabis_butter.name = Cannabis Butter
-server.orbis_underground.cannabis_butter.description = Butter infused with cannabis. A potent edible.
-cannabis_butter.name = Cannabis Butter
-cannabis_butter.description = Butter infused with cannabis. A potent edible.
-
-server.orbis_underground.cannabis_seed_hybrid.name = Hybrid Seed
-server.orbis_underground.cannabis_seed_hybrid.description = Rare hybrid cannabis seed. Combines Sativa and Indica traits.
-cannabis_seed_hybrid.name = Hybrid Seed
-cannabis_seed_hybrid.description = Rare hybrid cannabis seed. Combines Sativa and Indica traits.
-
-server.orbis_underground.cannabis_seed_indica.name = Indica Seed
-server.orbis_underground.cannabis_seed_indica.description = Cannabis Indica seed. Thrives in plains. Relaxing buds.
-cannabis_seed_indica.name = Indica Seed
-cannabis_seed_indica.description = Cannabis Indica seed. Thrives in plains. Relaxing buds.
-
-server.orbis_underground.cannabis_seed_sativa.name = Sativa Seed
-server.orbis_underground.cannabis_seed_sativa.description = Cannabis Sativa seed. Grows at forest edges. Energetic buds.
-cannabis_seed_sativa.name = Sativa Seed
-cannabis_seed_sativa.description = Cannabis Sativa seed. Grows at forest edges. Energetic buds.
-
-server.orbis_underground.coca_leaves.name = Coca Leaves
-server.orbis_underground.coca_leaves.description = Fresh coca leaves. Process into paste.
-coca_leaves.name = Coca Leaves
-coca_leaves.description = Fresh coca leaves. Process into paste.
-
-server.orbis_underground.coca_paste.name = Coca Paste
-server.orbis_underground.coca_paste.description = Crude coca extract. Refine into cocaine.
-coca_paste.name = Coca Paste
-coca_paste.description = Crude coca extract. Refine into cocaine.
-
-server.orbis_underground.coca_seed.name = Coca Seed
-server.orbis_underground.coca_seed.description = A coca plant seed. Grows in the Underground Jungle.
-coca_seed.name = Coca Seed
-coca_seed.description = A coca plant seed. Grows in the Underground Jungle.
-
-server.orbis_underground.cocaine.name = Cocaine
-server.orbis_underground.cocaine.description = Pure cocaine hydrochloride. A powerful stimulant.
-cocaine.name = Cocaine
-cocaine.description = Pure cocaine hydrochloride. A powerful stimulant.
-
-server.orbis_underground.crack.name = Crack
-server.orbis_underground.crack.description = Freebase cocaine rocks. Short, intense high.
-crack.name = Crack
-crack.description = Freebase cocaine rocks. Short, intense high.
-
-server.orbis_underground.datura_leaves.name = Datura Leaves
-server.orbis_underground.datura_leaves.description = Dangerous datura leaves. Source of scopolamine.
-datura_leaves.name = Datura Leaves
-datura_leaves.description = Dangerous datura leaves. Source of scopolamine.
-
-server.orbis_underground.datura_seed.name = Datura Seed
-server.orbis_underground.datura_seed.description = A datura plant seed. Grows near ruins.
-datura_seed.name = Datura Seed
-datura_seed.description = A datura plant seed. Grows near ruins.
-
-server.orbis_underground.dried_cannabis.name = Dried Cannabis
-server.orbis_underground.dried_cannabis.description = Cured cannabis flower. Ready for rolling or processing.
-dried_cannabis.name = Dried Cannabis
-dried_cannabis.description = Cured cannabis flower. Ready for rolling or processing.
-
-server.orbis_underground.empty_syringe.name = Empty Syringe
-server.orbis_underground.empty_syringe.description = A glass syringe. Fill with heroin for injection.
-empty_syringe.name = Empty Syringe
-empty_syringe.description = A glass syringe. Fill with heroin for injection.
-
-server.orbis_underground.ephedra_seed.name = Ephedra Seed
-server.orbis_underground.ephedra_seed.description = Ephedra plant seed. Grows on rocky hills.
-ephedra_seed.name = Ephedra Seed
-ephedra_seed.description = Ephedra plant seed. Grows on rocky hills.
-
-server.orbis_underground.ephedra_stem.name = Ephedra Stem
-server.orbis_underground.ephedra_stem.description = Rod-shaped ephedra stem. Grind into powder.
-ephedra_stem.name = Ephedra Stem
-ephedra_stem.description = Rod-shaped ephedra stem. Grind into powder.
-
-server.orbis_underground.ephedrin_powder.name = Ephedrine Powder
-server.orbis_underground.ephedrin_powder.description = Ground ephedra. Precursor for methamphetamine.
-ephedrin_powder.name = Ephedrine Powder
-ephedrin_powder.description = Ground ephedra. Precursor for methamphetamine.
-
-server.orbis_underground.essence_shadow.name = Essence of Shadow
-server.orbis_underground.essence_shadow.description = A dark, swirling essence. Currency of the underworld.
-essence_shadow.name = Essence of Shadow
-essence_shadow.description = A dark, swirling essence. Currency of the underworld.
-
-server.orbis_underground.ethanol.name = Ethanol
-server.orbis_underground.ethanol.description = Pure alcohol. Fermented from wheat and berries.
-ethanol.name = Ethanol
-ethanol.description = Pure alcohol. Fermented from wheat and berries.
-
-server.orbis_underground.ether.name = Ether
-server.orbis_underground.ether.description = Diethyl ether. Volatile solvent for meth synthesis.
-ether.name = Ether
-ether.description = Diethyl ether. Volatile solvent for meth synthesis.
-
-server.orbis_underground.filled_syringe.name = Filled Syringe
-server.orbis_underground.filled_syringe.description = A syringe filled with heroin. Ready to use.
-filled_syringe.name = Filled Syringe
-filled_syringe.description = A syringe filled with heroin. Ready to use.
-
-server.orbis_underground.filter_paper.name = Filter Paper
-server.orbis_underground.filter_paper.description = Gray filter paper for chemical extractions.
-filter_paper.name = Filter Paper
-filter_paper.description = Gray filter paper for chemical extractions.
-
-server.orbis_underground.haschisch.name = Hashish
-server.orbis_underground.haschisch.description = Compressed cannabis resin. Far more potent than flower.
-haschisch.name = Hashish
-haschisch.description = Compressed cannabis resin. Far more potent than flower.
-
-server.orbis_underground.heroin.name = Heroin
-server.orbis_underground.heroin.description = Diacetylmorphine. Extremely potent opiate.
-heroin.name = Heroin
-heroin.description = Diacetylmorphine. Extremely potent opiate.
-
-server.orbis_underground.iboga_root.name = Iboga Root
-server.orbis_underground.iboga_root.description = Root bark of the iboga shrub. Source of ibogaine.
-iboga_root.name = Iboga Root
-iboga_root.description = Root bark of the iboga shrub. Source of ibogaine.
-
-server.orbis_underground.iboga_seed.name = Iboga Seed
-server.orbis_underground.iboga_seed.description = Rare iboga seed. Grows deep underground.
-iboga_seed.name = Iboga Seed
-iboga_seed.description = Rare iboga seed. Grows deep underground.
-
-server.orbis_underground.ibogain_extract.name = Ibogaine Extract
-server.orbis_underground.ibogain_extract.description = White extract. Removes all drug effects. Causes ataxia.
-ibogain_extract.name = Ibogaine Extract
-ibogain_extract.description = White extract. Removes all drug effects. Causes ataxia.
-
-server.orbis_underground.joint.name = Joint
-server.orbis_underground.joint.description = A hand-rolled cannabis cigarette. Classic Sativa experience.
-joint.name = Joint
-joint.description = A hand-rolled cannabis cigarette. Classic Sativa experience.
-
-server.orbis_underground.kava_paste.name = Kava Paste
-server.orbis_underground.kava_paste.description = A grayish paste. Sedative and anti-anxiety.
-kava_paste.name = Kava Paste
-kava_paste.description = A grayish paste. Sedative and anti-anxiety.
-
-server.orbis_underground.kava_root.name = Kava Root
-server.orbis_underground.kava_root.description = Brown kava root. Process into calming paste.
-kava_root.name = Kava Root
-kava_root.description = Brown kava root. Process into calming paste.
-
-server.orbis_underground.khat_leaves.name = Khat Leaves
-server.orbis_underground.khat_leaves.description = Fresh khat leaves. A mild natural stimulant.
-khat_leaves.name = Khat Leaves
-khat_leaves.description = Fresh khat leaves. A mild natural stimulant.
-
-server.orbis_underground.khat_seed.name = Khat Seed
-server.orbis_underground.khat_seed.description = A khat shrub seed. Grows in oases.
-khat_seed.name = Khat Seed
-khat_seed.description = A khat shrub seed. Grows in oases.
-
-server.orbis_underground.koka_tee.name = Coca Tea
-server.orbis_underground.koka_tee.description = A mild stimulant tea from coca leaves.
-koka_tee.name = Coca Tea
-koka_tee.description = A mild stimulant tea from coca leaves.
-
-server.orbis_underground.lithium_powder.name = Lithium Powder
-server.orbis_underground.lithium_powder.description = Silvery-gray powder. Catalyst for methamphetamine.
-lithium_powder.name = Lithium Powder
-lithium_powder.description = Silvery-gray powder. Catalyst for methamphetamine.
-
-server.orbis_underground.lsd_tab.name = LSD Tab
-server.orbis_underground.lsd_tab.description = A tiny blotter tab. 12 hours of psychedelic journey.
-lsd_tab.name = LSD Tab
-lsd_tab.description = A tiny blotter tab. 12 hours of psychedelic journey.
-
-server.orbis_underground.lysergsaeure.name = Lysergic Acid
-server.orbis_underground.lysergsaeure.description = Yellowish liquid. Precursor for LSD synthesis.
-lysergsaeure.name = Lysergic Acid
-lysergsaeure.description = Yellowish liquid. Precursor for LSD synthesis.
-
-server.orbis_underground.mdma_pill.name = MDMA Pill
-server.orbis_underground.mdma_pill.description = A colorful pressed pill. Euphoric empathogen.
-mdma_pill.name = MDMA Pill
-mdma_pill.description = A colorful pressed pill. Euphoric empathogen.
-
-server.orbis_underground.mdma_powder.name = MDMA Powder
-server.orbis_underground.mdma_powder.description = Raw MDMA. Press into pills.
-mdma_powder.name = MDMA Powder
-mdma_powder.description = Raw MDMA. Press into pills.
-
-server.orbis_underground.meskalin_extract.name = Mescaline Extract
-server.orbis_underground.meskalin_extract.description = Brown extract from peyote. Powerful psychedelic.
-meskalin_extract.name = Mescaline Extract
-meskalin_extract.description = Brown extract from peyote. Powerful psychedelic.
-
-server.orbis_underground.meth.name = Methamphetamine
-server.orbis_underground.meth.description = Crystal meth. Intense stimulant. EXPLOSION RISK when cooking!
-meth.name = Methamphetamine
-meth.description = Crystal meth. Intense stimulant. EXPLOSION RISK when cooking!
-
-server.orbis_underground.mohn_kapsel.name = Poppy Pod
-server.orbis_underground.mohn_kapsel.description = A dried opium poppy seed pod.
-mohn_kapsel.name = Poppy Pod
-mohn_kapsel.description = A dried opium poppy seed pod.
-
-server.orbis_underground.mohn_samen.name = Poppy Seeds
-server.orbis_underground.mohn_samen.description = Seeds of the opium poppy. Plant in Zone 1 or 3 plains.
-mohn_samen.name = Poppy Seeds
-mohn_samen.description = Seeds of the opium poppy. Plant in Zone 1 or 3 plains.
-
-server.orbis_underground.morphine.name = Morphine
-server.orbis_underground.morphine.description = Refined opium alkaloid. Powerful painkiller.
-morphine.name = Morphine
-morphine.description = Refined opium alkaloid. Powerful painkiller.
-
-server.orbis_underground.mutterkorn.name = Ergot
-server.orbis_underground.mutterkorn.description = A dark fungal growth. Source of lysergic acid.
-mutterkorn.name = Ergot
-mutterkorn.description = A dark fungal growth. Source of lysergic acid.
-
-server.orbis_underground.naloxon.name = Naloxone
-server.orbis_underground.naloxon.description = Clear antidote liquid. Removes opiate effects. Saves lives.
-naloxon.name = Naloxone
-naloxon.description = Clear antidote liquid. Removes opiate effects. Saves lives.
-
-server.orbis_underground.paper.name = Paper
-server.orbis_underground.paper.description = Clean paper sheet. Essential for rolling.
-paper.name = Paper
-paper.description = Clean paper sheet. Essential for rolling.
-
-server.orbis_underground.peyote_bud.name = Peyote Bud
-server.orbis_underground.peyote_bud.description = A peyote cactus button. Extract mescaline.
-peyote_bud.name = Peyote Bud
-peyote_bud.description = A peyote cactus button. Extract mescaline.
-
-server.orbis_underground.peyote_seed.name = Peyote Seed
-server.orbis_underground.peyote_seed.description = Peyote cactus seed. Grows in the Savanna.
-peyote_seed.name = Peyote Seed
-peyote_seed.description = Peyote cactus seed. Grows in the Savanna.
-
-server.orbis_underground.pill_press_form.name = Pill Press Form
-server.orbis_underground.pill_press_form.description = A metal mold for pressing powder into pills.
-pill_press_form.name = Pill Press Form
-pill_press_form.description = A metal mold for pressing powder into pills.
-
-server.orbis_underground.pilz_pulver.name = Mushroom Powder
-server.orbis_underground.pilz_pulver.description = Ground mushroom powder. Refine into tinctures.
-pilz_pulver.name = Mushroom Powder
-pilz_pulver.description = Ground mushroom powder. Refine into tinctures.
-
-server.orbis_underground.psilocybin_tinktur.name = Psilocybin Tincture
-server.orbis_underground.psilocybin_tinktur.description = A shimmering blue tincture. Opens the doors of perception.
-psilocybin_tinktur.name = Psilocybin Tincture
-psilocybin_tinktur.description = A shimmering blue tincture. Opens the doors of perception.
-
-server.orbis_underground.rohopium.name = Raw Opium
-server.orbis_underground.rohopium.description = Crude opium from poppy pods. Base for refined opiates.
-rohopium.name = Raw Opium
-rohopium.description = Crude opium from poppy pods. Base for refined opiates.
-
-server.orbis_underground.salvia_leaves.name = Salvia Leaves
-server.orbis_underground.salvia_leaves.description = Broad salvia leaves. Source of salvinorin.
-salvia_leaves.name = Salvia Leaves
-salvia_leaves.description = Broad salvia leaves. Source of salvinorin.
-
-server.orbis_underground.salvia_seed.name = Salvia Seed
-server.orbis_underground.salvia_seed.description = A salvia plant seed. Grows in swamps.
-salvia_seed.name = Salvia Seed
-salvia_seed.description = A salvia plant seed. Grows in swamps.
-
-server.orbis_underground.salvinorin.name = Salvinorin
-server.orbis_underground.salvinorin.description = Bright green tincture. Brief but extremely intense.
-salvinorin.name = Salvinorin
-salvinorin.description = Bright green tincture. Brief but extremely intense.
-
-server.orbis_underground.salzsaeure.name = Hydrochloric Acid
-server.orbis_underground.salzsaeure.description = Strong acid from bone minerals.
-salzsaeure.name = Hydrochloric Acid
-salzsaeure.description = Strong acid from bone minerals.
-
-server.orbis_underground.schwefelsaeure.name = Sulfuric Acid
-server.orbis_underground.schwefelsaeure.description = Strong mineral acid. Essential chemical reagent.
-schwefelsaeure.name = Sulfuric Acid
-schwefelsaeure.description = Strong mineral acid. Essential chemical reagent.
-
-server.orbis_underground.scopolamin_extract.name = Scopolamine Extract
-server.orbis_underground.scopolamin_extract.description = Murky green extract. Causes delirium and hallucinations.
-scopolamin_extract.name = Scopolamine Extract
-scopolamin_extract.description = Murky green extract. Causes delirium and hallucinations.
-
-server.orbis_underground.spliff.name = Spliff
-server.orbis_underground.spliff.description = A balanced blend for a smooth Hybrid experience.
-spliff.name = Spliff
-spliff.description = A balanced blend for a smooth Hybrid experience.
-
-npc.kweebeck_dealer = Kweebeck Dealer
-npc.kweebeck_dealer.dialog = Psst... Got any Essence of Shadow?
-ui.benchcategory.botany = Botanical Table
-ui.orbis_underground = Orbis Underground
-ui.orbis_underground.chemicals = Chemicals
-ui.orbis_underground.consumables = Consumables
-ui.orbis_underground.currency = Currency
-ui.orbis_underground.materials = Materials
-ui.orbis_underground.seeds = Seeds
-ui.orbis_underground.tools = Tools
-
-effect.orbis_underground.drug_amanita = Amanita Delirium
-effect.orbis_underground.drug_betel = Betel Buzz
-effect.orbis_underground.drug_cannabis_hybrid = Cannabis (Hybrid)
-effect.orbis_underground.drug_cannabis_indica = Cannabis (Indica)
-effect.orbis_underground.drug_cannabis_sativa = Cannabis (Sativa)
-effect.orbis_underground.drug_cocaine = Cocaine Rush
-effect.orbis_underground.drug_cocaine_crash = Cocaine Crash
-effect.orbis_underground.drug_crack = Crack High
-effect.orbis_underground.drug_crack_crash = Crack Crash
-effect.orbis_underground.drug_ephedrin = Ephedrine Rush
-effect.orbis_underground.drug_hashish = Hashish High
-effect.orbis_underground.drug_heroin = Heroin Effect
-effect.orbis_underground.drug_ibogaine = Ibogaine Reset
-effect.orbis_underground.drug_kava = Kava Calm
-effect.orbis_underground.drug_khat = Khat Stimulation
-effect.orbis_underground.drug_lsd = LSD Trip
-effect.orbis_underground.drug_mdma = MDMA Euphoria
-effect.orbis_underground.drug_mdma_crash = MDMA Depression
-effect.orbis_underground.drug_mescaline = Mescaline Trip
-effect.orbis_underground.drug_meth = Meth High
-effect.orbis_underground.drug_meth_crash = Meth Crash
-effect.orbis_underground.drug_morphine = Morphine Effect
-effect.orbis_underground.drug_overdose = OVERDOSE
-effect.orbis_underground.drug_psilocybin = Psilocybin Trip
-effect.orbis_underground.drug_salvinorin = Salvinorin Shift
-effect.orbis_underground.drug_scopolamine = Scopolamine Delirium
+# Keys must match: server.{key} in TranslationProperties.Name / .Description
+
+# === ITEMS ===
+orbis_underground.aceton.name = Acetone
+orbis_underground.aceton.description = Industrial solvent. Used in heroin synthesis.
+orbis_underground.amanita_pulver.name = Amanita Powder
+orbis_underground.amanita_pulver.description = Bloodcap mushroom powder. A dangerous deliriant.
+orbis_underground.ammoniak.name = Ammonia
+orbis_underground.ammoniak.description = Alkaline solution. Used in crack and meth production.
+orbis_underground.bench_botany.name = Botanical Table
+orbis_underground.bench_botany.description = A workbench for drying, grinding, pressing, and extracting plant materials.
+orbis_underground.betel_nut.name = Betel Nut
+orbis_underground.betel_nut.description = A brown oval nut. Mild stimulant when chewed.
+orbis_underground.betel_seed.name = Betel Seed
+orbis_underground.betel_seed.description = Betel palm seed. Grows in oases.
+orbis_underground.blunt.name = Blunt
+orbis_underground.blunt.description = A thick cannabis cigar. Packs twice the herb.
+orbis_underground.cannabis_butter.name = Cannabis Butter
+orbis_underground.cannabis_butter.description = Butter infused with cannabis. A potent edible.
+orbis_underground.cannabis_seed_hybrid.name = Hybrid Seed
+orbis_underground.cannabis_seed_hybrid.description = Rare hybrid cannabis seed. Combines Sativa and Indica traits.
+orbis_underground.cannabis_seed_indica.name = Indica Seed
+orbis_underground.cannabis_seed_indica.description = Cannabis Indica seed. Thrives in plains. Relaxing buds.
+orbis_underground.cannabis_seed_sativa.name = Sativa Seed
+orbis_underground.cannabis_seed_sativa.description = Cannabis Sativa seed. Grows at forest edges. Energetic buds.
+orbis_underground.coca_leaves.name = Coca Leaves
+orbis_underground.coca_leaves.description = Fresh coca leaves. Process into paste.
+orbis_underground.coca_paste.name = Coca Paste
+orbis_underground.coca_paste.description = Crude coca extract. Refine into cocaine.
+orbis_underground.coca_seed.name = Coca Seed
+orbis_underground.coca_seed.description = A coca plant seed. Grows in the Underground Jungle.
+orbis_underground.cocaine.name = Cocaine
+orbis_underground.cocaine.description = Pure cocaine hydrochloride. A powerful stimulant.
+orbis_underground.crack.name = Crack
+orbis_underground.crack.description = Freebase cocaine rocks. Short, intense high.
+orbis_underground.datura_leaves.name = Datura Leaves
+orbis_underground.datura_leaves.description = Dangerous datura leaves. Source of scopolamine.
+orbis_underground.datura_seed.name = Datura Seed
+orbis_underground.datura_seed.description = A datura plant seed. Grows near ruins.
+orbis_underground.dried_cannabis.name = Dried Cannabis
+orbis_underground.dried_cannabis.description = Cured cannabis flower. Ready for rolling or processing.
+orbis_underground.empty_syringe.name = Empty Syringe
+orbis_underground.empty_syringe.description = A glass syringe. Fill with heroin for injection.
+orbis_underground.ephedra_seed.name = Ephedra Seed
+orbis_underground.ephedra_seed.description = Ephedra plant seed. Grows on rocky hills.
+orbis_underground.ephedra_stem.name = Ephedra Stem
+orbis_underground.ephedra_stem.description = Rod-shaped ephedra stem. Grind into powder.
+orbis_underground.ephedrin_powder.name = Ephedrine Powder
+orbis_underground.ephedrin_powder.description = Ground ephedra. Precursor for methamphetamine.
+orbis_underground.essence_shadow.name = Essence of Shadow
+orbis_underground.essence_shadow.description = A dark, swirling essence. Currency of the underworld.
+orbis_underground.ethanol.name = Ethanol
+orbis_underground.ethanol.description = Pure alcohol. Fermented from wheat and berries.
+orbis_underground.ether.name = Ether
+orbis_underground.ether.description = Diethyl ether. Volatile solvent for meth synthesis.
+orbis_underground.filled_syringe.name = Filled Syringe
+orbis_underground.filled_syringe.description = A syringe filled with heroin. Ready to use.
+orbis_underground.filter_paper.name = Filter Paper
+orbis_underground.filter_paper.description = Gray filter paper for chemical extractions.
+orbis_underground.haschisch.name = Hashish
+orbis_underground.haschisch.description = Compressed cannabis resin. Far more potent than flower.
+orbis_underground.heroin.name = Heroin
+orbis_underground.heroin.description = Diacetylmorphine. Extremely potent opiate.
+orbis_underground.iboga_root.name = Iboga Root
+orbis_underground.iboga_root.description = Root bark of the iboga shrub. Source of ibogaine.
+orbis_underground.iboga_seed.name = Iboga Seed
+orbis_underground.iboga_seed.description = Rare iboga seed. Grows deep underground.
+orbis_underground.ibogain_extract.name = Ibogaine Extract
+orbis_underground.ibogain_extract.description = White extract. Removes all drug effects. Causes ataxia.
+orbis_underground.joint.name = Joint
+orbis_underground.joint.description = A hand-rolled cannabis cigarette. Classic Sativa experience.
+orbis_underground.kava_paste.name = Kava Paste
+orbis_underground.kava_paste.description = A grayish paste. Sedative and anti-anxiety.
+orbis_underground.kava_root.name = Kava Root
+orbis_underground.kava_root.description = Brown kava root. Process into calming paste.
+orbis_underground.khat_leaves.name = Khat Leaves
+orbis_underground.khat_leaves.description = Fresh khat leaves. A mild natural stimulant.
+orbis_underground.khat_seed.name = Khat Seed
+orbis_underground.khat_seed.description = A khat shrub seed. Grows in oases.
+orbis_underground.koka_tee.name = Coca Tea
+orbis_underground.koka_tee.description = A mild stimulant tea from coca leaves.
+orbis_underground.lithium_powder.name = Lithium Powder
+orbis_underground.lithium_powder.description = Silvery-gray powder. Catalyst for methamphetamine.
+orbis_underground.lsd_tab.name = LSD Tab
+orbis_underground.lsd_tab.description = A tiny blotter tab. 12 hours of psychedelic journey.
+orbis_underground.lysergsaeure.name = Lysergic Acid
+orbis_underground.lysergsaeure.description = Yellowish liquid. Precursor for LSD synthesis.
+orbis_underground.mdma_pill.name = MDMA Pill
+orbis_underground.mdma_pill.description = A colorful pressed pill. Euphoric empathogen.
+orbis_underground.mdma_powder.name = MDMA Powder
+orbis_underground.mdma_powder.description = Raw MDMA. Press into pills.
+orbis_underground.meskalin_extract.name = Mescaline Extract
+orbis_underground.meskalin_extract.description = Brown extract from peyote. Powerful psychedelic.
+orbis_underground.meth.name = Methamphetamine
+orbis_underground.meth.description = Crystal meth. Intense stimulant. §4§lEXPLOSION RISK §rwhen cooking!
+orbis_underground.mohn_kapsel.name = Poppy Pod
+orbis_underground.mohn_kapsel.description = A dried opium poppy seed pod.
+orbis_underground.mohn_samen.name = Poppy Seeds
+orbis_underground.mohn_samen.description = Seeds of the opium poppy. Plant in Zone 1 or 3 plains.
+orbis_underground.morphine.name = Morphine
+orbis_underground.morphine.description = Refined opium alkaloid. Powerful painkiller.
+orbis_underground.mutterkorn.name = Ergot
+orbis_underground.mutterkorn.description = A dark fungal growth. Source of lysergic acid. Rare drop from poppies.
+orbis_underground.naloxon.name = Naloxone
+orbis_underground.naloxon.description = Clear antidote liquid. Removes all drug effects. Saves lives.
+orbis_underground.paper.name = Paper
+orbis_underground.paper.description = Clean paper sheet. Essential for rolling.
+orbis_underground.peyote_bud.name = Peyote Bud
+orbis_underground.peyote_bud.description = A peyote cactus button. Extract mescaline.
+orbis_underground.peyote_seed.name = Peyote Seed
+orbis_underground.peyote_seed.description = Peyote cactus seed. Grows in the Savanna.
+orbis_underground.pill_press_form.name = Pill Press Form
+orbis_underground.pill_press_form.description = A metal mold for pressing powder into pills.
+orbis_underground.pilz_pulver.name = Mushroom Powder
+orbis_underground.pilz_pulver.description = Ground mushroom powder. Refine into tinctures.
+orbis_underground.psilocybin_tinktur.name = Psilocybin Tincture
+orbis_underground.psilocybin_tinktur.description = A shimmering blue tincture. Opens the doors of perception.
+orbis_underground.rohopium.name = Raw Opium
+orbis_underground.rohopium.description = Crude opium from poppy pods. Base for refined opiates.
+orbis_underground.salvia_leaves.name = Salvia Leaves
+orbis_underground.salvia_leaves.description = Broad salvia leaves. Source of salvinorin.
+orbis_underground.salvia_seed.name = Salvia Seed
+orbis_underground.salvia_seed.description = A salvia plant seed. Grows in swamps.
+orbis_underground.salvinorin.name = Salvinorin
+orbis_underground.salvinorin.description = Bright green tincture. Brief but extremely intense.
+orbis_underground.salzsaeure.name = Hydrochloric Acid
+orbis_underground.salzsaeure.description = Strong acid from bone minerals.
+orbis_underground.schwefelsaeure.name = Sulfuric Acid
+orbis_underground.schwefelsaeure.description = Strong mineral acid. Essential chemical reagent.
+orbis_underground.scopolamin_extract.name = Scopolamine Extract
+orbis_underground.scopolamin_extract.description = Murky green extract. Causes delirium and hallucinations.
+orbis_underground.spliff.name = Spliff
+orbis_underground.spliff.description = A balanced blend for a smooth Hybrid experience.
+
+# === NPC ===
+orbis_underground.npc.kweebeck_dealer = Kweebeck Dealer
+orbis_underground.npc.kweebeck_dealer.dialog = Psst... Got any Essence of Shadow?
+
+# === BENCH CATEGORIES ===
+orbis_underground.ui.benchcategory.botany = Botanical Table
+
+# === ITEM CATEGORIES (CreativeLibrary) ===
+orbis_underground.ui.itemcategory.orbis_underground = Orbis Underground
+orbis_underground.ui.itemcategory.orbis_underground.chemicals = Chemicals
+orbis_underground.ui.itemcategory.orbis_underground.consumables = Consumables
+orbis_underground.ui.itemcategory.orbis_underground.currency = Currency
+orbis_underground.ui.itemcategory.orbis_underground.materials = Materials
+orbis_underground.ui.itemcategory.orbis_underground.seeds = Seeds
+orbis_underground.ui.itemcategory.orbis_underground.tools = Tools
+
+# === STATUS EFFECTS ===
+orbis_underground.effect.orbis_underground.drug_amanita = Amanita Delirium
+orbis_underground.effect.orbis_underground.drug_betel = Betel Buzz
+orbis_underground.effect.orbis_underground.drug_cannabis_hybrid = Cannabis (Hybrid)
+orbis_underground.effect.orbis_underground.drug_cannabis_indica = Cannabis (Indica)
+orbis_underground.effect.orbis_underground.drug_cannabis_sativa = Cannabis (Sativa)
+orbis_underground.effect.orbis_underground.drug_cocaine = Cocaine Rush
+orbis_underground.effect.orbis_underground.drug_cocaine_crash = Cocaine Crash
+orbis_underground.effect.orbis_underground.drug_crack = Crack High
+orbis_underground.effect.orbis_underground.drug_crack_crash = Crack Crash
+orbis_underground.effect.orbis_underground.drug_ephedrin = Ephedrine Rush
+orbis_underground.effect.orbis_underground.drug_hashish = Hashish High
+orbis_underground.effect.orbis_underground.drug_heroin = Heroin Effect
+orbis_underground.effect.orbis_underground.drug_ibogaine = Ibogaine Reset
+orbis_underground.effect.orbis_underground.drug_kava = Kava Calm
+orbis_underground.effect.orbis_underground.drug_khat = Khat Stimulation
+orbis_underground.effect.orbis_underground.drug_lsd = LSD Trip
+orbis_underground.effect.orbis_underground.drug_mdma = MDMA Euphoria
+orbis_underground.effect.orbis_underground.drug_mdma_crash = MDMA Depression
+orbis_underground.effect.orbis_underground.drug_mescaline = Mescaline Trip
+orbis_underground.effect.orbis_underground.drug_meth = Meth High
+orbis_underground.effect.orbis_underground.drug_meth_crash = Meth Crash
+orbis_underground.effect.orbis_underground.drug_morphine = Morphine Effect
+orbis_underground.effect.orbis_underground.drug_overdose = OVERDOSE
+orbis_underground.effect.orbis_underground.drug_psilocybin = Psilocybin Trip
+orbis_underground.effect.orbis_underground.drug_salvinorin = Salvinorin Shift
+orbis_underground.effect.orbis_underground.drug_scopolamine = Scopolamine Delirium
+
+# === CUSTOM BENCHES ===
+orbis_underground.bench_chemistry.name = Chemistry Laboratory
+orbis_underground.bench_chemistry.description = A dark alchemical workbench for chemical synthesis, distillation, and hard-drug production.
+orbis_underground.ui.benchcategory.chemistry = Chemical Synthesis
+orbis_underground.barter.kweebeck_dealer.title = Kweebec Underground Dealer
+
+# === CANNABIS BUD QUALITY TIERS ===
+orbis_underground.cannabis_bud_sativa_junk.name = Sativa Bud (Junk)
+orbis_underground.cannabis_bud_sativa_junk.description = Junk-quality Sativa cannabis flower.
+orbis_underground.cannabis_bud_sativa_street.name = Sativa Bud (Street)
+orbis_underground.cannabis_bud_sativa_street.description = Street-quality Sativa cannabis flower.
+orbis_underground.cannabis_bud_sativa_dispensary.name = Sativa Bud (Dispensary)
+orbis_underground.cannabis_bud_sativa_dispensary.description = Dispensary-quality Sativa cannabis flower.
+orbis_underground.cannabis_bud_sativa_exotic.name = Sativa Bud (Exotic)
+orbis_underground.cannabis_bud_sativa_exotic.description = Exotic-quality Sativa cannabis flower.
+orbis_underground.cannabis_bud_sativa_god.name = Sativa Bud (God)
+orbis_underground.cannabis_bud_sativa_god.description = God-quality Sativa cannabis flower.
+orbis_underground.cannabis_bud_indica_junk.name = Indica Bud (Junk)
+orbis_underground.cannabis_bud_indica_junk.description = Junk-quality Indica cannabis flower.
+orbis_underground.cannabis_bud_indica_street.name = Indica Bud (Street)
+orbis_underground.cannabis_bud_indica_street.description = Street-quality Indica cannabis flower.
+orbis_underground.cannabis_bud_indica_dispensary.name = Indica Bud (Dispensary)
+orbis_underground.cannabis_bud_indica_dispensary.description = Dispensary-quality Indica cannabis flower.
+orbis_underground.cannabis_bud_indica_exotic.name = Indica Bud (Exotic)
+orbis_underground.cannabis_bud_indica_exotic.description = Exotic-quality Indica cannabis flower.
+orbis_underground.cannabis_bud_indica_god.name = Indica Bud (God)
+orbis_underground.cannabis_bud_indica_god.description = God-quality Indica cannabis flower.
+orbis_underground.cannabis_bud_hybrid_junk.name = Hybrid Bud (Junk)
+orbis_underground.cannabis_bud_hybrid_junk.description = Junk-quality Hybrid cannabis flower.
+orbis_underground.cannabis_bud_hybrid_street.name = Hybrid Bud (Street)
+orbis_underground.cannabis_bud_hybrid_street.description = Street-quality Hybrid cannabis flower.
+orbis_underground.cannabis_bud_hybrid_dispensary.name = Hybrid Bud (Dispensary)
+orbis_underground.cannabis_bud_hybrid_dispensary.description = Dispensary-quality Hybrid cannabis flower.
+orbis_underground.cannabis_bud_hybrid_exotic.name = Hybrid Bud (Exotic)
+orbis_underground.cannabis_bud_hybrid_exotic.description = Exotic-quality Hybrid cannabis flower.
+orbis_underground.cannabis_bud_hybrid_god.name = Hybrid Bud (God)
+orbis_underground.cannabis_bud_hybrid_god.description = God-quality Hybrid cannabis flower.
+# === WILD WORLDGEN PLANTS ===
+orbis_underground.plant.cannabis_sativa.name = Wild Cannabis Sativa
+orbis_underground.plant.cannabis_sativa.description = A wild Sativa plant from the Seeding Woods.
+orbis_underground.plant.cannabis_indica.name = Wild Cannabis Indica
+orbis_underground.plant.cannabis_indica.description = A wild Indica plant from the Drifting Plains.
+orbis_underground.plant.cannabis_hybrid.name = Wild Hybrid Cannabis
+orbis_underground.plant.cannabis_hybrid.description = An exceptionally rare hybrid cannabis plant.
+orbis_underground.plant.poppy.name = Opium Poppy
+orbis_underground.plant.poppy.description = A flowering poppy with harvestable seed pods.
+orbis_underground.plant.coca.name = Wild Coca Shrub
+orbis_underground.plant.coca.description = A coca shrub adapted to the underground jungle.
+orbis_underground.plant.peyote.name = Peyote Cactus
+orbis_underground.plant.peyote.description = A small peyote cactus found in the savanna.
+orbis_underground.plant.khat.name = Wild Khat Shrub
+orbis_underground.plant.khat.description = A leafy khat shrub growing around oases.
+orbis_underground.plant.datura.name = Datura
+orbis_underground.plant.datura.description = A dangerous datura plant that favors the ground around ruins.
+orbis_underground.plant.salvia.name = Wild Salvia
+orbis_underground.plant.salvia.description = A broad-leaf salvia plant from The Fens.
+orbis_underground.plant.iboga.name = Wild Iboga Shrub
+orbis_underground.plant.iboga.description = A rare iboga shrub from the underground jungle.
+orbis_underground.plant.ephedra.name = Wild Ephedra
+orbis_underground.plant.ephedra.description = A hardy ephedra shrub from rocky hills.
+orbis_underground.plant.betel_palm.name = Betel Palm
+orbis_underground.plant.betel_palm.description = A rare betel palm growing around desert oases.
+orbis_underground.plant.kava.name = Wild Kava
+orbis_underground.plant.kava.description = A wetland kava plant from The Fens.

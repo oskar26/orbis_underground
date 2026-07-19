@@ -1,10 +1,14 @@
 {
-  "Id": "orbis_underground:cannabis_bud_sativa_street",
-  "TranslationProperties": {"Name":"server.orbis_underground.cannabis_bud_sativa_street.name","Description":"server.orbis_underground.cannabis_bud_sativa_street.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.cannabis_bud_sativa_street.name",
+    "Description": "server.orbis_underground.cannabis_bud_sativa_street.description"
+  },
   "Icon": "Icons/ItemsGenerated/cannabis_bud_sativa_street.png",
   "Model": "Items/Cannabis/cannabis_bud_sativa.blockymodel",
   "Quality": "Common",
   "MaxStack": 32,
-  "Categories": ["OrbisUnderground.Materials"],
+  "Categories": [
+    "OrbisUnderground.Materials"
+  ],
   "ItemLevel": 1
 }

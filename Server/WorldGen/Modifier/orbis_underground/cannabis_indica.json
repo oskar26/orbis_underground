@@ -1,0 +1,21 @@
+{
+  "$Comment": "Inject Wild Cannabis Indica into: Zones.Zone1_Tier*.Tile.Plains_*",
+  "Priority": "NORMAL",
+  "Target": {
+    "Root": "Default",
+    "Rules": [
+      "Zones.Zone1_Tier*.Tile.Plains_*"
+    ]
+  },
+  "Content": {
+    "Biome_Prefabs": [
+      {
+        "Operation": "Add",
+        "Content": {
+          "Type": "File",
+          "Path": "OrbisUnderground.Worldgen.Entries.CannabisIndica"
+        }
+      }
+    ]
+  }
+}

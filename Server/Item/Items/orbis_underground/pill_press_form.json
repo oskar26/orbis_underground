@@ -1,5 +1,13 @@
 {
-  "Id":"orbis_underground:pill_press_form",
-  "TranslationProperties":{"Name":"server.orbis_underground.pill_press_form.name","Description":"server.orbis_underground.pill_press_form.description"},
-  "Icon":"Icons/ItemsGenerated/pill_press_form.png","Quality":"Uncommon","MaxStack":1,"MaxDurability":50,"Categories":["OrbisUnderground.Tools"]
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.pill_press_form.name",
+    "Description": "server.orbis_underground.pill_press_form.description"
+  },
+  "Icon": "Icons/ItemsGenerated/pill_press_form.png",
+  "Quality": "Uncommon",
+  "MaxStack": 1,
+  "MaxDurability": 50,
+  "Categories": [
+    "OrbisUnderground.Tools"
+  ]
 }

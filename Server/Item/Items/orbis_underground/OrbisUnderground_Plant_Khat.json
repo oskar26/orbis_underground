@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Arid",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.khat.name",
+    "Description": "server.orbis_underground.plant.khat.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Khat"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

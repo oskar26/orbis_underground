@@ -1,18 +1,22 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:meth",
   "TranslationProperties": {
     "Name": "server.orbis_underground.meth.name",
     "Description": "server.orbis_underground.meth.description"
   },
   "Icon": "Icons/ItemsGenerated/meth.png",
-  "Model": "Items/Crystals/MethCrystal.blockymodel",
   "Quality": "Rare",
   "MaxStack": 16,
   "DropOnDeath": true,
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
     "Secondary": "Root_Secondary_Consume_Potion"
   },
@@ -21,45 +25,61 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_meth",
-          "Duration": 600.0
+          "EffectId": "drug_meth"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Blue.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#aaccff",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 30,
     "Input": [
       {
-        "ItemId": "orbis_underground:ephedrin_powder",
+        "ItemId": "ephedrin_powder",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:lithium_powder",
+        "ItemId": "lithium_powder",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:ammoniak",
+        "ItemId": "ammoniak",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:ether",
+        "ItemId": "ether",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:meth"
-    },
+    "Output": [
+      {
+        "ItemId": "meth"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Alchemy",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Potions"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }
-    ],
-    "CraftingBench": "Bench_Alchemy"
+    ]
   }
 }

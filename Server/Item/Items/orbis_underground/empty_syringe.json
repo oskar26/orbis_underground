@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:empty_syringe",
   "TranslationProperties": {
     "Name": "server.orbis_underground.empty_syringe.name",
     "Description": "server.orbis_underground.empty_syringe.description"
@@ -15,7 +14,7 @@
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
@@ -23,22 +22,23 @@
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_LinenScraps",
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:empty_syringe"
-    },
+    "Output": [
+      {
+        "ItemId": "empty_syringe"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Workbench",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Workbench"
+    ]
   }
 }

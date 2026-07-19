@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Arid_Sharp",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.ephedra.name",
+    "Description": "server.orbis_underground.plant.ephedra.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Ephedra"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

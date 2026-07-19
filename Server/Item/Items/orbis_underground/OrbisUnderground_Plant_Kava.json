@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Fern_Wet_Big",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.kava.name",
+    "Description": "server.orbis_underground.plant.kava.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Kava"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

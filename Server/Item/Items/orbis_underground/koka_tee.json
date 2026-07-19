@@ -1,6 +1,5 @@
 {
-  "Parent": "Potion_Template",
-  "Id": "orbis_underground:koka_tee",
+  "Parent": "Template_Food",
   "TranslationProperties": {
     "Name": "server.orbis_underground.koka_tee.name",
     "Description": "server.orbis_underground.koka_tee.description"
@@ -12,45 +11,67 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Food"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
-    "Secondary": "Root_Secondary_Consume_Potion"
+    "Secondary": "Root_Secondary_Consume_Food_T2"
   },
   "InteractionVars": {
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_cocaine",
-          "Duration": 90.0
+          "EffectId": "drug_ephedrin"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Food/Bread.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Food/Bread_Texture.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#8aaa55",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "Recipe": {
     "TimeSeconds": 5,
     "Input": [
       {
-        "ItemId": "orbis_underground:coca_leaves",
+        "ItemId": "coca_leaves",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
-    "PrimaryOutput": {
-      "ItemId": "orbis_underground:koka_tee"
-    },
+    "Output": [
+      {
+        "ItemId": "koka_tee"
+      }
+    ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Cooking",
+        "Id": "Cookingbench",
         "Categories": [
           "Prepared"
         ]
       }
-    ],
-    "CraftingBench": "Bench_Cooking"
+    ]
   },
   "ItemLevel": 2
 }

@@ -1,6 +1,5 @@
 {
-  "Parent": "Potion_Template",
-  "Id": "orbis_underground:betel_nut",
+  "Parent": "Template_Food",
   "TranslationProperties": {
     "Name": "server.orbis_underground.betel_nut.name",
     "Description": "server.orbis_underground.betel_nut.description"
@@ -12,18 +11,32 @@
   "Categories": [
     "OrbisUnderground.Consumables"
   ],
+  "Tags": {
+    "Type": [
+      "Food"
+    ]
+  },
+  "Consumable": true,
   "Interactions": {
-    "Secondary": "Root_Secondary_Consume_Potion"
+    "Secondary": "Root_Secondary_Consume_Food_T2"
   },
   "InteractionVars": {
     "Effect": {
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_betel",
-          "Duration": 120.0
+          "EffectId": "drug_betel"
         }
       ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "ParticleColor": "#cc8866",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
     }
   },
   "ItemLevel": 1

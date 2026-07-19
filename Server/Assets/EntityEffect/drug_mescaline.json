@@ -1,23 +1,20 @@
 {
-  "Id": "orbis_underground:drug_mescaline",
   "Name": "effect.orbis_underground.drug_mescaline",
   "Duration": 600,
   "Debuff": false,
-  "StatModifiers": {
-    "PerceptionBoost": 1.0
-  },
+  "StatModifiers": {},
   "StatusEffectIcon": "UI/StatusEffects/drug_mescaline.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#c4956a"
   },
-  "modelChange": "mescaline_visuals",
+  "ModelChange": "mescaline_visuals",
   "DamageCalculator": {
     "Type": "OverTime",
     "DamageCauses": {
-      "Nausea": 2.0
+      "Poison": 1.0
     }
   },
-  "DamageCalculatorCooldown": 1.0
+  "DamageCalculatorCooldown": 3.0
 }
