@@ -1,23 +1,77 @@
 {
   "Parent": "Potion_Template",
   "Id": "orbis_underground:haschisch",
-  "TranslationProperties": {"Name":"server.orbis_underground.haschisch.name","Description":"server.orbis_underground.haschisch.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.haschisch.name",
+    "Description": "server.orbis_underground.haschisch.description"
+  },
   "Icon": "Icons/ItemsGenerated/haschisch.png",
   "Quality": "Uncommon",
   "MaxStack": 16,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
   "InteractionVars": {
-    "Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_hashish"}]}
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_hashish"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Purple.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#1a4d0f",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
   },
   "Recipe": {
     "TimeSeconds": 10,
     "Input": [
-      {"ItemId":"orbis_underground:dried_cannabis","Quantity":4},
-      {"ItemId":"Ingredient_TreeSap","Quantity":1}
+      {
+        "ItemId": "orbis_underground:dried_cannabis",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_TreeSap",
+        "Quantity": 1
+      }
     ],
-    "PrimaryOutput": {"ItemId":"orbis_underground:haschisch"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "Output": [
+      {
+        "ItemId": "orbis_underground:haschisch"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Botany",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ]
   }
 }

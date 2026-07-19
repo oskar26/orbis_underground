@@ -1,15 +1,14 @@
 {
-  "Id": "orbis_underground:drug_mdma",
   "Name": "effect.orbis_underground.drug_mdma",
   "Duration": 300,
   "Debuff": false,
   "StatModifiers": {
-    "Strength": 0.2,
+    "AttackDamage": 0.2,
     "HealthRegen": 0.3
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_mdma.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#ff88cc"
   }

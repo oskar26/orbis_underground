@@ -1,1 +1,86 @@
-{"Parent":"Potion_Template","Id":"orbis_underground:lsd_tab","TranslationProperties":{"Name":"server.orbis_underground.lsd_tab.name","Description":"server.orbis_underground.lsd_tab.description"},"Icon":"Icons/ItemsGenerated/lsd_tab.png","Quality":"Rare","MaxStack":16,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],"Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},"InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_lsd"}]}},"Recipe":{"TimeSeconds":22,"Input":[{"ItemId":"orbis_underground:lysergsaeure","Quantity":1},{"ItemId":"Ingredient_MotesOfLight","Quantity":1},{"ItemId":"orbis_underground:paper","Quantity":1},{"ItemId":"Ingredient_EssenceOfVoid","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:lsd_tab"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"],"RequiredTierLevel":2}]}}
+{
+  "Parent": "Potion_Template",
+  "Id": "orbis_underground:lsd_tab",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.lsd_tab.name",
+    "Description": "server.orbis_underground.lsd_tab.description"
+  },
+  "Icon": "Icons/ItemsGenerated/lsd_tab.png",
+  "Quality": "Rare",
+  "MaxStack": 16,
+  "DropOnDeath": true,
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_lsd"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Purple.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#ff66ff",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
+  },
+  "Recipe": {
+    "TimeSeconds": 22,
+    "Input": [
+      {
+        "ItemId": "orbis_underground:lysergsaeure",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_MotesOfLight",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "orbis_underground:paper",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EssenceOfVoid",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:lsd_tab"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Botany",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ]
+  }
+}

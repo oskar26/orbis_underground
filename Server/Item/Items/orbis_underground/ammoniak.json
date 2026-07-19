@@ -1,6 +1,44 @@
 {
-  "Id":"orbis_underground:ammoniak",
-  "TranslationProperties":{"Name":"server.orbis_underground.ammoniak.name","Description":"server.orbis_underground.ammoniak.description"},
-  "Icon":"Icons/ItemsGenerated/ammoniak.png","Quality":"Common","MaxStack":32,"Categories":["OrbisUnderground.Chemicals"],
-  "Recipe":{"TimeSeconds":14,"Input":[{"ItemId":"Ingredient_BoneFragment","Quantity":3},{"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1},{"ItemId":"Ingredient_EssenceOfWater","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:ammoniak"},"BenchRequirement":[{"Type":"Crafting","Id":"Alchemybench","Categories":["Potions"]}]}
+  "Id": "orbis_underground:ammoniak",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.ammoniak.name",
+    "Description": "server.orbis_underground.ammoniak.description"
+  },
+  "Icon": "Icons/ItemsGenerated/ammoniak.png",
+  "Quality": "Common",
+  "MaxStack": 32,
+  "Categories": [
+    "OrbisUnderground.Chemicals"
+  ],
+  "Recipe": {
+    "TimeSeconds": 14,
+    "Input": [
+      {
+        "ItemId": "Ingredient_BoneFragment",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_EmptyPotionBottle",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_EssenceOfWater",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:ammoniak"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Alchemybench",
+        "Categories": [
+          "Alchemy_Potions_Misc"
+        ]
+      }
+    ]
+  }
 }

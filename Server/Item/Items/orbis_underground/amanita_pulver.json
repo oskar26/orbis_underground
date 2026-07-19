@@ -1,18 +1,73 @@
 {
   "Parent": "Potion_Template",
   "Id": "orbis_underground:amanita_pulver",
-  "TranslationProperties": {"Name":"server.orbis_underground.amanita_pulver.name","Description":"server.orbis_underground.amanita_pulver.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.amanita_pulver.name",
+    "Description": "server.orbis_underground.amanita_pulver.description"
+  },
   "Icon": "Icons/ItemsGenerated/pilz_pulver.png",
   "Quality": "Common",
   "MaxStack": 16,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
-  "InteractionVars": {"Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_amanita"}]}},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
+  "Consumable": true,
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
+  "InteractionVars": {
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "orbis_underground:drug_amanita"
+        }
+      ]
+    }
+  },
+  "BlockType": {
+    "Material": "Empty",
+    "DrawType": "Model",
+    "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Purple.png",
+        "Weight": 1
+      }
+    ],
+    "ParticleColor": "#8b3a3a",
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
+  },
   "Recipe": {
     "TimeSeconds": 4,
-    "Input": [{"ItemId":"Plant_BloodcapMushroom","Quantity":1}],
-    "PrimaryOutput": {"ItemId":"orbis_underground:amanita_pulver"},
-    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+    "Input": [
+      {
+        "ItemId": "Plant_BloodcapMushroom",
+        "Quantity": 1
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "orbis_underground:amanita_pulver"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Bench_Botany",
+        "Categories": [
+          "OrbisUnderground_Botany"
+        ]
+      }
+    ]
   }
 }

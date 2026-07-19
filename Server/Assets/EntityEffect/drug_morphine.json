@@ -1,22 +1,22 @@
 {
-  "Id": "orbis_underground:drug_morphine",
   "Name": "effect.orbis_underground.drug_morphine",
   "Duration": 300,
   "Debuff": false,
   "StatModifiers": {
-    "DamageResist": 0.5
+    "AttackDamage": 0.5,
+    "MoveSpeed": -0.1
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_morphine.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#d4d4d4"
   },
   "DamageCalculator": {
     "Type": "OverTime",
     "DamageCauses": {
-      "Respiratory": 1.0
+      "Poison": 0.5
     }
   },
-  "DamageCalculatorCooldown": 1.0
+  "DamageCalculatorCooldown": 3.0
 }

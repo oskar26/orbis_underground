@@ -1,14 +1,13 @@
 {
-  "Id": "orbis_underground:drug_amanita",
   "Name": "effect.orbis_underground.drug_amanita",
   "Duration": 180,
   "Debuff": false,
   "StatModifiers": {
-    "Strength": 0.1
+    "AttackDamage": 0.1
   },
   "StatusEffectIcon": "UI/StatusEffects/drug_amanita.png",
-  "OverlapBehavior": "OVERWRITE",
-  "RemovalBehavior": "COMPLETE",
+  "OverlapBehavior": "Extend",
+  "RemovalBehavior": "Complete",
   "ApplicationEffects": {
     "EntityBottomTint": "#8b3a3a"
   },
