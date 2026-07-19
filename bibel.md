@@ -228,7 +228,8 @@ Die 13 Pflanzen werden über konfliktarme WorldGen-v1-Modifier unter `Server/Wor
    - `Server/Item/Items/orbis_underground/` (Item JSONs)
    - `Server/Assets/EntityEffect/` (Effekt JSONs)
    - `Common/Icons/ItemsGenerated/` (Texturen)
-   - `Common/Models/` (3D Modelle `.bbmodel`)
+   - `Common/Blocks/orbis_underground/` (Werkbank-Modelle `.blockymodel`)
+   - `Common/Items/Cannabis/` (optionale Cannabis-Bud-Modelle aus Get Hy!)
 4. **Sprachdateien:** `Server/Languages/en-US/server.lang` und `de-DE/server.lang`. Alle 15 Cannabis-Bud-Tiers brauchen Namen (z.B. "Sativa Bud (Junk)").
 ```
 
