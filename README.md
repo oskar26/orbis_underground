@@ -1,6 +1,6 @@
 # 🌿 Orbis Underground — Hytale Drogen-Mod
 
-**Version 1.0.0 | Lizenz: MIT | Alle 3 Phasen implementiert**
+**Version 1.1.0 | Lizenz: MIT | Alle 3 Phasen implementiert**
 
 > Eine umfassende Drogen-Mod für Hytale mit realistischen Crafting-Ketten, 26 Status-Effekten und einem Kweebec-Dealer-Handelssystem. **Die Pflanzenverarbeitung und Chemie laufen über zwei eigene, auf Tier 2 aufrüstbare Custom-Werkbänke.**
 
@@ -14,7 +14,7 @@
 | **2.0** | Hard Stuff | Kokain, Crack, Morphium, Heroin, Meth, MDMA, Meskalin, Scopolamin, Salvinorin, Khat | 15 |
 | **3.0** | Full Trip | Ibogain, Ephedrin, Betel, Kava, LSD, Überdosis | 6 |
 
-**79 Items | 26 EntityEffects | 2 NPCs | 2 Loot-Tables | EN + DE Übersetzungen**
+**94 Items/Blöcke | 26 EntityEffects | 1 Dealer-NPC | 13 Worldgen-Pflanzen | EN + DE Übersetzungen**
 
 ---
 
@@ -43,15 +43,19 @@ Der Pfad sollte danach so aussehen:
   %APPDATA%\Roaming\Hytale\UserData\Packs\orbis_underground\
     ├── manifest.json
     ├── Common\
-    │   ├── Icons\ItemsGenerated\   ← Hier kommen deine Texturen rein
-    │   ├── Icons\ItemCategories\   ← Kategorie-Icons
-    │   └── Models\                  ← 3D-Modelle
+    │   ├── Blocks\orbis_underground\       ← Werkbank-Modelle
+    │   ├── BlockTextures\orbis_underground\← Werkbank-Texturen
+    │   ├── Icons\ItemsGenerated\           ← Item- und Werkbank-Icons
+    │   └── Icons\ItemCategories\           ← Kategorie-Icons
     └── Server\
-        ├── Item\Items\orbis_underground\  ← 79 Item-JSONs
-        ├── Assets\EntityEffect\           ← 26 Effekte
-        ├── NPC\Roles\                     ← Kweebeck Dealer
-        ├── Languages\en-US\server.lang    ← Englische Texte
-        └── Languages\de-DE\server.lang    ← Deutsche Texte
+        ├── Item\Items\orbis_underground\   ← Items, Werkbänke und Wildpflanzen
+        ├── Assets\EntityEffect\            ← 26 Effekte
+        ├── WorldGen\Modifier\              ← 13 WorldGen-v1-Injections
+        ├── NPC\Roles\                      ← Kweebec-Dealer
+        ├── NPC\Spawn\Markers\              ← 50%-Dorfspawn
+        ├── BarterShops\                     ← Dealer-Handel
+        ├── Languages\en-US\server.lang     ← Englische Texte
+        └── Languages\de-DE\server.lang     ← Deutsche Texte
 ```
 
 ### Schritt 2: Texturen generieren (MUST DO!)

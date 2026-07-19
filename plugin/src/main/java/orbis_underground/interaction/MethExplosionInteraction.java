@@ -19,13 +19,13 @@ import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * MethExplosionInteraction
- * 
+ *
  * When the player crafts meth, there is a 20% chance of an explosion.
  * The explosion:
  * - Deals 8-15 damage to the player
  * - Sends a warning message
  * - Creates a visual explosion effect at the player's position
- * 
+ *
  * On success (80% chance):
  * - The meth item is crafted normally
  * - The player gets the drug_meth effect applied
@@ -97,7 +97,7 @@ public class MethExplosionInteraction extends SimpleInstantInteraction {
 
             // Send dramatic message to player
             player.sendMessage(Message.raw(
-                    "§c§l💥 EXPLOSION! §eThe meth lab erupted! §cYou took " + 
+                    "§c§l💥 EXPLOSION! §eThe meth lab erupted! §cYou took " +
                     String.format("%.0f", damage) + " damage! §4(Meth destroyed)"
             ));
 

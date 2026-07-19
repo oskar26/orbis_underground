@@ -8,7 +8,7 @@ import javax.annotation.Nonnull;
 
 /**
  * Orbis Underground — Plugin
- * 
+ *
  * Registers custom interactions:
  * - orbis_underground:meth_explosion: 20% chance explosion when crafting meth
  * - orbis_underground:RemoveAllDrugEffects: Naloxone removes all drug effects

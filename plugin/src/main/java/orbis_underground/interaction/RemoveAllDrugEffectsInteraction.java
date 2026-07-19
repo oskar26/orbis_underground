@@ -17,7 +17,7 @@ import javax.annotation.Nonnull;
 
 /**
  * RemoveAllDrugEffectsInteraction
- * 
+ *
  * Used by Naloxone item.
  * Removes ALL active entity effects (drug-related and others) from the player.
  * This is the "antidote" mechanic.
@@ -56,11 +56,11 @@ public class RemoveAllDrugEffectsInteraction extends SimpleInstantInteraction {
         if (effectController != null) {
             // Clear all active effects
             effectController.clearEffects(entityRef, commandBuffer);
-            
+
             player.sendMessage(Message.raw(
                     "§b§l💉 Naloxone administered. §aAll drug effects have been purged."
             ));
-            
+
             interactionContext.getState().state = InteractionState.Finished;
         } else {
             player.sendMessage(Message.raw("§7No active effects to remove."));

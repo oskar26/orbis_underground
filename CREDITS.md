@@ -21,8 +21,5 @@ Original mod: https://www.curseforge.com/hytale/mods/get-hy
 - Botanical Table `.blockymodel` generated from code: wooden table, mortar/pestle, and drying rack
 - Botanical Table 128×128 texture atlas generated programmatically
 
-## Tools Used
-- Python/PIL for texture recoloring (scripts/recolor.py)
-
 ## License
 This project is licensed under the MIT License.

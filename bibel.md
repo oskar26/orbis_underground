@@ -1,7 +1,7 @@
 # 🌿 ORBIS UNDERGROUND — Ultimative Projekt-Bibel & Mod-Kontext
 
-**Version:** 1.0.0 | **Lizenz:** MIT | **Spiel:** Hytale (Early Access)
-**Status:** In Entwicklung (Code- & Asset-Generierung durch KI)
+**Version:** 1.1.0 | **Lizenz:** MIT | **Spiel:** Hytale (Early Access)
+**Status:** Custom-Werkbänke, Worldgen-v1-Modifier und Dealer-Spawn implementiert
 
 ---
 
@@ -54,13 +54,17 @@ Der Nutzer kann **NICHT** manuell designen oder modellieren. Die KI muss folgend
 ## 3. ARCHITEKTUR & WERKBANK-ROUTING
 Die Mod nutzt **ZWEI eigene Custom-Werkbänke** sowie spezifische vanilla Werkbänke.
 
-### Custom Block 1: Botanischer Tisch (`orbis_underground:bench_botany`)
+### Custom Block 1: Botanischer Tisch (`bench_botany`)
+- **Bench-ID:** `OrbisUnderground_Botanybench`
 - **Funktion:** Trocknen, Mahlen, Pressen, Joints drehen, Pillen pressen, pflanzliche Extraktion.
 - **Tier-System:** Tier 1 (Bau) & Tier 2 (Upgrade für komplexe Extrakte wie Scopolamin).
 
-### Custom Block 2: Chemie-Labor (`orbis_underground:bench_chemistry`)
+### Custom Block 2: Chemie-Labor (`bench_chemistry`)
+- **Bench-ID:** `OrbisUnderground_Chemistrybench`
 - **Funktion:** Alle chemischen Synthesen, Destillationen, Raffinationen.
-- **Tier-System:** Tier 1 (Bau) & Tier 2 (Upgrade für harte Drogen wie Heroin, Meth, LSD). 
+- **Tier-System:** Tier 1 (Bau) & Tier 2 (Upgrade für harte Drogen wie Heroin, Meth, LSD).
+
+> Hytale leitet Asset-IDs global aus dem Dateinamen ab. Die Schreibweise `orbis_underground:…` ist für Item-/Block-Asset-Referenzen nicht gültig; eindeutige Bench-IDs und der Manifest-Identifier verhindern Kollisionen. 
 - **Meth-Explosion:** Methamphetamin hat 20% Explosions-Chance bei Herstellung (benötigt Java-Plugin-Snippet für `ItemCraftedEvent`, da JSON keine Zufallsereignisse unterstützt!).
 
 ### Vanilla Werkbänke (Zusätzlich genutzt)
@@ -177,6 +181,9 @@ Die Mod nutzt **ZWEI eigene Custom-Werkbänke** sowie spezifische vanilla Werkb�
 ---
 
 ## 6. WELT-GENERATION & LOOT
+
+Die 13 Pflanzen werden über konfliktarme WorldGen-v1-Modifier unter `Server/WorldGen/Modifier/orbis_underground/` in die Vanilla-Biome-Prefablisten injiziert. Jeder Eintrag besitzt ein eigenes Pattern, ein Einblock-Prefab, einen erntbaren Wildpflanzenblock und eine Drop-Liste. Bereits generierte Chunks werden nicht rückwirkend verändert.
+
 ### Pflanzen-Spawns
 | Pflanze | Zone | Biom | Seltenheit |
 |---|---|---|---|
@@ -216,7 +223,7 @@ Die Mod nutzt **ZWEI eigene Custom-Werkbänke** sowie spezifische vanilla Werkb�
    "InteractionVars": { "Effect": { "Interactions": [{ "Type": "ApplyEffect", "EffectId": "XYZ", "Duration": 120.0 }] } }
    ```
    *(Hinweis: Konsum funktioniert NUR im Adventure-Mode!)*
-2. **Rezept-Struktur:** In Item-JSONs unter `"Recipe"` mit `"Input"`, `"Output"`, `"CraftingBench"` (exakte IDs!), `"TimeSeconds"`.
+2. **Rezept-Struktur:** In Item-JSONs unter `"Recipe"` mit `"Input"`, `"Output"`, `"BenchRequirement"` und `"TimeSeconds"`. `BenchRequirement` enthält die exakte Bench-ID, Kategorie und bei Bedarf `RequiredTierLevel`.
 3. **Ordnerstruktur:** 
    - `Server/Item/Items/orbis_underground/` (Item JSONs)
    - `Server/Assets/EntityEffect/` (Effekt JSONs)
