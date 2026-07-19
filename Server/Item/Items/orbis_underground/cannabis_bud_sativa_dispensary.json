@@ -1,0 +1,10 @@
+{
+  "Id": "orbis_underground:cannabis_bud_sativa_dispensary",
+  "TranslationProperties": {"Name":"server.orbis_underground.cannabis_bud_sativa_dispensary.name","Description":"server.orbis_underground.cannabis_bud_sativa_dispensary.description"},
+  "Icon": "Icons/ItemsGenerated/cannabis_bud_sativa_dispensary.png",
+  "Model": "Items/Cannabis/cannabis_bud_sativa.blockymodel",
+  "Quality": "Uncommon",
+  "MaxStack": 32,
+  "Categories": ["OrbisUnderground.Materials"],
+  "ItemLevel": 1
+}

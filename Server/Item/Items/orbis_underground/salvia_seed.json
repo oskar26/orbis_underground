@@ -1,0 +1,6 @@
+{
+  "Id":"orbis_underground:salvia_seed",
+  "TranslationProperties":{"Name":"server.orbis_underground.salvia_seed.name","Description":"server.orbis_underground.salvia_seed.description"},
+  "Icon":"Icons/ItemsGenerated/salvia_seed.png","Quality":"Uncommon","MaxStack":64,"Categories":["OrbisUnderground.Seeds"],
+  "Recipe":{"TimeSeconds":5,"Input":[{"ItemId":"orbis_underground:essence_shadow","Quantity":2},{"ItemId":"orbis_underground:salvia_leaves","Quantity":2}],"PrimaryOutput":{"ItemId":"orbis_underground:salvia_seed"},"BenchRequirement":[{"Type":"Crafting","Id":"Farmingbench","Categories":["Seeds"],"RequiredTierLevel":2}]}
+}

@@ -1,0 +1,16 @@
+{
+  "Id": "orbis_underground:drug_lsd",
+  "Name": "effect.orbis_underground.drug_lsd",
+  "Duration": 720,
+  "Debuff": false,
+  "StatModifiers": {
+    "PerceptionBoost": 2.0
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_lsd.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#ff66ff"
+  },
+  "modelChange": "lsd_visuals"
+}

@@ -1,0 +1,14 @@
+{
+  "Id": "orbis_underground:pilz_pulver",
+  "TranslationProperties": {"Name":"server.orbis_underground.pilz_pulver.name","Description":"server.orbis_underground.pilz_pulver.description"},
+  "Icon": "Icons/ItemsGenerated/pilz_pulver.png",
+  "Quality": "Common",
+  "MaxStack": 64,
+  "Categories": ["OrbisUnderground.Materials"],
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [{"ItemId":"Plant_BlueGlowingMushroom","Quantity":1}],
+    "PrimaryOutput": {"ItemId":"orbis_underground:pilz_pulver"},
+    "BenchRequirement": [{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "Parent":"Potion_Template","Id":"orbis_underground:mdma_pill",
+  "TranslationProperties":{"Name":"server.orbis_underground.mdma_pill.name","Description":"server.orbis_underground.mdma_pill.description"},
+  "Icon":"Icons/ItemsGenerated/mdma_pill.png","Quality":"Rare","MaxStack":16,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
+  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
+  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_mdma"}]}},
+  "Recipe":{"TimeSeconds":8,"Input":[{"ItemId":"orbis_underground:mdma_powder","Quantity":1},{"ItemId":"orbis_underground:pill_press_form","Quantity":1},{"ItemId":"Ingredient_PlantFiber","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:mdma_pill"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"],"RequiredTierLevel":2}]}
+}

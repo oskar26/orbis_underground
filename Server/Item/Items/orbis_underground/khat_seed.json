@@ -1,0 +1,6 @@
+{
+  "Id":"orbis_underground:khat_seed",
+  "TranslationProperties":{"Name":"server.orbis_underground.khat_seed.name","Description":"server.orbis_underground.khat_seed.description"},
+  "Icon":"Icons/ItemsGenerated/khat_seed.png","Quality":"Uncommon","MaxStack":64,"Categories":["OrbisUnderground.Seeds"],
+  "Recipe":{"TimeSeconds":5,"Input":[{"ItemId":"orbis_underground:essence_shadow","Quantity":2},{"ItemId":"orbis_underground:khat_leaves","Quantity":2}],"PrimaryOutput":{"ItemId":"orbis_underground:khat_seed"},"BenchRequirement":[{"Type":"Crafting","Id":"Farmingbench","Categories":["Seeds"],"RequiredTierLevel":2}]}
+}

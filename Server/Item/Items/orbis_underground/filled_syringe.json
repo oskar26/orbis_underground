@@ -1,0 +1,8 @@
+{
+  "Parent":"Potion_Template","Id":"orbis_underground:filled_syringe",
+  "TranslationProperties":{"Name":"server.orbis_underground.filled_syringe.name","Description":"server.orbis_underground.filled_syringe.description"},
+  "Icon":"Icons/ItemsGenerated/filled_syringe.png","Model":"Items/Syringe/Syringe_Filled.blockymodel","Quality":"Rare","MaxStack":8,"DropOnDeath":true,"Categories":["OrbisUnderground.Consumables"],
+  "Interactions":{"Secondary":"Root_Secondary_Consume_Potion"},
+  "InteractionVars":{"Effect":{"Interactions":[{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_heroin"}]}},
+  "Recipe":{"TimeSeconds":4,"Input":[{"ItemId":"orbis_underground:empty_syringe","Quantity":1},{"ItemId":"orbis_underground:heroin","Quantity":1}],"PrimaryOutput":{"ItemId":"orbis_underground:filled_syringe"},"BenchRequirement":[{"Type":"Crafting","Id":"orbis_underground:bench_botany","Categories":["OrbisUnderground_Botany"]}]}
+}

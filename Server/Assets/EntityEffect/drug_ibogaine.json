@@ -1,0 +1,14 @@
+{
+  "Id": "orbis_underground:drug_ibogaine",
+  "Name": "effect.orbis_underground.drug_ibogaine",
+  "Duration": 1800,
+  "Debuff": false,
+  "StatModifiers": {},
+  "StatusEffectIcon": "UI/StatusEffects/drug_ibogaine.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#aa9977"
+  },
+  "modelChange": "ibogaine_ataxia"
+}

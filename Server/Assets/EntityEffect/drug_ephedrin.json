@@ -1,0 +1,22 @@
+{
+  "Id": "orbis_underground:drug_ephedrin",
+  "Name": "effect.orbis_underground.drug_ephedrin",
+  "Duration": 120,
+  "Debuff": false,
+  "StatModifiers": {
+    "MovementSpeed": 0.15
+  },
+  "StatusEffectIcon": "UI/StatusEffects/drug_ephedrin.png",
+  "OverlapBehavior": "OVERWRITE",
+  "RemovalBehavior": "COMPLETE",
+  "ApplicationEffects": {
+    "EntityBottomTint": "#ccddaa"
+  },
+  "DamageCalculator": {
+    "Type": "OverTime",
+    "DamageCauses": {
+      "HeartPalpitations": 1.0
+    }
+  },
+  "DamageCalculatorCooldown": 1.0
+}
