@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:schwefelsaeure",
   "TranslationProperties": {
     "Name": "server.orbis_underground.schwefelsaeure.name",
     "Description": "server.orbis_underground.schwefelsaeure.description"
@@ -18,25 +17,25 @@
         "Quantity": 2
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EssenceOfFire",
+        "ItemId": "Ingredient_Fire_Essence",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:schwefelsaeure"
+        "ItemId": "schwefelsaeure"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
     ]

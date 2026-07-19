@@ -1,0 +1,20 @@
+{
+  "$Comment": "Wild Coca Shrub — occasional spawn profile",
+  "GridGenerator": {
+    "Seed": "OrbisUnderground-Coca",
+    "Density": 0.18,
+    "Scale": 0.035,
+    "Jitter": 0.9
+  },
+  "Mask": {
+    "File": "Zones.Masks.Shared.Bushes"
+  },
+  "Parent": [
+    "Soil_Grass",
+    "Soil_Grass_Deep",
+    "Soil_Dirt",
+    "Soil_Mud",
+    "Soil_Leaves"
+  ],
+  "FitHeightmap": true
+}

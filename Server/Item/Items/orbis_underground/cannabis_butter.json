@@ -1,6 +1,5 @@
 {
   "Parent": "Template_Food",
-  "Id": "orbis_underground:cannabis_butter",
   "TranslationProperties": {
     "Name": "server.orbis_underground.cannabis_butter.name",
     "Description": "server.orbis_underground.cannabis_butter.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_cannabis_indica"
+          "EffectId": "drug_cannabis_indica"
         }
       ]
     }
@@ -51,7 +50,7 @@
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 1
       },
       {
@@ -61,7 +60,7 @@
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:cannabis_butter"
+        "ItemId": "cannabis_butter"
       }
     ],
     "BenchRequirement": [

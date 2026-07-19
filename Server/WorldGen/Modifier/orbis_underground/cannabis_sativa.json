@@ -1,0 +1,21 @@
+{
+  "$Comment": "Inject Wild Cannabis Sativa into: Zones.Zone1_Tier*.Tile.Forest_*",
+  "Priority": "NORMAL",
+  "Target": {
+    "Root": "Default",
+    "Rules": [
+      "Zones.Zone1_Tier*.Tile.Forest_*"
+    ]
+  },
+  "Content": {
+    "Biome_Prefabs": [
+      {
+        "Operation": "Add",
+        "Content": {
+          "Type": "File",
+          "Path": "OrbisUnderground.Worldgen.Entries.CannabisSativa"
+        }
+      }
+    ]
+  }
+}

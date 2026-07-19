@@ -1,6 +1,5 @@
 {
   "Parent": "Template_Food",
-  "Id": "orbis_underground:koka_tee",
   "TranslationProperties": {
     "Name": "server.orbis_underground.koka_tee.name",
     "Description": "server.orbis_underground.koka_tee.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_ephedrin"
+          "EffectId": "drug_ephedrin"
         }
       ]
     }
@@ -51,17 +50,17 @@
     "TimeSeconds": 5,
     "Input": [
       {
-        "ItemId": "orbis_underground:coca_leaves",
+        "ItemId": "coca_leaves",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:koka_tee"
+        "ItemId": "koka_tee"
       }
     ],
     "BenchRequirement": [

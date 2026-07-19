@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:crack",
   "TranslationProperties": {
     "Name": "server.orbis_underground.crack.name",
     "Description": "server.orbis_underground.crack.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_crack"
+          "EffectId": "drug_crack"
         }
       ]
     }
@@ -51,25 +50,25 @@
     "TimeSeconds": 10,
     "Input": [
       {
-        "ItemId": "orbis_underground:cocaine",
+        "ItemId": "cocaine",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:ammoniak",
+        "ItemId": "ammoniak",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:crack"
+        "ItemId": "crack"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
     ]

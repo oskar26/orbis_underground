@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:spliff",
   "TranslationProperties": {
     "Name": "server.orbis_underground.spliff.name",
     "Description": "server.orbis_underground.spliff.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_cannabis_hybrid"
+          "EffectId": "drug_cannabis_hybrid"
         }
       ]
     }
@@ -51,25 +50,25 @@
     "TimeSeconds": 3,
     "Input": [
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:paper",
+        "ItemId": "paper",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:spliff"
+        "ItemId": "spliff"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ]

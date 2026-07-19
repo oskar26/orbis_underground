@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:mdma_powder",
   "TranslationProperties": {
     "Name": "server.orbis_underground.mdma_powder.name",
     "Description": "server.orbis_underground.mdma_powder.description"
@@ -14,29 +13,29 @@
     "TimeSeconds": 26,
     "Input": [
       {
-        "ItemId": "Ingredient_MotesOfLight",
+        "ItemId": "Ingredient_Motes_Light",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:schwefelsaeure",
+        "ItemId": "schwefelsaeure",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:aceton",
+        "ItemId": "aceton",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:mdma_powder"
+        "ItemId": "mdma_powder"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }

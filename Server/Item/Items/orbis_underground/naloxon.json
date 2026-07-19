@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:naloxon",
   "TranslationProperties": {
     "Name": "server.orbis_underground.naloxon.name",
     "Description": "server.orbis_underground.naloxon.description"
@@ -70,11 +69,11 @@
     "TimeSeconds": 18,
     "Input": [
       {
-        "ItemId": "orbis_underground:morphine",
+        "ItemId": "morphine",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:salzsaeure",
+        "ItemId": "salzsaeure",
         "Quantity": 1
       },
       {
@@ -82,21 +81,21 @@
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:naloxon"
+        "ItemId": "naloxon"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }

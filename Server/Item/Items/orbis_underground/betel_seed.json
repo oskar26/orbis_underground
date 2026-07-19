@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:betel_seed",
   "TranslationProperties": {
     "Name": "server.orbis_underground.betel_seed.name",
     "Description": "server.orbis_underground.betel_seed.description"
@@ -14,17 +13,17 @@
     "TimeSeconds": 5,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:betel_nut",
+        "ItemId": "betel_nut",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:betel_seed"
+        "ItemId": "betel_seed"
       }
     ],
     "BenchRequirement": [

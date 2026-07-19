@@ -1,32 +1,70 @@
 {
   "Parent": "Template_Food",
-  "Id": "orbis_underground:kava_paste",
-  "TranslationProperties": {"Name":"server.orbis_underground.kava_paste.name","Description":"server.orbis_underground.kava_paste.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.kava_paste.name",
+    "Description": "server.orbis_underground.kava_paste.description"
+  },
   "Icon": "Icons/ItemsGenerated/kava_paste.png",
   "Quality": "Common",
   "MaxStack": 32,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Tags": {"Type": ["Food"]},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Food"
+    ]
+  },
   "Consumable": true,
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Food_T2"},
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Food_T2"
+  },
   "InteractionVars": {
-    "Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_kava"}]}
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "drug_kava"
+        }
+      ]
+    }
   },
   "BlockType": {
     "Material": "Empty",
     "DrawType": "Model",
     "ParticleColor": "#999988",
-    "Gathering": {"Harvest": {}, "Soft": {}}
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
   },
   "Recipe": {
     "TimeSeconds": 8,
     "Input": [
-      {"ItemId":"orbis_underground:kava_root","Quantity":2},
-      {"ItemId":"Ingredient_TreeSap","Quantity":1}
+      {
+        "ItemId": "kava_root",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Tree_Sap",
+        "Quantity": 1
+      }
     ],
-    "Output": [{"ItemId":"orbis_underground:kava_paste"}],
-    "BenchRequirement": [{"Type":"Crafting","Id":"Bench_Botany","Categories":["OrbisUnderground_Botany"]}]
+    "Output": [
+      {
+        "ItemId": "kava_paste"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "OrbisUnderground_Botanybench",
+        "Categories": [
+          "OrbisUnderground_Botany_Processing"
+        ]
+      }
+    ]
   },
   "ItemLevel": 1
 }

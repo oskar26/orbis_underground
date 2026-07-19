@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:rohopium",
   "TranslationProperties": {
     "Name": "server.orbis_underground.rohopium.name",
     "Description": "server.orbis_underground.rohopium.description"
@@ -14,22 +13,22 @@
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "orbis_underground:mohn_kapsel",
+        "ItemId": "mohn_kapsel",
         "Quantity": 3
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:rohopium"
+        "ItemId": "rohopium"
       }
     ]
   }

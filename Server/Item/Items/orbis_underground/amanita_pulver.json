@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:amanita_pulver",
   "TranslationProperties": {
     "Name": "server.orbis_underground.amanita_pulver.name",
     "Description": "server.orbis_underground.amanita_pulver.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_amanita"
+          "EffectId": "drug_amanita"
         }
       ]
     }
@@ -51,21 +50,21 @@
     "TimeSeconds": 4,
     "Input": [
       {
-        "ItemId": "Plant_BloodcapMushroom",
+        "ItemId": "Plant_Crop_Mushroom_Cap_Red",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:amanita_pulver"
+        "ItemId": "amanita_pulver"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ]

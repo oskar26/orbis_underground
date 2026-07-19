@@ -1,33 +1,77 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:salvinorin",
-  "TranslationProperties": {"Name":"server.orbis_underground.salvinorin.name","Description":"server.orbis_underground.salvinorin.description"},
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.salvinorin.name",
+    "Description": "server.orbis_underground.salvinorin.description"
+  },
   "Icon": "Icons/ItemsGenerated/salvinorin.png",
   "Quality": "Uncommon",
   "MaxStack": 10,
   "DropOnDeath": true,
-  "Categories": ["OrbisUnderground.Consumables"],
-  "Tags": {"Type": ["Potion"]},
+  "Categories": [
+    "OrbisUnderground.Consumables"
+  ],
+  "Tags": {
+    "Type": [
+      "Potion"
+    ]
+  },
   "Consumable": true,
-  "Interactions": {"Secondary": "Root_Secondary_Consume_Potion"},
+  "Interactions": {
+    "Secondary": "Root_Secondary_Consume_Potion"
+  },
   "InteractionVars": {
-    "Effect": {"Interactions": [{"Type":"ApplyEffect","EffectId":"orbis_underground:drug_salvinorin"}]}
+    "Effect": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "drug_salvinorin"
+        }
+      ]
+    }
   },
   "BlockType": {
     "Material": "Empty",
     "DrawType": "Model",
     "CustomModel": "Items/Consumables/Potions/Potion.blockymodel",
-    "CustomModelTexture": [{"Texture": "Items/Consumables/Potions/Potion_Textures/Green.png", "Weight": 1}],
+    "CustomModelTexture": [
+      {
+        "Texture": "Items/Consumables/Potions/Potion_Textures/Green.png",
+        "Weight": 1
+      }
+    ],
     "ParticleColor": "#44aa44",
-    "Gathering": {"Harvest": {}, "Soft": {}}
+    "Gathering": {
+      "Harvest": {},
+      "Soft": {}
+    }
   },
   "Recipe": {
     "TimeSeconds": 12,
     "Input": [
-      {"ItemId":"orbis_underground:salvia_leaves","Quantity":3},
-      {"ItemId":"Ingredient_EmptyPotionBottle","Quantity":1}
+      {
+        "ItemId": "salvia_leaves",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Potion_Empty",
+        "Quantity": 1
+      }
     ],
-    "Output": [{"ItemId":"orbis_underground:salvinorin"}],
-    "BenchRequirement": [{"Type":"Crafting","Id":"Bench_Botany","Categories":["OrbisUnderground_Botany"],"RequiredTierLevel":2}]
+    "Output": [
+      {
+        "ItemId": "salvinorin"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "OrbisUnderground_Botanybench",
+        "Categories": [
+          "OrbisUnderground_Botany_Processing"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ]
   }
 }

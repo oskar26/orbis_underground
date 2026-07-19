@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Green",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.cannabis_sativa.name",
+    "Description": "server.orbis_underground.plant.cannabis_sativa.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_CannabisSativa"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

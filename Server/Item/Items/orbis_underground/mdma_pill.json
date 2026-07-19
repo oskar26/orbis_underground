@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:mdma_pill",
   "TranslationProperties": {
     "Name": "server.orbis_underground.mdma_pill.name",
     "Description": "server.orbis_underground.mdma_pill.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_mdma"
+          "EffectId": "drug_mdma"
         }
       ]
     }
@@ -51,29 +50,29 @@
     "TimeSeconds": 8,
     "Input": [
       {
-        "ItemId": "orbis_underground:mdma_powder",
+        "ItemId": "mdma_powder",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:pill_press_form",
+        "ItemId": "pill_press_form",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_PlantFiber",
+        "ItemId": "Ingredient_Fibre",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:mdma_pill"
+        "ItemId": "mdma_pill"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }

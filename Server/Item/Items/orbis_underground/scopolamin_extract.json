@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:scopolamin_extract",
   "TranslationProperties": {
     "Name": "server.orbis_underground.scopolamin_extract.name",
     "Description": "server.orbis_underground.scopolamin_extract.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_scopolamine"
+          "EffectId": "drug_scopolamine"
         }
       ]
     }
@@ -51,29 +50,29 @@
     "TimeSeconds": 14,
     "Input": [
       {
-        "ItemId": "orbis_underground:datura_leaves",
+        "ItemId": "datura_leaves",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_VenomSac",
+        "ItemId": "Ingredient_Sac_Venom",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:scopolamin_extract"
+        "ItemId": "scopolamin_extract"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }

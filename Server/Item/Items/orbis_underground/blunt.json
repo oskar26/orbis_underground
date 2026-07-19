@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:blunt",
   "TranslationProperties": {
     "Name": "server.orbis_underground.blunt.name",
     "Description": "server.orbis_underground.blunt.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_cannabis_indica"
+          "EffectId": "drug_cannabis_indica"
         }
       ]
     }
@@ -51,25 +50,25 @@
     "TimeSeconds": 4,
     "Input": [
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:paper",
+        "ItemId": "paper",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:blunt"
+        "ItemId": "blunt"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ]

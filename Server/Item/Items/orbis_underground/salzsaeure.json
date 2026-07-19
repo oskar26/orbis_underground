@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:salzsaeure",
   "TranslationProperties": {
     "Name": "server.orbis_underground.salzsaeure.name",
     "Description": "server.orbis_underground.salzsaeure.description"
@@ -14,29 +13,29 @@
     "TimeSeconds": 14,
     "Input": [
       {
-        "ItemId": "Ingredient_BoneFragment",
+        "ItemId": "Ingredient_Bone_Fragment",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:schwefelsaeure",
+        "ItemId": "schwefelsaeure",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:salzsaeure"
+        "ItemId": "salzsaeure"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
     ]

@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:mohn_kapsel",
   "TranslationProperties": {
     "Name": "server.orbis_underground.mohn_kapsel.name",
     "Description": "server.orbis_underground.mohn_kapsel.description"
@@ -14,22 +13,22 @@
     "TimeSeconds": 4,
     "Input": [
       {
-        "ItemId": "orbis_underground:mohn_flower",
+        "ItemId": "Plant_Flower_Common_Red",
         "Quantity": 1
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:mohn_kapsel",
+        "ItemId": "mohn_kapsel",
         "Quantity": 2
       }
     ]

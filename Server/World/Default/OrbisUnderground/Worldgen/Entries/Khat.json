@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Khat"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Khat"
+  }
+}

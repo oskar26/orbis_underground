@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:ibogain_extract",
   "TranslationProperties": {
     "Name": "server.orbis_underground.ibogain_extract.name",
     "Description": "server.orbis_underground.ibogain_extract.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_ibogaine"
+          "EffectId": "drug_ibogaine"
         }
       ]
     }
@@ -51,11 +50,11 @@
     "TimeSeconds": 18,
     "Input": [
       {
-        "ItemId": "orbis_underground:iboga_root",
+        "ItemId": "iboga_root",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       },
       {
@@ -65,15 +64,15 @@
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:ibogain_extract"
+        "ItemId": "ibogain_extract"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }

@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:lsd_tab",
   "TranslationProperties": {
     "Name": "server.orbis_underground.lsd_tab.name",
     "Description": "server.orbis_underground.lsd_tab.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_lsd"
+          "EffectId": "drug_lsd"
         }
       ]
     }
@@ -51,33 +50,33 @@
     "TimeSeconds": 22,
     "Input": [
       {
-        "ItemId": "orbis_underground:lysergsaeure",
+        "ItemId": "lysergsaeure",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_MotesOfLight",
+        "ItemId": "Ingredient_Motes_Light",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:paper",
+        "ItemId": "paper",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EssenceOfVoid",
+        "ItemId": "Ingredient_Void_Essence",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:lsd_tab"
+        "ItemId": "lsd_tab"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }

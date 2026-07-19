@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:coca_paste",
   "TranslationProperties": {
     "Name": "server.orbis_underground.coca_paste.name",
     "Description": "server.orbis_underground.coca_paste.description"
@@ -14,29 +13,29 @@
     "TimeSeconds": 12,
     "Input": [
       {
-        "ItemId": "orbis_underground:coca_leaves",
+        "ItemId": "coca_leaves",
         "Quantity": 5
       },
       {
-        "ItemId": "Ingredient_TreeSap",
+        "ItemId": "Ingredient_Tree_Sap",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_PlantFiber",
+        "ItemId": "Ingredient_Fibre",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:coca_paste"
+        "ItemId": "coca_paste"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }

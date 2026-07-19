@@ -1,0 +1,18 @@
+{
+  "$Comment": "Every vanilla Kweebec village merchant marker chooses the normal merchant or the Orbis Underground dealer with equal weight (50%).",
+  "Model": "NPC_Spawn_Marker",
+  "NPCs": [
+    {
+      "Name": "Kweebec_Merchant",
+      "Weight": 50,
+      "SpawnAfterGameTime": "P1D"
+    },
+    {
+      "Name": "kweebeck_dealer",
+      "Weight": 50,
+      "SpawnAfterGameTime": "P1D"
+    }
+  ],
+  "ExclusionRadius": 10,
+  "MaxDropHeight": 4
+}

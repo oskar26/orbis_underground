@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:heroin",
   "TranslationProperties": {
     "Name": "server.orbis_underground.heroin.name",
     "Description": "server.orbis_underground.heroin.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_heroin"
+          "EffectId": "drug_heroin"
         }
       ]
     }
@@ -51,29 +50,29 @@
     "TimeSeconds": 24,
     "Input": [
       {
-        "ItemId": "orbis_underground:morphine",
+        "ItemId": "morphine",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:aceton",
+        "ItemId": "aceton",
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:heroin"
+        "ItemId": "heroin"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }

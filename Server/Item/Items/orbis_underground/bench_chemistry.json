@@ -1,0 +1,167 @@
+{
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.bench_chemistry.name",
+    "Description": "server.orbis_underground.bench_chemistry.description"
+  },
+  "Quality": "Rare",
+  "Icon": "Icons/ItemsGenerated/bench_chemistry.png",
+  "Categories": [
+    "OrbisUnderground.Tools",
+    "Furniture.Benches"
+  ],
+  "Interactions": {
+    "Primary": "Block_Primary",
+    "Secondary": "Block_Secondary"
+  },
+  "Recipe": {
+    "TimeSeconds": 12,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ResourceTypeId": "Rock",
+        "Quantity": 20
+      },
+      {
+        "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 10
+      },
+      {
+        "ItemId": "Ingredient_Bar_Gold",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Sac_Venom",
+        "Quantity": 6
+      },
+      {
+        "ItemId": "Ingredient_Bone_Fragment",
+        "Quantity": 12
+      }
+    ],
+    "Output": [
+      {
+        "ItemId": "bench_chemistry",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Id": "Workbench",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ]
+  },
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/orbis_underground/bench_chemistry.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "BlockTextures/orbis_underground/bench_chemistry.png",
+        "Weight": 1
+      }
+    ],
+    "VariantRotation": "NESW",
+    "HitboxType": "Bench_Alchemy",
+    "Bench": {
+      "Type": "Crafting",
+      "Id": "OrbisUnderground_Chemistrybench",
+      "Categories": [
+        {
+          "Id": "OrbisUnderground_Chemistry_Synthesis",
+          "Name": "server.orbis_underground.ui.benchcategory.chemistry",
+          "Icon": "Icons/ItemCategories/OrbisUnderground_Chemicals.png"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Alchemy_Bench_Open",
+      "LocalCloseSoundEventId": "SFX_Alchemy_Bench_Close",
+      "CompletedSoundEventId": "SFX_Alchemy_Bench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "TierLevels": [
+        {
+          "CraftingTimeReductionModifier": 0.0,
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Bar_Silver",
+                "Quantity": 20
+              },
+              {
+                "ItemId": "Ingredient_Bar_Gold",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "Ingredient_Powder_Boom",
+                "Quantity": 10
+              },
+              {
+                "ItemId": "essence_shadow",
+                "Quantity": 16
+              }
+            ],
+            "TimeSeconds": 6
+          }
+        },
+        {
+          "CraftingTimeReductionModifier": 0.3
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Alchemy_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Alchemy_Crafting.blockyanim"
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches",
+        "ItemId": "bench_chemistry"
+      }
+    },
+    "BlockParticleSetId": "Stone",
+    "ParticleColor": "#4a3f51",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Stone"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.435,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      11.4,
+      -18.6
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemLevel": 10,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

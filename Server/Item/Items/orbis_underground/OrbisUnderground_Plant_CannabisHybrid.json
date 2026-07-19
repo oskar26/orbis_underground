@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Bush_Lush",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.cannabis_hybrid.name",
+    "Description": "server.orbis_underground.plant.cannabis_hybrid.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_CannabisHybrid"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

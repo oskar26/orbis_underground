@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:aceton",
   "TranslationProperties": {
     "Name": "server.orbis_underground.aceton.name",
     "Description": "server.orbis_underground.aceton.description"
@@ -14,7 +13,7 @@
     "TimeSeconds": 14,
     "Input": [
       {
-        "ItemId": "Ingredient_TreeSap",
+        "ItemId": "Ingredient_Tree_Sap",
         "Quantity": 2
       },
       {
@@ -22,21 +21,21 @@
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:aceton"
+        "ItemId": "aceton"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
     ]

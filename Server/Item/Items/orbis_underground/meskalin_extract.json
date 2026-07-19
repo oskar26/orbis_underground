@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:meskalin_extract",
   "TranslationProperties": {
     "Name": "server.orbis_underground.meskalin_extract.name",
     "Description": "server.orbis_underground.meskalin_extract.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_mescaline"
+          "EffectId": "drug_mescaline"
         }
       ]
     }
@@ -51,25 +50,25 @@
     "TimeSeconds": 15,
     "Input": [
       {
-        "ItemId": "orbis_underground:peyote_bud",
+        "ItemId": "peyote_bud",
         "Quantity": 3
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:meskalin_extract"
+        "ItemId": "meskalin_extract"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ],
         "RequiredTierLevel": 2
       }

@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.CannabisSativa"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.CannabisSativa"
+  }
+}

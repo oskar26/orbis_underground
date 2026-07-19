@@ -1,5 +1,4 @@
 {
-  "Id": "orbis_underground:cannabis_seed_sativa",
   "TranslationProperties": {
     "Name": "server.orbis_underground.cannabis_seed_sativa.name",
     "Description": "server.orbis_underground.cannabis_seed_sativa.description"
@@ -14,11 +13,11 @@
     "TimeSeconds": 5,
     "Input": [
       {
-        "ItemId": "orbis_underground:essence_shadow",
+        "ItemId": "essence_shadow",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 1
       }
     ],
@@ -34,7 +33,7 @@
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:cannabis_seed_sativa"
+        "ItemId": "cannabis_seed_sativa"
       }
     ]
   }

@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Iboga"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Iboga"
+  }
+}

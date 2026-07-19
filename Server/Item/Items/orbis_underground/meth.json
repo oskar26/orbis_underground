@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:meth",
   "TranslationProperties": {
     "Name": "server.orbis_underground.meth.name",
     "Description": "server.orbis_underground.meth.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_meth"
+          "EffectId": "drug_meth"
         }
       ]
     }
@@ -51,33 +50,33 @@
     "TimeSeconds": 30,
     "Input": [
       {
-        "ItemId": "orbis_underground:ephedrin_powder",
+        "ItemId": "ephedrin_powder",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:lithium_powder",
+        "ItemId": "lithium_powder",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:ammoniak",
+        "ItemId": "ammoniak",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:ether",
+        "ItemId": "ether",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:meth"
+        "ItemId": "meth"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ],
         "RequiredTierLevel": 2
       }

@@ -1,0 +1,22 @@
+{
+  "$Comment": "Inject Wild Salvia into: Zones.Zone1_Tier3.Tile.Forest_Swamp, Zones.Zone1_Tier3.Custom.Lake_Swamp",
+  "Priority": "NORMAL",
+  "Target": {
+    "Root": "Default",
+    "Rules": [
+      "Zones.Zone1_Tier3.Tile.Forest_Swamp",
+      "Zones.Zone1_Tier3.Custom.Lake_Swamp"
+    ]
+  },
+  "Content": {
+    "Biome_Prefabs": [
+      {
+        "Operation": "Add",
+        "Content": {
+          "Type": "File",
+          "Path": "OrbisUnderground.Worldgen.Entries.Salvia"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Flower_Common_Red",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.poppy.name",
+    "Description": "server.orbis_underground.plant.poppy.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Poppy"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

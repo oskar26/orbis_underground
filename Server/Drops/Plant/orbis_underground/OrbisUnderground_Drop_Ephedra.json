@@ -1,0 +1,10 @@
+{
+  "Container": {
+    "Type": "Single",
+    "Item": {
+      "ItemId": "ephedra_stem",
+      "QuantityMin": 2,
+      "QuantityMax": 4
+    }
+  }
+}

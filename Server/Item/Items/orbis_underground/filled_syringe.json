@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:filled_syringe",
   "TranslationProperties": {
     "Name": "server.orbis_underground.filled_syringe.name",
     "Description": "server.orbis_underground.filled_syringe.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_heroin"
+          "EffectId": "drug_heroin"
         }
       ]
     }
@@ -51,25 +50,25 @@
     "TimeSeconds": 4,
     "Input": [
       {
-        "ItemId": "orbis_underground:empty_syringe",
+        "ItemId": "empty_syringe",
         "Quantity": 1
       },
       {
-        "ItemId": "orbis_underground:heroin",
+        "ItemId": "heroin",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:filled_syringe"
+        "ItemId": "filled_syringe"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ]

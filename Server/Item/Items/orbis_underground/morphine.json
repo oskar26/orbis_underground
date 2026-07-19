@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:morphine",
   "TranslationProperties": {
     "Name": "server.orbis_underground.morphine.name",
     "Description": "server.orbis_underground.morphine.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_morphine"
+          "EffectId": "drug_morphine"
         }
       ]
     }
@@ -51,11 +50,11 @@
     "TimeSeconds": 20,
     "Input": [
       {
-        "ItemId": "orbis_underground:rohopium",
+        "ItemId": "rohopium",
         "Quantity": 2
       },
       {
-        "ItemId": "orbis_underground:schwefelsaeure",
+        "ItemId": "schwefelsaeure",
         "Quantity": 1
       },
       {
@@ -63,21 +62,21 @@
         "Quantity": 1
       },
       {
-        "ItemId": "Ingredient_EmptyPotionBottle",
+        "ItemId": "Potion_Empty",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:morphine"
+        "ItemId": "morphine"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Alchemybench",
+        "Id": "OrbisUnderground_Chemistrybench",
         "Categories": [
-          "Alchemy_Potions_Misc"
+          "OrbisUnderground_Chemistry_Synthesis"
         ]
       }
     ]

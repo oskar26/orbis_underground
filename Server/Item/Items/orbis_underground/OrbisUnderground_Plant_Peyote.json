@@ -1,0 +1,27 @@
+{
+  "Parent": "Plant_Cactus_Flower",
+  "TranslationProperties": {
+    "Name": "server.orbis_underground.plant.peyote.name",
+    "Description": "server.orbis_underground.plant.peyote.description"
+  },
+  "Categories": [
+    "OrbisUnderground.Materials",
+    "Blocks.Plants"
+  ],
+  "BlockType": {
+    "Gathering": {
+      "Soft": {
+        "DropList": "OrbisUnderground_Drop_Peyote"
+      },
+      "UseDefaultDropWhenPlaced": false
+    }
+  },
+  "Tags": {
+    "Type": [
+      "Plant"
+    ],
+    "Family": [
+      "OrbisUnderground_WildPlant"
+    ]
+  }
+}

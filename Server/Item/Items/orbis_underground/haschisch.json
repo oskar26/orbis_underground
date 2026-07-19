@@ -1,6 +1,5 @@
 {
   "Parent": "Potion_Template",
-  "Id": "orbis_underground:haschisch",
   "TranslationProperties": {
     "Name": "server.orbis_underground.haschisch.name",
     "Description": "server.orbis_underground.haschisch.description"
@@ -26,7 +25,7 @@
       "Interactions": [
         {
           "Type": "ApplyEffect",
-          "EffectId": "orbis_underground:drug_hashish"
+          "EffectId": "drug_hashish"
         }
       ]
     }
@@ -51,25 +50,25 @@
     "TimeSeconds": 10,
     "Input": [
       {
-        "ItemId": "orbis_underground:dried_cannabis",
+        "ItemId": "dried_cannabis",
         "Quantity": 4
       },
       {
-        "ItemId": "Ingredient_TreeSap",
+        "ItemId": "Ingredient_Tree_Sap",
         "Quantity": 1
       }
     ],
     "Output": [
       {
-        "ItemId": "orbis_underground:haschisch"
+        "ItemId": "haschisch"
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Crafting",
-        "Id": "Bench_Botany",
+        "Id": "OrbisUnderground_Botanybench",
         "Categories": [
-          "OrbisUnderground_Botany"
+          "OrbisUnderground_Botany_Processing"
         ]
       }
     ]

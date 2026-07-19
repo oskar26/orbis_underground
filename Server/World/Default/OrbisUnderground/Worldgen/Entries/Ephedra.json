@@ -1,0 +1,8 @@
+{
+  "Prefab": [
+    "OrbisUnderground.Plants.Ephedra"
+  ],
+  "Pattern": {
+    "File": "OrbisUnderground.Worldgen.Patterns.Ephedra"
+  }
+}
